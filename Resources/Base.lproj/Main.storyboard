@@ -9,7 +9,7 @@
         <!--KENO!-->
         <scene sceneID="MRK-Xy-YkP">
             <objects>
-                <viewController id="9oc-XS-Z3v" userLabel="KENO!" customClass="ViewController" customModule="MassStateKeno" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9oc-XS-Z3v" userLabel="KENO!" customClass="KENOViewController" customModule="MassStateKeno" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3WL-YY-kAk"/>
                         <viewControllerLayoutGuide type="bottom" id="mnA-cV-ayl"/>

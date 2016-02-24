@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		62CBBC101C7E317F00C27DAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */; };
-		62CBBC121C7E317F00C27DAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC111C7E317F00C27DAD /* ViewController.swift */; };
+		62CBBC121C7E317F00C27DAD /* KENOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC111C7E317F00C27DAD /* KENOViewController.swift */; };
 		62CBBC151C7E317F00C27DAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62CBBC131C7E317F00C27DAD /* Main.storyboard */; };
 		62CBBC171C7E317F00C27DAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62CBBC161C7E317F00C27DAD /* Assets.xcassets */; };
 		62CBBC1A1C7E317F00C27DAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62CBBC181C7E317F00C27DAD /* LaunchScreen.storyboard */; };
@@ -17,6 +17,14 @@
 		62CBBC411C7E31E100C27DAD /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC401C7E31E100C27DAD /* GradientView.swift */; };
 		62CBBC431C7E36CA00C27DAD /* WinningNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC421C7E36CA00C27DAD /* WinningNumber.swift */; };
 		62CBBC461C7E371100C27DAD /* WinningNumbersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC451C7E371100C27DAD /* WinningNumbersController.swift */; };
+		62CBBC4A1C7E471C00C27DAD /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC491C7E471C00C27DAD /* APIRequest.swift */; };
+		62CBBC4C1C7E473500C27DAD /* Reason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC4B1C7E473500C27DAD /* Reason.swift */; };
+		62CBBC4E1C7E475600C27DAD /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC4D1C7E475600C27DAD /* HTTPMethod.swift */; };
+		62CBBC501C7E476B00C27DAD /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC4F1C7E476B00C27DAD /* Path.swift */; };
+		62CBBC521C7E477E00C27DAD /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC511C7E477E00C27DAD /* Resource.swift */; };
+		62CBBC541C7E497900C27DAD /* MassLottery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC531C7E497900C27DAD /* MassLottery.swift */; };
+		62CBBC561C7E4DC200C27DAD /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC551C7E4DC200C27DAD /* Request.swift */; };
+		62CBBC581C7E4E0000C27DAD /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC571C7E4E0000C27DAD /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +47,7 @@
 /* Begin PBXFileReference section */
 		62CBBC0C1C7E317F00C27DAD /* MassStateKeno.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MassStateKeno.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		62CBBC111C7E317F00C27DAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		62CBBC111C7E317F00C27DAD /* KENOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KENOViewController.swift; sourceTree = "<group>"; };
 		62CBBC141C7E317F00C27DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62CBBC161C7E317F00C27DAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62CBBC191C7E317F00C27DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +61,14 @@
 		62CBBC401C7E31E100C27DAD /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		62CBBC421C7E36CA00C27DAD /* WinningNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinningNumber.swift; sourceTree = "<group>"; };
 		62CBBC451C7E371100C27DAD /* WinningNumbersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinningNumbersController.swift; sourceTree = "<group>"; };
+		62CBBC491C7E471C00C27DAD /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		62CBBC4B1C7E473500C27DAD /* Reason.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reason.swift; sourceTree = "<group>"; };
+		62CBBC4D1C7E475600C27DAD /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		62CBBC4F1C7E476B00C27DAD /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		62CBBC511C7E477E00C27DAD /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		62CBBC531C7E497900C27DAD /* MassLottery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MassLottery.swift; sourceTree = "<group>"; };
+		62CBBC551C7E4DC200C27DAD /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		62CBBC571C7E4E0000C27DAD /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,11 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				62CBBC441C7E36CE00C27DAD /* Library */,
-				62CBBC0E1C7E317F00C27DAD /* Source */,
-				62CBBC3E1C7E31A900C27DAD /* Tests */,
-				62CBBC3D1C7E31A200C27DAD /* Resources */,
-				62CBBC3F1C7E31BC00C27DAD /* SupportFiles */,
 				62CBBC0D1C7E317F00C27DAD /* Products */,
+				62CBBC3D1C7E31A200C27DAD /* Resources */,
+				62CBBC0E1C7E317F00C27DAD /* Source */,
+				62CBBC3F1C7E31BC00C27DAD /* SupportFiles */,
+				62CBBC3E1C7E31A900C27DAD /* Tests */,
+				62CBBC471C7E46F100C27DAD /* Vendor */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,7 +123,10 @@
 			isa = PBXGroup;
 			children = (
 				62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */,
-				62CBBC111C7E317F00C27DAD /* ViewController.swift */,
+				62CBBC111C7E317F00C27DAD /* KENOViewController.swift */,
+				62CBBC531C7E497900C27DAD /* MassLottery.swift */,
+				62CBBC551C7E4DC200C27DAD /* Request.swift */,
+				62CBBC571C7E4E0000C27DAD /* Response.swift */,
 				62CBBC421C7E36CA00C27DAD /* WinningNumber.swift */,
 				62CBBC451C7E371100C27DAD /* WinningNumbersController.swift */,
 			);
@@ -164,6 +184,26 @@
 				62CBBC401C7E31E100C27DAD /* GradientView.swift */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		62CBBC471C7E46F100C27DAD /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				62CBBC481C7E46F600C27DAD /* TinyNetworking */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		62CBBC481C7E46F600C27DAD /* TinyNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				62CBBC491C7E471C00C27DAD /* APIRequest.swift */,
+				62CBBC4D1C7E475600C27DAD /* HTTPMethod.swift */,
+				62CBBC4F1C7E476B00C27DAD /* Path.swift */,
+				62CBBC4B1C7E473500C27DAD /* Reason.swift */,
+				62CBBC511C7E477E00C27DAD /* Resource.swift */,
+			);
+			path = TinyNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,11 +337,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62CBBC121C7E317F00C27DAD /* ViewController.swift in Sources */,
+				62CBBC121C7E317F00C27DAD /* KENOViewController.swift in Sources */,
+				62CBBC561C7E4DC200C27DAD /* Request.swift in Sources */,
 				62CBBC431C7E36CA00C27DAD /* WinningNumber.swift in Sources */,
 				62CBBC461C7E371100C27DAD /* WinningNumbersController.swift in Sources */,
+				62CBBC521C7E477E00C27DAD /* Resource.swift in Sources */,
 				62CBBC101C7E317F00C27DAD /* AppDelegate.swift in Sources */,
+				62CBBC581C7E4E0000C27DAD /* Response.swift in Sources */,
+				62CBBC541C7E497900C27DAD /* MassLottery.swift in Sources */,
+				62CBBC4E1C7E475600C27DAD /* HTTPMethod.swift in Sources */,
+				62CBBC4A1C7E471C00C27DAD /* APIRequest.swift in Sources */,
 				62CBBC411C7E31E100C27DAD /* GradientView.swift in Sources */,
+				62CBBC501C7E476B00C27DAD /* Path.swift in Sources */,
+				62CBBC4C1C7E473500C27DAD /* Reason.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
