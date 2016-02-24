@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62CBBC101C7E317F00C27DAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */; };
+		62CBBC121C7E317F00C27DAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC111C7E317F00C27DAD /* ViewController.swift */; };
+		62CBBC151C7E317F00C27DAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62CBBC131C7E317F00C27DAD /* Main.storyboard */; };
+		62CBBC171C7E317F00C27DAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62CBBC161C7E317F00C27DAD /* Assets.xcassets */; };
+		62CBBC1A1C7E317F00C27DAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62CBBC181C7E317F00C27DAD /* LaunchScreen.storyboard */; };
+		62CBBC251C7E317F00C27DAD /* MassStateKenoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC241C7E317F00C27DAD /* MassStateKenoTests.swift */; };
+		62CBBC301C7E317F00C27DAD /* MassStateKenoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC2F1C7E317F00C27DAD /* MassStateKenoUITests.swift */; };
+		62CBBC411C7E31E100C27DAD /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC401C7E31E100C27DAD /* GradientView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		62CBBC211C7E317F00C27DAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62CBBC041C7E317F00C27DAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62CBBC0B1C7E317F00C27DAD;
+			remoteInfo = MassStateKeno;
+		};
+		62CBBC2C1C7E317F00C27DAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62CBBC041C7E317F00C27DAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62CBBC0B1C7E317F00C27DAD;
+			remoteInfo = MassStateKeno;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		62CBBC0C1C7E317F00C27DAD /* MassStateKeno.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MassStateKeno.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		62CBBC111C7E317F00C27DAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		62CBBC141C7E317F00C27DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62CBBC161C7E317F00C27DAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62CBBC191C7E317F00C27DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		62CBBC1B1C7E317F00C27DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62CBBC201C7E317F00C27DAD /* MassStateKenoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MassStateKenoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62CBBC241C7E317F00C27DAD /* MassStateKenoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassStateKenoTests.swift; sourceTree = "<group>"; };
+		62CBBC261C7E317F00C27DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62CBBC2B1C7E317F00C27DAD /* MassStateKenoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MassStateKenoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62CBBC2F1C7E317F00C27DAD /* MassStateKenoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassStateKenoUITests.swift; sourceTree = "<group>"; };
+		62CBBC311C7E317F00C27DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62CBBC401C7E31E100C27DAD /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62CBBC091C7E317F00C27DAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CBBC1D1C7E317F00C27DAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CBBC281C7E317F00C27DAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62CBBC031C7E317F00C27DAD = {
+			isa = PBXGroup;
+			children = (
+				62CBBC0E1C7E317F00C27DAD /* Source */,
+				62CBBC3D1C7E31A200C27DAD /* Resources */,
+				62CBBC3E1C7E31A900C27DAD /* Tests */,
+				62CBBC3F1C7E31BC00C27DAD /* SupportFiles */,
+				62CBBC0D1C7E317F00C27DAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		62CBBC0D1C7E317F00C27DAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62CBBC0C1C7E317F00C27DAD /* MassStateKeno.app */,
+				62CBBC201C7E317F00C27DAD /* MassStateKenoTests.xctest */,
+				62CBBC2B1C7E317F00C27DAD /* MassStateKenoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62CBBC0E1C7E317F00C27DAD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */,
+				62CBBC401C7E31E100C27DAD /* GradientView.swift */,
+				62CBBC111C7E317F00C27DAD /* ViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		62CBBC231C7E317F00C27DAD /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				62CBBC261C7E317F00C27DAD /* Info.plist */,
+				62CBBC241C7E317F00C27DAD /* MassStateKenoTests.swift */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		62CBBC2E1C7E317F00C27DAD /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				62CBBC311C7E317F00C27DAD /* Info.plist */,
+				62CBBC2F1C7E317F00C27DAD /* MassStateKenoUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		62CBBC3D1C7E31A200C27DAD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				62CBBC161C7E317F00C27DAD /* Assets.xcassets */,
+				62CBBC181C7E317F00C27DAD /* LaunchScreen.storyboard */,
+				62CBBC131C7E317F00C27DAD /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		62CBBC3E1C7E31A900C27DAD /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				62CBBC2E1C7E317F00C27DAD /* UITests */,
+				62CBBC231C7E317F00C27DAD /* UnitTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		62CBBC3F1C7E31BC00C27DAD /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				62CBBC1B1C7E317F00C27DAD /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62CBBC0B1C7E317F00C27DAD /* MassStateKeno */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62CBBC341C7E317F00C27DAD /* Build configuration list for PBXNativeTarget "MassStateKeno" */;
+			buildPhases = (
+				62CBBC081C7E317F00C27DAD /* Sources */,
+				62CBBC091C7E317F00C27DAD /* Frameworks */,
+				62CBBC0A1C7E317F00C27DAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MassStateKeno;
+			productName = MassStateKeno;
+			productReference = 62CBBC0C1C7E317F00C27DAD /* MassStateKeno.app */;
+			productType = "com.apple.product-type.application";
+		};
+		62CBBC1F1C7E317F00C27DAD /* MassStateKenoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62CBBC371C7E317F00C27DAD /* Build configuration list for PBXNativeTarget "MassStateKenoTests" */;
+			buildPhases = (
+				62CBBC1C1C7E317F00C27DAD /* Sources */,
+				62CBBC1D1C7E317F00C27DAD /* Frameworks */,
+				62CBBC1E1C7E317F00C27DAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62CBBC221C7E317F00C27DAD /* PBXTargetDependency */,
+			);
+			name = MassStateKenoTests;
+			productName = MassStateKenoTests;
+			productReference = 62CBBC201C7E317F00C27DAD /* MassStateKenoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		62CBBC2A1C7E317F00C27DAD /* MassStateKenoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62CBBC3A1C7E317F00C27DAD /* Build configuration list for PBXNativeTarget "MassStateKenoUITests" */;
+			buildPhases = (
+				62CBBC271C7E317F00C27DAD /* Sources */,
+				62CBBC281C7E317F00C27DAD /* Frameworks */,
+				62CBBC291C7E317F00C27DAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62CBBC2D1C7E317F00C27DAD /* PBXTargetDependency */,
+			);
+			name = MassStateKenoUITests;
+			productName = MassStateKenoUITests;
+			productReference = 62CBBC2B1C7E317F00C27DAD /* MassStateKenoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62CBBC041C7E317F00C27DAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Alexis Digital";
+				TargetAttributes = {
+					62CBBC0B1C7E317F00C27DAD = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					62CBBC1F1C7E317F00C27DAD = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 62CBBC0B1C7E317F00C27DAD;
+					};
+					62CBBC2A1C7E317F00C27DAD = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 62CBBC0B1C7E317F00C27DAD;
+					};
+				};
+			};
+			buildConfigurationList = 62CBBC071C7E317F00C27DAD /* Build configuration list for PBXProject "MassStateKeno" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62CBBC031C7E317F00C27DAD;
+			productRefGroup = 62CBBC0D1C7E317F00C27DAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62CBBC0B1C7E317F00C27DAD /* MassStateKeno */,
+				62CBBC1F1C7E317F00C27DAD /* MassStateKenoTests */,
+				62CBBC2A1C7E317F00C27DAD /* MassStateKenoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62CBBC0A1C7E317F00C27DAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62CBBC1A1C7E317F00C27DAD /* LaunchScreen.storyboard in Resources */,
+				62CBBC171C7E317F00C27DAD /* Assets.xcassets in Resources */,
+				62CBBC151C7E317F00C27DAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CBBC1E1C7E317F00C27DAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CBBC291C7E317F00C27DAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62CBBC081C7E317F00C27DAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62CBBC121C7E317F00C27DAD /* ViewController.swift in Sources */,
+				62CBBC101C7E317F00C27DAD /* AppDelegate.swift in Sources */,
+				62CBBC411C7E31E100C27DAD /* GradientView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CBBC1C1C7E317F00C27DAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62CBBC251C7E317F00C27DAD /* MassStateKenoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CBBC271C7E317F00C27DAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62CBBC301C7E317F00C27DAD /* MassStateKenoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62CBBC221C7E317F00C27DAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62CBBC0B1C7E317F00C27DAD /* MassStateKeno */;
+			targetProxy = 62CBBC211C7E317F00C27DAD /* PBXContainerItemProxy */;
+		};
+		62CBBC2D1C7E317F00C27DAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62CBBC0B1C7E317F00C27DAD /* MassStateKeno */;
+			targetProxy = 62CBBC2C1C7E317F00C27DAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		62CBBC131C7E317F00C27DAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62CBBC141C7E317F00C27DAD /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		62CBBC181C7E317F00C27DAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62CBBC191C7E317F00C27DAD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		62CBBC321C7E317F00C27DAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62CBBC331C7E317F00C27DAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62CBBC351C7E317F00C27DAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/SupportFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.MassStateKeno;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		62CBBC361C7E317F00C27DAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/SupportFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.MassStateKeno;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		62CBBC381C7E317F00C27DAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.MassStateKenoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MassStateKeno.app/MassStateKeno";
+			};
+			name = Debug;
+		};
+		62CBBC391C7E317F00C27DAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.MassStateKenoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MassStateKeno.app/MassStateKeno";
+			};
+			name = Release;
+		};
+		62CBBC3B1C7E317F00C27DAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.MassStateKenoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MassStateKeno;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		62CBBC3C1C7E317F00C27DAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.MassStateKenoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MassStateKeno;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62CBBC071C7E317F00C27DAD /* Build configuration list for PBXProject "MassStateKeno" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62CBBC321C7E317F00C27DAD /* Debug */,
+				62CBBC331C7E317F00C27DAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62CBBC341C7E317F00C27DAD /* Build configuration list for PBXNativeTarget "MassStateKeno" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62CBBC351C7E317F00C27DAD /* Debug */,
+				62CBBC361C7E317F00C27DAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62CBBC371C7E317F00C27DAD /* Build configuration list for PBXNativeTarget "MassStateKenoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62CBBC381C7E317F00C27DAD /* Debug */,
+				62CBBC391C7E317F00C27DAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62CBBC3A1C7E317F00C27DAD /* Build configuration list for PBXNativeTarget "MassStateKenoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62CBBC3B1C7E317F00C27DAD /* Debug */,
+				62CBBC3C1C7E317F00C27DAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62CBBC041C7E317F00C27DAD /* Project object */;
+}
