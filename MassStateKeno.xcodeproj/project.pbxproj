@@ -50,7 +50,7 @@
 		62CBBC2B1C7E317F00C27DAD /* MassStateKenoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MassStateKenoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62CBBC2F1C7E317F00C27DAD /* MassStateKenoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassStateKenoUITests.swift; sourceTree = "<group>"; };
 		62CBBC311C7E317F00C27DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62CBBC401C7E31E100C27DAD /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = Source/GradientView.swift; sourceTree = "<group>"; };
+		62CBBC401C7E31E100C27DAD /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		62CBBC421C7E36CA00C27DAD /* WinningNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinningNumber.swift; sourceTree = "<group>"; };
 		62CBBC451C7E371100C27DAD /* WinningNumbersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinningNumbersController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,8 +85,8 @@
 			children = (
 				62CBBC441C7E36CE00C27DAD /* Library */,
 				62CBBC0E1C7E317F00C27DAD /* Source */,
-				62CBBC3D1C7E31A200C27DAD /* Resources */,
 				62CBBC3E1C7E31A900C27DAD /* Tests */,
+				62CBBC3D1C7E31A200C27DAD /* Resources */,
 				62CBBC3F1C7E31BC00C27DAD /* SupportFiles */,
 				62CBBC0D1C7E317F00C27DAD /* Products */,
 			);
@@ -163,7 +163,7 @@
 			children = (
 				62CBBC401C7E31E100C27DAD /* GradientView.swift */,
 			);
-			name = Library;
+			path = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
