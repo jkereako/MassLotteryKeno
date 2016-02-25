@@ -12,7 +12,7 @@ struct Request {
   static let baseURL = NSURL(string: "http://www.masslottery.com/data/json")!
   func todaysWinningKENONumbers() -> Resource<String> {
     return Resource(
-      path: MassLottery.KENO.Today,
+      path: MassLottery.Keno.TodaysWinningNumbers,
       method: Method.GET,
       requestBody: nil,
       headers: [:],

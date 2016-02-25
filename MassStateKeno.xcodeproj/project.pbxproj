@@ -25,6 +25,14 @@
 		62CBBC541C7E497900C27DAD /* MassLottery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC531C7E497900C27DAD /* MassLottery.swift */; };
 		62CBBC561C7E4DC200C27DAD /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC551C7E4DC200C27DAD /* Request.swift */; };
 		62CBBC581C7E4E0000C27DAD /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC571C7E4E0000C27DAD /* Response.swift */; };
+		62CBBC5B1C7E51FF00C27DAD /* Coders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC5A1C7E51FF00C27DAD /* Coders.swift */; };
+		62CBBC5D1C7E521800C27DAD /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC5C1C7E521800C27DAD /* Curry.swift */; };
+		62CBBC5F1C7E522A00C27DAD /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC5E1C7E522A00C27DAD /* Helpers.swift */; };
+		62CBBC611C7E529600C27DAD /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC601C7E529600C27DAD /* Operators.swift */; };
+		62CBBC631C7E52B900C27DAD /* ParseTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC621C7E52B900C27DAD /* ParseTypes.swift */; };
+		62CBBC651C7E52CF00C27DAD /* ResourceConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC641C7E52CF00C27DAD /* ResourceConstructor.swift */; };
+		62CBBC671C7E52E700C27DAD /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC661C7E52E700C27DAD /* TypeAliases.swift */; };
+		62CBBC691C7E541E00C27DAD /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC681C7E541E00C27DAD /* Drawing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +77,14 @@
 		62CBBC531C7E497900C27DAD /* MassLottery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MassLottery.swift; sourceTree = "<group>"; };
 		62CBBC551C7E4DC200C27DAD /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		62CBBC571C7E4E0000C27DAD /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		62CBBC5A1C7E51FF00C27DAD /* Coders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coders.swift; sourceTree = "<group>"; };
+		62CBBC5C1C7E521800C27DAD /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
+		62CBBC5E1C7E522A00C27DAD /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		62CBBC601C7E529600C27DAD /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		62CBBC621C7E52B900C27DAD /* ParseTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseTypes.swift; sourceTree = "<group>"; };
+		62CBBC641C7E52CF00C27DAD /* ResourceConstructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceConstructor.swift; sourceTree = "<group>"; };
+		62CBBC661C7E52E700C27DAD /* TypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		62CBBC681C7E541E00C27DAD /* Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +112,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62534B271C7E901E0008C2EF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				62CBBC681C7E541E00C27DAD /* Drawing.swift */,
+				62CBBC531C7E497900C27DAD /* MassLottery.swift */,
+				62CBBC551C7E4DC200C27DAD /* Request.swift */,
+				62CBBC571C7E4E0000C27DAD /* Response.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		62CBBC031C7E317F00C27DAD = {
 			isa = PBXGroup;
 			children = (
@@ -122,11 +149,9 @@
 		62CBBC0E1C7E317F00C27DAD /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				62534B271C7E901E0008C2EF /* API */,
 				62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */,
 				62CBBC111C7E317F00C27DAD /* KENOViewController.swift */,
-				62CBBC531C7E497900C27DAD /* MassLottery.swift */,
-				62CBBC551C7E4DC200C27DAD /* Request.swift */,
-				62CBBC571C7E4E0000C27DAD /* Response.swift */,
 				62CBBC421C7E36CA00C27DAD /* WinningNumber.swift */,
 				62CBBC451C7E371100C27DAD /* WinningNumbersController.swift */,
 			);
@@ -189,6 +214,7 @@
 		62CBBC471C7E46F100C27DAD /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				62CBBC591C7E515A00C27DAD /* JSONParser */,
 				62CBBC481C7E46F600C27DAD /* TinyNetworking */,
 			);
 			path = Vendor;
@@ -204,6 +230,20 @@
 				62CBBC511C7E477E00C27DAD /* Resource.swift */,
 			);
 			path = TinyNetworking;
+			sourceTree = "<group>";
+		};
+		62CBBC591C7E515A00C27DAD /* JSONParser */ = {
+			isa = PBXGroup;
+			children = (
+				62CBBC5A1C7E51FF00C27DAD /* Coders.swift */,
+				62CBBC5C1C7E521800C27DAD /* Curry.swift */,
+				62CBBC5E1C7E522A00C27DAD /* Helpers.swift */,
+				62CBBC601C7E529600C27DAD /* Operators.swift */,
+				62CBBC621C7E52B900C27DAD /* ParseTypes.swift */,
+				62CBBC641C7E52CF00C27DAD /* ResourceConstructor.swift */,
+				62CBBC661C7E52E700C27DAD /* TypeAliases.swift */,
+			);
+			path = JSONParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,12 +380,20 @@
 				62CBBC121C7E317F00C27DAD /* KENOViewController.swift in Sources */,
 				62CBBC561C7E4DC200C27DAD /* Request.swift in Sources */,
 				62CBBC431C7E36CA00C27DAD /* WinningNumber.swift in Sources */,
+				62CBBC5B1C7E51FF00C27DAD /* Coders.swift in Sources */,
 				62CBBC461C7E371100C27DAD /* WinningNumbersController.swift in Sources */,
 				62CBBC521C7E477E00C27DAD /* Resource.swift in Sources */,
+				62CBBC651C7E52CF00C27DAD /* ResourceConstructor.swift in Sources */,
 				62CBBC101C7E317F00C27DAD /* AppDelegate.swift in Sources */,
+				62CBBC691C7E541E00C27DAD /* Drawing.swift in Sources */,
+				62CBBC671C7E52E700C27DAD /* TypeAliases.swift in Sources */,
 				62CBBC581C7E4E0000C27DAD /* Response.swift in Sources */,
 				62CBBC541C7E497900C27DAD /* MassLottery.swift in Sources */,
+				62CBBC631C7E52B900C27DAD /* ParseTypes.swift in Sources */,
 				62CBBC4E1C7E475600C27DAD /* HTTPMethod.swift in Sources */,
+				62CBBC5D1C7E521800C27DAD /* Curry.swift in Sources */,
+				62CBBC5F1C7E522A00C27DAD /* Helpers.swift in Sources */,
+				62CBBC611C7E529600C27DAD /* Operators.swift in Sources */,
 				62CBBC4A1C7E471C00C27DAD /* APIRequest.swift in Sources */,
 				62CBBC411C7E31E100C27DAD /* GradientView.swift in Sources */,
 				62CBBC501C7E476B00C27DAD /* Path.swift in Sources */,

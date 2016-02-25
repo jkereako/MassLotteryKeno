@@ -22,23 +22,42 @@
                                 <rect key="frame" x="20" y="20" width="560" height="572"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xhC-XF-day" userLabel="Header">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="136.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="136"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Keno" translatesAutoresizingMaskIntoConstraints="NO" id="IDE-WM-ajm">
                                                 <rect key="frame" x="135" y="0.0" width="290" height="112"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="logo"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Game # 1169640" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQ1-vc-5V1" userLabel="Game identifier">
-                                                <rect key="frame" x="195" y="112" width="170" height="24.5"/>
-                                                <accessibility key="accessibilityConfiguration" identifier="gameIdentifier"/>
-                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="21"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dIW-Of-Vk2">
+                                                <rect key="frame" x="196" y="112" width="168" height="25"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQ1-vc-5V1" userLabel="Game">
+                                                        <rect key="frame" x="0.0" y="0.0" width="61" height="25"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="game" label="Game"/>
+                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="21"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ViT-Sv-urZ" userLabel="Pound">
+                                                        <rect key="frame" x="65" y="0.0" width="12" height="25"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="pound"/>
+                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="21"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="1169640" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="als-HR-f6t" userLabel="Identifier">
+                                                        <rect key="frame" x="81" y="0.0" width="88" height="25"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="identifier" label="Identifier"/>
+                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="21"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
-                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7nb-FG-feq">
-                                        <rect key="frame" x="0.0" y="140.5" width="560" height="407.5"/>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7nb-FG-feq" userLabel="Winning numbers">
+                                        <rect key="frame" x="0.0" y="140" width="560" height="408"/>
                                         <connections>
                                             <segue destination="2mG-yl-vh3" kind="embed" id="QKv-H5-chX"/>
                                         </connections>
@@ -46,27 +65,39 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="kQp-Dt-zCG" userLabel="Footer">
                                         <rect key="frame" x="0.0" y="552" width="560" height="20"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="4TR-8a-Qly" userLabel="Next game">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="20"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="4TR-8a-Qly" userLabel="Jackpot">
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="20"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Next Game in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dK7-yA-qqL" userLabel="Next game">
-                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="20"/>
-                                                        <accessibility key="accessibilityConfiguration" identifier="nextGame"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Jackpot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dK7-yA-qqL" userLabel="Jackpot">
+                                                        <rect key="frame" x="0.0" y="0.0" width="66" height="20"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="jackpot"/>
                                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="2:27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEa-Ul-8Oj" userLabel="Count down">
-                                                        <rect key="frame" x="114" y="0.0" width="36" height="20"/>
-                                                        <accessibility key="accessibilityConfiguration" identifier="countDown"/>
-                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BTn-ZK-qn2" userLabel="Amount">
+                                                        <rect key="frame" x="70" y="0.0" width="31" height="20"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEa-Ul-8Oj" userLabel="Currency">
+                                                                <rect key="frame" x="0.0" y="0.0" width="11" height="20"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="currency"/>
+                                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="58" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aM-oF-iXr" userLabel="Amount">
+                                                                <rect key="frame" x="11" y="0.0" width="21" height="20"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="amount"/>
+                                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="MOB-CQ-NJy" userLabel="Bonus">
-                                                <rect key="frame" x="458.5" y="0.0" width="101.5" height="20"/>
+                                                <rect key="frame" x="458" y="0.0" width="102" height="20"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="BONUS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbb-Ju-2ZA" userLabel="Bonus">
                                                         <rect key="frame" x="0.0" y="0.0" width="63" height="20"/>
@@ -82,13 +113,25 @@
                                                         <color key="textColor" red="0.71372549019999998" green="0.80000000000000004" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="3X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cno-wu-bGO" userLabel="Multiplier">
-                                                        <rect key="frame" x="81" y="0.0" width="20.5" height="20"/>
-                                                        <accessibility key="accessibilityConfiguration" identifier="multiplier"/>
-                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                                        <color key="textColor" red="0.71372549019999998" green="0.80000000000000004" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3a-e7-eoY" userLabel="Multiplier">
+                                                        <rect key="frame" x="81" y="0.0" width="21" height="20"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cno-wu-bGO" userLabel="Number">
+                                                                <rect key="frame" x="0.0" y="0.0" width="11" height="20"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="number"/>
+                                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                                <color key="textColor" red="0.71372549019999998" green="0.80000000000000004" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypA-bT-RsO" userLabel="Times">
+                                                                <rect key="frame" x="11" y="0.0" width="11" height="20"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="times"/>
+                                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                                <color key="textColor" red="0.71372549019999998" green="0.80000000000000004" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
@@ -108,7 +151,7 @@
                                 <color key="value" red="0.066666666669999999" green="0.035294117649999998" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
-                                <color key="value" red="0.25490196079999999" green="0.28627450980000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="value" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
@@ -122,7 +165,7 @@
             <objects>
                 <collectionViewController id="2mG-yl-vh3" userLabel="Winning numbers" customClass="WinningNumbersController" customModule="MassStateKeno" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="EKX-xR-Vht" userLabel="Numbers">
-                        <rect key="frame" x="0.0" y="0.0" width="560" height="407.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="560" height="408"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ula-gA-MnX">

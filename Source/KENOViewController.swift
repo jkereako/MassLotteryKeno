@@ -13,6 +13,7 @@ class KENOViewController: UIViewController {
     super.viewDidLoad()
 
     // How to make an API request
+
     /*
     let apiRequest = APIRequest(baseURL: NSURL(string: "http://www.masslottery.com/data/json")!)
 

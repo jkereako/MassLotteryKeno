@@ -9,16 +9,15 @@
 import Foundation
 
 enum MassLottery {
-  enum KENO {
-    case Today
+  enum Keno {
+    case TodaysWinningNumbers
   }
-
 }
 
-extension MassLottery.KENO: Path {
+extension MassLottery.Keno: Path {
   var path: String {
     switch self {
-    case .Today: return "/search/dailygames/todays/15.json"
+    case .TodaysWinningNumbers: return "/search/dailygames/todays/15.json"
     }
   }
 }
