@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="top" id="3WL-YY-kAk"/>
                         <viewControllerLayoutGuide type="bottom" id="mnA-cV-ayl"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="pDE-cN-u8F" customClass="GradientView" customModule="MassStateKeno" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="pDE-cN-u8F" customClass="LinearGradient" customModule="MassStateKeno" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -68,7 +68,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="4TR-8a-Qly" userLabel="Jackpot">
                                                 <rect key="frame" x="0.0" y="0.0" width="101" height="20"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Jackpot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dK7-yA-qqL" userLabel="Jackpot">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" ambiguous="YES" text="Jackpot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dK7-yA-qqL" userLabel="Jackpot">
                                                         <rect key="frame" x="0.0" y="0.0" width="66" height="20"/>
                                                         <accessibility key="accessibilityConfiguration" identifier="jackpot"/>
                                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
