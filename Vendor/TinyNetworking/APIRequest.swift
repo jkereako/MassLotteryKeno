@@ -35,52 +35,76 @@ struct APIRequest {
 
   func makeRequest<A>(
     requestModifier requestModifier: (NSMutableURLRequest -> ())?, resource: Resource<A>,
-    failure: (Reason, NSData?) -> (), completion: A -> ()) {
+                    failure: (reason: Reason, data: NSData?) -> (), completion: A -> ()) {
 
-      let session = NSURLSession.sharedSession()
-      let url = baseURL.URLByAppendingPathComponent(resource.path.path)
-      let request = NSMutableURLRequest(URL: url)
+    let session = NSURLSession.sharedSession()
+    let url = baseURL.URLByAppendingPathComponent(resource.path.path)
+    let request = NSMutableURLRequest(URL: url)
 
-      request.HTTPMethod = resource.method.rawValue
-      request.HTTPBody = resource.requestBody
+    request.HTTPMethod = resource.method.rawValue
+    request.HTTPBody = resource.requestBody
 
-      requestModifier?(request)
+    requestModifier?(request)
 
-      for (key,value) in resource.headers {
-        request.setValue(value, forHTTPHeaderField: key)
-      }
+    for (key,value) in resource.headers {
+      request.setValue(value, forHTTPHeaderField: key)
+    }
 
-      let task = session.dataTaskWithRequest(request) {
-        (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
+    let task = session.dataTaskWithRequest(request) {
+      (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
 
-        if let httpResponse = response as? NSHTTPURLResponse {
+      if let httpResponse = response as? NSHTTPURLResponse {
+        switch httpResponse.statusCode {
 
-          if 200...299 ~= httpResponse.statusCode {
-            if let responseData = data {
-              if let result = resource.parser(responseData) {
-                completion(result)
-              }
-
-              else {
-                failure(Reason.CouldNotParseJSON, data)
-              }
+        // Success!
+        case 200...299:
+          if let responseData = data {
+            if let result = resource.parser(responseData) {
+              completion(result)
             }
 
             else {
-              failure(Reason.NoData, data)
+              failure(reason: Reason.UnableToParseData, data: data)
             }
-          } // httpResponse.statusCode == 200
+          }
 
           else {
-            failure(Reason.NoSuccessStatusCode(statusCode: httpResponse.statusCode), data)
+            failure(reason: Reason.NoData, data: data)
           }
-        }
 
-        else {
-          failure(Reason.Other(error!), data)
+          break
+
+        // Redirection
+        case 300...399:
+          failure(reason: Reason.Redirection(
+            httpStatusCode: httpResponse.statusCode), data: data
+          )
+          break
+
+        // Client error
+        case 400...499:
+          failure(reason: Reason.ClientError(
+            httpStatusCode: httpResponse.statusCode), data: data
+          )
+          break
+
+        // Server error
+        case 500...599:
+          failure(reason: Reason.ServerError(
+            httpStatusCode: httpResponse.statusCode), data: data
+          )
+          break
+
+        default:
+          break
         }
       }
-      
-      task.resume()
+
+      else {
+        failure(reason: Reason.Other(error!), data: data)
+      }
+    }
+    
+    task.resume()
   }
 }

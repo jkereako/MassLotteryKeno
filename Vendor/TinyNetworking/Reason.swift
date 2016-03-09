@@ -26,8 +26,10 @@ import Foundation
 
 // Provides a more specific reason for failure.
 enum Reason: ErrorType {
-  case CouldNotParseJSON
+  case Redirection(httpStatusCode: Int)
+  case ClientError(httpStatusCode: Int)
+  case ServerError(httpStatusCode: Int)
+  case UnableToParseData
   case NoData
-  case NoSuccessStatusCode(statusCode: Int)
   case Other(NSError)
 }
