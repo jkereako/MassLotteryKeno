@@ -179,9 +179,9 @@
 		62CBBC3D1C7E31A200C27DAD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				62CBBC161C7E317F00C27DAD /* Assets.xcassets */,
-				62CBBC181C7E317F00C27DAD /* LaunchScreen.storyboard */,
 				62CBBC131C7E317F00C27DAD /* Main.storyboard */,
+				62CBBC181C7E317F00C27DAD /* LaunchScreen.storyboard */,
+				62CBBC161C7E317F00C27DAD /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";

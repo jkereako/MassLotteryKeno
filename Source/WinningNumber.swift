@@ -8,24 +8,32 @@
 
 import UIKit
 
+@IBDesignable
 class WinningNumber: UICollectionViewCell {
-  override func awakeFromNib() {
-    super.awakeFromNib()
 
+  @IBInspectable var borderColor: UIColor = UIColor.whiteColor()
+  @IBInspectable var borderWidth: CGFloat = 3.0
+  @IBInspectable var cornerRadius: CGFloat = 15.0
+  @IBInspectable var shadowColor: UIColor = UIColor.blackColor()
+  @IBInspectable var shadowOffset: CGSize = CGSize(width: 0, height: 2.0)
+  @IBInspectable var shadowRadius: CGFloat = 2.0
+  @IBInspectable var shadowOpacity: Float = 1.0
+
+  override func drawRect(rect: CGRect) {
+//    clipsToBounds = true
     // Create a border
-    layer.cornerRadius = 15.0
-    layer.borderWidth = 3.0
-    layer.borderColor = UIColor.whiteColor().CGColor
+    layer.cornerRadius = cornerRadius
+    layer.borderWidth = borderWidth
+    layer.borderColor = borderColor.CGColor
     layer.masksToBounds = true
 
     // Create a drop shadow
-    layer.shadowColor = UIColor.blackColor().CGColor
-    layer.shadowOffset = CGSize(width: 0, height: 2.0)
-    layer.shadowRadius = 2.0
-    layer.shadowOpacity = 1.0
+    layer.shadowColor = shadowColor.CGColor
+    layer.shadowOffset = shadowOffset
+    layer.shadowRadius = shadowRadius
+    layer.shadowOpacity = shadowOpacity
     layer.masksToBounds = false
-    layer.shadowPath = UIBezierPath(
-      roundedRect: bounds, cornerRadius: layer.cornerRadius
-      ).CGPath
+    layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius).CGPath
+
   }
 }
