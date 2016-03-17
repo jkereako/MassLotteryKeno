@@ -6,11 +6,46 @@
 //  Copyright © 2016 Alexis Digital. All rights reserved.
 //
 
-import Foundation
+import Argo
+import Curry
 
-struct Drawing {
+/*
+"draw_id": "1790381",
+"jackpot": "$16",
+"winning_num_org": "16-14-04-10-65-49-40-45-79-37-53-02-78-24-52-74-03-06-70-36",
+"winning_num": "02-03-04-06-10-14-16-24-36-37-40-45-49-52-53-65-70-74-78-79",
+"bonus": "3x",
+"bonus_value": "3"
+*/
+let toInt: String -> Decoded<Int> = {
+  .fromOptional(Int($0))
+}
+
+let currencyToInt: String -> Decoded<Int> = {
+  .fromOptional(Int(String($0.characters.dropFirst())))
+}
+
+//String(str.characters.dropFirst())
+
+/*
+let toArrayOfInts: String -> Decoded<[Int]> = {
+  $0.characters.split{$0 == "-"}.map{ .fromOptional(Int(String($0))) }
+}
+*/
+
+struct Drawing: Decodable {
   let identifier: Int
-  let jackpot: String
-  let winningNumbers: [Int]
-  let bonus: Int
+  let jackpot: Int
+  let winningNumbers: String
+  let bonusMultiplier: Int
+
+  static func decode(j: JSON) -> Decoded<Drawing> {
+    // https://github.com/thoughtbot/Argo/issues/272
+    let f = curry(self.init)
+    return f
+      <^> (j <| "draw_id" >>- toInt)
+      <*> (j <| "jackpot" >>- currencyToInt)
+      <*> j <| "winning_num_org"
+      <*> (j <| "bonus_value" >>- toInt)
+  }
 }

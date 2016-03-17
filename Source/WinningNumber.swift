@@ -20,20 +20,19 @@ class WinningNumber: UICollectionViewCell {
   @IBInspectable var shadowOpacity: Float = 1.0
 
   override func drawRect(rect: CGRect) {
-//    clipsToBounds = true
     // Create a border
     layer.cornerRadius = cornerRadius
     layer.borderWidth = borderWidth
     layer.borderColor = borderColor.CGColor
-    layer.masksToBounds = true
 
     // Create a drop shadow
     layer.shadowColor = shadowColor.CGColor
     layer.shadowOffset = shadowOffset
     layer.shadowRadius = shadowRadius
     layer.shadowOpacity = shadowOpacity
-    layer.masksToBounds = false
     layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius).CGPath
+
+    layer.masksToBounds = true
 
   }
 }

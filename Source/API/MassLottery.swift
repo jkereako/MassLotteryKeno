@@ -10,14 +10,14 @@ import Foundation
 
 enum MassLottery {
   enum Keno {
-    case TodaysWinningNumbers
+    case WinningNumbers
   }
 }
 
 extension MassLottery.Keno: Path {
   var path: String {
     switch self {
-    case .TodaysWinningNumbers: return "/search/dailygames/todays/15.json"
+    case .WinningNumbers: return "/search/dailygames/todays/15.json"
     }
   }
 }

@@ -60,7 +60,9 @@ class WinningNumbersController: UICollectionViewController {
     }
   }
 
-  override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+  override func collectionView(
+    collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+      
     return 20
   }
 
