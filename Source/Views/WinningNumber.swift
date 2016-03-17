@@ -35,6 +35,5 @@ final class WinningNumber: UICollectionViewCell {
     layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius).CGPath
 
     layer.masksToBounds = true
-
   }
 }

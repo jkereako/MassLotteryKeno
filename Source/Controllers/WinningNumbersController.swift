@@ -21,7 +21,7 @@ final class WinningNumbersController: UICollectionViewController {
     super.viewDidLoad()
 
     coordinator = WinningNumbersCoordinator(controller: self)
-    
+
     guard let layout = collectionView?.collectionViewLayout as? UICollectionViewFlowLayout else {
       assertionFailure("Collection view layout is not of type UICollectionViewFlowLayout.")
       return
@@ -29,17 +29,17 @@ final class WinningNumbersController: UICollectionViewController {
 
     switch UIScreen.mainScreen().bounds.size {
 
-    // 4s
+      // 4s
     case CGSizeMake(320.0, 480.0):
       layout.itemSize = CGSize(width: 64, height: 64)
 
-    // 5(s) and 6(s) with display zoom
+      // 5(s) and 6(s) with display zoom
     case CGSizeMake(320.0, 568.0):
       switch UIScreen.mainScreen().scale {
-      // 5(s)
+        // 5(s)
       case 2:
         layout.itemSize = CGSize(width: 64, height: 64)
-      // 6(s) display zoom
+        // 6(s) display zoom
       case 3:
         layout.itemSize = CGSize(width: 64, height: 64)
       default:
@@ -47,13 +47,13 @@ final class WinningNumbersController: UICollectionViewController {
         break
       }
 
-    // 6(s), and 6(s) Plus with display zoom
+      // 6(s), and 6(s) Plus with display zoom
     case CGSizeMake(375.0, 667.0):
       switch UIScreen.mainScreen().scale {
-      // 6(s)
+        // 6(s)
       case 2:
         layout.itemSize = CGSize(width: 74, height: 74)
-      // 6(s) Plus display zoom
+        // 6(s) Plus display zoom
       case 3:
         layout.itemSize = CGSize(width: 64, height: 64)
       default:
@@ -61,7 +61,7 @@ final class WinningNumbersController: UICollectionViewController {
         break
       }
 
-    // 6 Plus and 6s plus
+      // 6 Plus and 6s plus
     case CGSizeMake(414.0, 736.0):
       layout.itemSize = CGSize(width: 84, height: 84)
 
@@ -73,7 +73,7 @@ final class WinningNumbersController: UICollectionViewController {
   override func collectionView(
     collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 
-    return numbers?.count ?? 20
+      return numbers?.count ?? 20
   }
 
   override func collectionView(
@@ -91,8 +91,12 @@ final class WinningNumbersController: UICollectionViewController {
 
       if let nums = numbers {
         cell.winningNumber.text = String(nums[indexPath.row])
-      }
+        cell.winningNumber.alpha = 0.0
 
+        // Implicitly animate the layer
+        UIView.animateWithDuration(1.0, animations: { cell.winningNumber.alpha = 1.0 })
+      }
+      
       
       return cell
   }
