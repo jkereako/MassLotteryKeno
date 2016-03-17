@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6274345A1C9B12E20054DCBD /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627434591C9B12E20054DCBD /* Helpers.swift */; };
+		6274345F1C9B275D0054DCBD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6274345E1C9B275D0054DCBD /* AppCoordinator.swift */; };
+		627434611C9B27810054DCBD /* KenoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627434601C9B27810054DCBD /* KenoCoordinator.swift */; };
+		627434631C9B27920054DCBD /* WinningNumbersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627434621C9B27920054DCBD /* WinningNumbersCoordinator.swift */; };
 		62866EFF1C9A3ECA00D57228 /* KenoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62866EFE1C9A3ECA00D57228 /* KenoRequest.swift */; };
 		62866F0E1C9A3F4900D57228 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62866F0A1C9A3F4900D57228 /* Curry.framework */; };
 		62866F0F1C9A3F4900D57228 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62866F0B1C9A3F4900D57228 /* Argo.framework */; };
@@ -48,7 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		627434591C9B12E20054DCBD /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		627434591C9B12E20054DCBD /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = API/Helpers.swift; sourceTree = "<group>"; };
+		6274345E1C9B275D0054DCBD /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		627434601C9B27810054DCBD /* KenoCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenoCoordinator.swift; sourceTree = "<group>"; };
+		627434621C9B27920054DCBD /* WinningNumbersCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinningNumbersCoordinator.swift; sourceTree = "<group>"; };
 		62866EFE1C9A3ECA00D57228 /* KenoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenoRequest.swift; sourceTree = "<group>"; };
 		62866F091C9A3F4900D57228 /* Swish.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swish.framework; path = Carthage/Build/iOS/Swish.framework; sourceTree = "<group>"; };
 		62866F0A1C9A3F4900D57228 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
@@ -56,7 +62,7 @@
 		62866F0C1C9A3F4900D57228 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		62B8320C1C9A4BBF007831B4 /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		62B8320E1C9A5181007831B4 /* WinningNumbersRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinningNumbersRequest.swift; sourceTree = "<group>"; };
-		62B832101C9A55A1007831B4 /* Keno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keno.swift; sourceTree = "<group>"; };
+		62B832101C9A55A1007831B4 /* Keno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keno.swift; path = API/Keno.swift; sourceTree = "<group>"; };
 		62CBBC0C1C7E317F00C27DAD /* MassStateKeno.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MassStateKeno.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62CBBC111C7E317F00C27DAD /* KenoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenoViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +80,7 @@
 		62CBBC421C7E36CA00C27DAD /* WinningNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinningNumber.swift; sourceTree = "<group>"; };
 		62CBBC451C7E371100C27DAD /* WinningNumbersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinningNumbersController.swift; sourceTree = "<group>"; };
 		62CBBC531C7E497900C27DAD /* MassLottery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MassLottery.swift; sourceTree = "<group>"; };
-		62CBBC681C7E541E00C27DAD /* Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
+		62CBBC681C7E541E00C27DAD /* Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Drawing.swift; path = API/Drawing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,15 +115,38 @@
 		62534B271C7E901E0008C2EF /* API */ = {
 			isa = PBXGroup;
 			children = (
-				62B8320C1C9A4BBF007831B4 /* Path.swift */,
-				62CBBC531C7E497900C27DAD /* MassLottery.swift */,
-				62B832101C9A55A1007831B4 /* Keno.swift */,
-				62CBBC681C7E541E00C27DAD /* Drawing.swift */,
 				62866EFE1C9A3ECA00D57228 /* KenoRequest.swift */,
+				62CBBC531C7E497900C27DAD /* MassLottery.swift */,
+				62B8320C1C9A4BBF007831B4 /* Path.swift */,
 				62B8320E1C9A5181007831B4 /* WinningNumbersRequest.swift */,
-				627434591C9B12E20054DCBD /* Helpers.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		6274345B1C9B23830054DCBD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				62CBBC421C7E36CA00C27DAD /* WinningNumber.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6274345C1C9B238A0054DCBD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				62CBBC111C7E317F00C27DAD /* KenoViewController.swift */,
+				62CBBC451C7E371100C27DAD /* WinningNumbersController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6274345D1C9B239E0054DCBD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62CBBC681C7E541E00C27DAD /* Drawing.swift */,
+				62B832101C9A55A1007831B4 /* Keno.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		62866F081C9A3F2C00D57228 /* Frameworks */ = {
@@ -138,8 +167,8 @@
 				62CBBC441C7E36CE00C27DAD /* Library */,
 				62CBBC0E1C7E317F00C27DAD /* Source */,
 				62CBBC3D1C7E31A200C27DAD /* Resources */,
-				62CBBC3E1C7E31A900C27DAD /* Tests */,
 				62CBBC3F1C7E31BC00C27DAD /* SupportFiles */,
+				62CBBC3E1C7E31A900C27DAD /* Tests */,
 				62CBBC0D1C7E317F00C27DAD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -157,11 +186,15 @@
 		62CBBC0E1C7E317F00C27DAD /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				62534B271C7E901E0008C2EF /* API */,
 				62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */,
-				62CBBC111C7E317F00C27DAD /* KenoViewController.swift */,
-				62CBBC421C7E36CA00C27DAD /* WinningNumber.swift */,
-				62CBBC451C7E371100C27DAD /* WinningNumbersController.swift */,
+				6274345E1C9B275D0054DCBD /* AppCoordinator.swift */,
+				627434601C9B27810054DCBD /* KenoCoordinator.swift */,
+				627434621C9B27920054DCBD /* WinningNumbersCoordinator.swift */,
+				627434591C9B12E20054DCBD /* Helpers.swift */,
+				6274345D1C9B239E0054DCBD /* Models */,
+				6274345C1C9B238A0054DCBD /* Controllers */,
+				6274345B1C9B23830054DCBD /* Views */,
+				62534B271C7E901E0008C2EF /* API */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -187,9 +220,9 @@
 		62CBBC3D1C7E31A200C27DAD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				62CBBC131C7E317F00C27DAD /* Main.storyboard */,
-				62CBBC181C7E317F00C27DAD /* LaunchScreen.storyboard */,
 				62CBBC161C7E317F00C27DAD /* Assets.xcassets */,
+				62CBBC181C7E317F00C27DAD /* LaunchScreen.storyboard */,
+				62CBBC131C7E317F00C27DAD /* Main.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -371,8 +404,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				627434631C9B27920054DCBD /* WinningNumbersCoordinator.swift in Sources */,
 				62B832111C9A55A1007831B4 /* Keno.swift in Sources */,
+				627434611C9B27810054DCBD /* KenoCoordinator.swift in Sources */,
 				62CBBC121C7E317F00C27DAD /* KenoViewController.swift in Sources */,
+				6274345F1C9B275D0054DCBD /* AppCoordinator.swift in Sources */,
 				62CBBC431C7E36CA00C27DAD /* WinningNumber.swift in Sources */,
 				62CBBC461C7E371100C27DAD /* WinningNumbersController.swift in Sources */,
 				62866EFF1C9A3ECA00D57228 /* KenoRequest.swift in Sources */,
@@ -447,13 +483,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_ASSIGN_ENUM = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -469,11 +512,26 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -492,13 +550,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_ASSIGN_ENUM = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -508,11 +573,26 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -530,6 +610,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/SupportFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -546,6 +629,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/SupportFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

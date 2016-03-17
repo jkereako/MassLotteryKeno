@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class WinningNumber: UICollectionViewCell {
+final class WinningNumber: UICollectionViewCell {
 
   @IBInspectable var borderColor: UIColor = UIColor.whiteColor()
   @IBInspectable var borderWidth: CGFloat = 3.0

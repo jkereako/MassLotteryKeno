@@ -9,7 +9,18 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+final class AppDelegate: UIResponder {
   var window: UIWindow?
+}
+
+extension AppDelegate: UIApplicationDelegate {
+  func application(
+    application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?)
+    -> Bool {
+
+      AppCoordinator().start()
+
+      return true
+  }
 }
 

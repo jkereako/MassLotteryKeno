@@ -7,8 +7,9 @@
 //
 import UIKit
 
-@IBDesignable class LinearGradient: UIView {
-  @IBInspectable  var topColor: UIColor = UIColor.whiteColor() {
+@IBDesignable
+final class LinearGradient: UIView {
+  @IBInspectable var topColor: UIColor = UIColor.whiteColor() {
     didSet {
       updateView()
     }

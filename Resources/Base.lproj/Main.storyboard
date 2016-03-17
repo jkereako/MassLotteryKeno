@@ -59,7 +59,7 @@
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7nb-FG-feq" userLabel="Winning numbers">
                                         <rect key="frame" x="0.0" y="140.5" width="560" height="407.5"/>
                                         <connections>
-                                            <segue destination="2mG-yl-vh3" kind="embed" id="QKv-H5-chX"/>
+                                            <segue destination="2mG-yl-vh3" kind="embed" identifier="loadWinningNumbers" id="QKv-H5-chX"/>
                                         </connections>
                                     </containerView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="kQp-Dt-zCG" userLabel="Footer">
