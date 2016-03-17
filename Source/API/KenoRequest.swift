@@ -11,5 +11,4 @@ import Swish
 public protocol KenoRequest: Request {
   var baseURL: NSURL { get }
   func baseRequest(url url: NSURL, method: RequestMethod) -> NSURLRequest
-//  func makeRequest(completion completion: ((success: Bool) -> Void)?)
 }

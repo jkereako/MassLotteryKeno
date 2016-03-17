@@ -17,16 +17,6 @@ import Curry
 "draws": []
 */
 
-let toDate: String -> Decoded<NSDate> = {
-  .fromOptional(jsonDateFormatter.dateFromString($0))
-}
-
-let jsonDateFormatter: NSDateFormatter = {
-  let dateFormatter = NSDateFormatter()
-  dateFormatter.dateFormat = "MM/dd/yyyy"
-  return dateFormatter
-}()
-
 struct Keno: Decodable {
   let date: NSDate
   let drawings: [Drawing]

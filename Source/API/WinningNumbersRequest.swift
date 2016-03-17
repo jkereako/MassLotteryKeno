@@ -29,8 +29,6 @@ struct WinningNumbersRequest: KenoRequest {
 
         switch response {
         case let .Success(keno):
-          //          print(keno.drawings.first!)
-
           completion?(success: true, game: keno)
 
         case .Failure(_):

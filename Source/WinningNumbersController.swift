@@ -9,6 +9,7 @@
 import UIKit
 
 class WinningNumbersController: UICollectionViewController {
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -70,9 +71,14 @@ class WinningNumbersController: UICollectionViewController {
     collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath)
     -> UICollectionViewCell {
 
-      let cell = collectionView.dequeueReusableCellWithReuseIdentifier(
+      guard let cell = collectionView.dequeueReusableCellWithReuseIdentifier(
         "number", forIndexPath: indexPath
-      )
+        ) as? WinningNumber else {
+          assertionFailure("Could not dequeue cell")
+          return UICollectionViewCell()
+      }
+
+      cell.winningNumber.text = "332"
 
       return cell
   }

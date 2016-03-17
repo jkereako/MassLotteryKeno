@@ -225,6 +225,9 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="winningNumber" destination="Jdh-ih-P45" id="v8l-NK-boc"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>

@@ -17,21 +17,6 @@ import Curry
 "bonus": "3x",
 "bonus_value": "3"
 */
-let toInt: String -> Decoded<Int> = {
-  .fromOptional(Int($0))
-}
-
-let currencyToInt: String -> Decoded<Int> = {
-  .fromOptional(Int(String($0.characters.dropFirst())))
-}
-
-//String(str.characters.dropFirst())
-
-/*
-let toArrayOfInts: String -> Decoded<[Int]> = {
-  $0.characters.split{$0 == "-"}.map{ .fromOptional(Int(String($0))) }
-}
-*/
 
 struct Drawing: Decodable {
   let identifier: Int
