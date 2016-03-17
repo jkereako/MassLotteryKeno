@@ -29,7 +29,7 @@ final class AppCoordinator: NSObject {
       }
 
       NSNotificationCenter.defaultCenter().postNotificationName(
-        didFinishSuccessfully, object: aGame
+        didFinishSuccessfully, object: Wrapper(aStruct: aGame)
       )
     })
   }

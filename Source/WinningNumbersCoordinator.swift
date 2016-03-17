@@ -29,12 +29,12 @@ final class WinningNumbersCoordinator: NSObject {
   }
 
   func setNumbers(note: NSNotification) {
-    guard let game = note.object as? Keno else {
-      assertionFailure("Expected a Keno object")
+    guard let object = note.object as? Wrapper<Keno> else {
+      assertionFailure("Expected a Wrapper<Keno> object")
       return
     }
 
-    controller.numbers =  splitWinningNumbers(game.drawings.first?.winningNumbers ?? "")
+    controller.numbers =  splitWinningNumbers(object.aStruct.drawings.first?.winningNumbers ?? "")
   }
 
   private func splitWinningNumbers(numbers: String) -> [Int] {

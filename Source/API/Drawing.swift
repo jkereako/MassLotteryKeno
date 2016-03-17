@@ -34,3 +34,5 @@ struct Drawing: Decodable {
       <*> (j <| "bonus_value" >>- toInt)
   }
 }
+
+
