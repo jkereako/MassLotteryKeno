@@ -256,6 +256,7 @@
 				62CBBC081C7E317F00C27DAD /* Sources */,
 				62CBBC091C7E317F00C27DAD /* Frameworks */,
 				62CBBC0A1C7E317F00C27DAD /* Resources */,
+				62CF547D1C9A3C39004197F0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -371,6 +372,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62CF547D1C9A3C39004197F0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Argo.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Curry.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Swish.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		62CBBC081C7E317F00C27DAD /* Sources */ = {
