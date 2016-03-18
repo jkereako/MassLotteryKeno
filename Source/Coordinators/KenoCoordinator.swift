@@ -8,32 +8,18 @@
 
 import Foundation
 
-final class KenoCoordinator: NSObject {
+final class KenoCoordinator: NSObject, Coordinator {
+  var day: Day? {
+    didSet {
+      self.controller.day = day
+    }
+  }
+
   private let controller: KenoViewController
 
   init(controller: KenoViewController) {
     self.controller = controller
 
     super.init()
-
-    NSNotificationCenter.defaultCenter().addObserver(
-      self,
-      selector: "setGame:",
-      name: didFinishSuccessfully,
-      object: nil
-    )
-  }
-
-  deinit {
-    NSNotificationCenter.defaultCenter().removeObserver(self)
-  }
-
-  func setGame(note: NSNotification) {
-    guard let object = note.object as? Wrapper<Day> else {
-      assertionFailure("Expected a Wrapper<Keno> object")
-      return
-    }
-
-    controller.day = object.aStruct
   }
 }

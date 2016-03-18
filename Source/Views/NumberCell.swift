@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-final class WinningNumber: UICollectionViewCell {
+final class NumberCell: UICollectionViewCell {
 
   @IBInspectable var borderColor: UIColor = UIColor.whiteColor()
   @IBInspectable var borderWidth: CGFloat = 3.0
@@ -19,7 +19,7 @@ final class WinningNumber: UICollectionViewCell {
   @IBInspectable var shadowRadius: CGFloat = 2.0
   @IBInspectable var shadowOpacity: Float = 1.0
 
-  @IBOutlet weak var winningNumber: UILabel!
+  @IBOutlet weak var number: UILabel!
 
   override func drawRect(rect: CGRect) {
     // Create a border

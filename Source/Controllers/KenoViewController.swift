@@ -8,7 +8,10 @@
 
 import UIKit
 
-final class KenoViewController: UIViewController {
+
+final class KenoViewController: UIViewController, Controller {
+  var appCoordinator: AppCoordinator?
+
   @IBOutlet weak var gameIdentifier: UILabel!
   @IBOutlet weak var drawingsDate: UILabel!
   @IBOutlet weak var bonusMultiplier: UILabel!
@@ -31,10 +34,25 @@ final class KenoViewController: UIViewController {
 
   private var coordinator: KenoCoordinator!
 
+  override func awakeFromNib() {
+    super.awakeFromNib()
+
+    appCoordinator = AppCoordinator()
+    appCoordinator?.start()
+  }
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
     coordinator = KenoCoordinator(controller: self)
+    appCoordinator?.coordinators.append(coordinator)
+  }
+
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    guard var viewController = segue.destinationViewController as? Controller else {
+      return
+    }
+
+    viewController.appCoordinator = appCoordinator
   }
 }
-

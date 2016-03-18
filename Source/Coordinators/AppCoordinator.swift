@@ -8,34 +8,31 @@
 
 import Foundation
 
-let didFinishSuccessfully = (NSBundle.mainBundle().bundleIdentifier ?? "") + ".didFinishSuccessfully"
-let didNotFinishSuccessfully = (NSBundle.mainBundle().bundleIdentifier ?? "") + ".didNotFinishSuccessfully"
-
 final class AppCoordinator: NSObject {
-  private let request: WinningNumbersRequest
+  var coordinators = [Coordinator]()
+  private var day: Day! {
+    didSet {
 
-  init(request: WinningNumbersRequest ) {
-    self.request = request
-
-    super.init()
+      for var coordinator in coordinators {
+        coordinator.day = self.day
+      }
+    }
   }
 
   func start() {
-    request.makeRequest(completion: { (success: Bool, game: Day?) in
+    let request = WinningNumbersRequest(
+      baseURL: NSURL(string: "http://www.masslottery.com/data/json")!,
+      path: MassLottery.Keno.WinningNumbers
+    )
 
-      assert(NSThread.isMainThread())
+    request.makeRequest(completion: { [unowned self] (success: Bool, day: Day?) in
 
-      guard success, let aGame = game else {
-        NSNotificationCenter.defaultCenter().postNotificationName(
-          didNotFinishSuccessfully, object: nil
-        )
-
+      guard success, let aDay = day else {
         return
       }
 
-      NSNotificationCenter.defaultCenter().postNotificationName(
-        didFinishSuccessfully, object: Wrapper(aStruct: aGame)
-      )
-    })
+      self.day = aDay
+      
+      })
   }
 }

@@ -13,19 +13,4 @@ final class AppDelegate: UIResponder {
   var window: UIWindow?
 }
 
-extension AppDelegate: UIApplicationDelegate {
-  func application(
-    application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?)
-    -> Bool {
-
-      let request = WinningNumbersRequest(
-        baseURL: NSURL(string: "http://www.masslottery.com/data/json")!,
-        path: MassLottery.Keno.WinningNumbers
-      )
-
-      AppCoordinator(request: request).start()
-
-      return true
-  }
-}
-
+extension AppDelegate: UIApplicationDelegate {}

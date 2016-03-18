@@ -9,12 +9,12 @@
         <!--KENO!-->
         <scene sceneID="MRK-Xy-YkP">
             <objects>
-                <viewController id="9oc-XS-Z3v" userLabel="KENO!" customClass="KenoViewController" customModule="MassStateKeno" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9oc-XS-Z3v" userLabel="KENO!" customClass="KenoViewController" customModule="MassLotteryKeno" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3WL-YY-kAk"/>
                         <viewControllerLayoutGuide type="bottom" id="mnA-cV-ayl"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="pDE-cN-u8F" customClass="LinearGradient" customModule="MassStateKeno" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="pDE-cN-u8F" customClass="LinearGradient" customModule="MassLotteryKeno" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -135,16 +135,16 @@
                     <connections>
                         <outlet property="bonusMultiplier" destination="cno-wu-bGO" id="r5c-aL-wKP"/>
                         <outlet property="drawingsDate" destination="dK7-yA-qqL" id="FEu-DZ-U7c"/>
-                        <outlet property="gameIdentifier" destination="als-HR-f6t" id="Zzl-Ta-HGx"/>
+                        <outlet property="gameIdentifier" destination="als-HR-f6t" id="fFE-Ne-cWi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qdY-gk-zJ5" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Winning numbers-->
+        <!--Number grid-->
         <scene sceneID="20f-nX-ef5">
             <objects>
-                <collectionViewController id="2mG-yl-vh3" userLabel="Winning numbers" customClass="WinningNumbersController" customModule="MassStateKeno" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="2mG-yl-vh3" userLabel="Number grid" customClass="NumberGridController" customModule="MassLotteryKeno" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="EKX-xR-Vht" userLabel="Numbers">
                         <rect key="frame" x="0.0" y="0.0" width="560" height="407.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,7 +156,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="number" id="zTB-5h-Xxl" userLabel="Number" customClass="WinningNumber" customModule="MassStateKeno" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="number" id="zTB-5h-Xxl" userLabel="Number" customClass="NumberCell" customModule="MassLotteryKeno" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -202,7 +202,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <outlet property="winningNumber" destination="Jdh-ih-P45" id="v8l-NK-boc"/>
+                                    <outlet property="number" destination="Jdh-ih-P45" id="yRe-zm-xWF"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -214,7 +214,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ig2-R0-sZ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="242" y="1122"/>
+            <point key="canvasLocation" x="305" y="1121.75"/>
         </scene>
     </scenes>
     <resources>

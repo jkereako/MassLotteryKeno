@@ -8,24 +8,27 @@
 
 import UIKit
 
-final class WinningNumbersController: UICollectionViewController {
+final class NumberGridController: UICollectionViewController, Controller {
+  var appCoordinator: AppCoordinator?
+  
   var numbers: [Int]? {
     didSet {
       collectionView?.reloadData()
     }
   }
 
-  private var coordinator: WinningNumbersCoordinator!
+  private var coordinator: NumberGridCoordinator!
 
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    coordinator = WinningNumbersCoordinator(controller: self)
 
     guard let layout = collectionView?.collectionViewLayout as? UICollectionViewFlowLayout else {
       assertionFailure("Collection view layout is not of type UICollectionViewFlowLayout.")
       return
     }
+
+    coordinator = NumberGridCoordinator(controller: self)
+    appCoordinator?.coordinators.append(coordinator)
 
     switch UIScreen.mainScreen().bounds.size {
 
@@ -82,19 +85,19 @@ final class WinningNumbersController: UICollectionViewController {
 
       guard let cell = collectionView.dequeueReusableCellWithReuseIdentifier(
         "number", forIndexPath: indexPath
-        ) as? WinningNumber else {
+        ) as? NumberCell else {
           assertionFailure("Could not dequeue cell")
           return UICollectionViewCell()
       }
 
-      cell.winningNumber.text = ""
+      cell.number.text = ""
 
       if let nums = numbers {
-        cell.winningNumber.text = String(nums[indexPath.row])
-        cell.winningNumber.alpha = 0.0
+        cell.number.text = String(nums[indexPath.row])
+        cell.number.alpha = 0.0
 
         // Implicitly animate the layer
-        UIView.animateWithDuration(1.0, animations: { cell.winningNumber.alpha = 1.0 })
+        UIView.animateWithDuration(1.0, animations: { cell.number.alpha = 1.0 })
       }
       
       
