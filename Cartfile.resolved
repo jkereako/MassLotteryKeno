@@ -1,4 +1,4 @@
 github "thoughtbot/Argo" "v2.3.0"
 github "thoughtbot/Curry" "eeb459fac309833288e61e134a4e8fad649e99b0"
 github "antitypical/Result" "1.0.2"
-github "thoughtbot/Swish" "1d214d0dd3245bbea9e69b9d012e3fd56b22aa12"
+github "thoughtbot/Swish" "77abc99d6f957307da88544e7db089544d4127f7"

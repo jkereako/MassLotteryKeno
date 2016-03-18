@@ -10,17 +10,21 @@ import UIKit
 
 final class KenoViewController: UIViewController {
   @IBOutlet weak var gameIdentifier: UILabel!
-  @IBOutlet weak var jackpot: UILabel!
+  @IBOutlet weak var drawingsDate: UILabel!
   @IBOutlet weak var bonusMultiplier: UILabel!
 
   var game: Keno? {
     didSet {
-      guard let g = game, let drawing = g.drawings.first else {
+      guard let aGame = game, let drawing = aGame.drawings.first else {
         return
       }
 
+      let dateFormatter = NSDateFormatter()
+
+      dateFormatter.dateFormat = "M/dd/yyyy"
+
       self.gameIdentifier.text = String(drawing.identifier)
-      self.jackpot.text = String(drawing.jackpot)
+      self.drawingsDate.text = dateFormatter.stringFromDate(aGame.date)
       self.bonusMultiplier.text = String(drawing.bonusMultiplier)
     }
   }

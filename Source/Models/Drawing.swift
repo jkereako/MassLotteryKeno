@@ -20,7 +20,6 @@ import Curry
 
 struct Drawing: Decodable {
   let identifier: Int
-  let jackpot: Int
   let winningNumbers: String
   let bonusMultiplier: Int
 
@@ -29,7 +28,6 @@ struct Drawing: Decodable {
     let f = curry(self.init)
     return f
       <^> (j <| "draw_id" >>- toInt)
-      <*> (j <| "jackpot" >>- currencyToInt)
       <*> j <| "winning_num_org"
       <*> (j <| "bonus_value" >>- toInt)
   }
