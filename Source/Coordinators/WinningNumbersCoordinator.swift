@@ -9,7 +9,7 @@
 import Foundation
 
 final class WinningNumbersCoordinator: NSObject {
-  let controller: WinningNumbersController
+  private let controller: WinningNumbersController
 
   init(controller: WinningNumbersController) {
     self.controller = controller

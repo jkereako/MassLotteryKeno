@@ -10,13 +10,20 @@ import Result
 import Argo
 import Swish
 
-struct WinningNumbersRequest: MassLotteryRequest {
+struct WinningNumbersRequest: Request {
   typealias ResponseObject = Keno
-  var baseURL: NSURL { return NSURL(string: "http://www.masslottery.com/data/json")! }
+
+  private let baseURL: NSURL
+  private let path: Path
+
+  init(baseURL: NSURL, path: Path) {
+    self.baseURL = baseURL
+    self.path = path
+  }
 
   /// Build the request
   func build() -> NSURLRequest {
-    let url = baseURL.URLByAppendingPathComponent(MassLottery.Keno.WinningNumbers.path)
+    let url = baseURL.URLByAppendingPathComponent(path.path)
 
     let request = NSMutableURLRequest(URL: url)
 

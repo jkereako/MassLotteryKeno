@@ -12,10 +12,15 @@ let didFinishSuccessfully = (NSBundle.mainBundle().bundleIdentifier ?? "") + ".d
 let didNotFinishSuccessfully = (NSBundle.mainBundle().bundleIdentifier ?? "") + ".didNotFinishSuccessfully"
 
 final class AppCoordinator: NSObject {
+  private let request: WinningNumbersRequest
+
+  init(request: WinningNumbersRequest ) {
+    self.request = request
+
+    super.init()
+  }
 
   func start() {
-    let request = WinningNumbersRequest()
-
     request.makeRequest(completion: { (success: Bool, game: Keno?) in
 
       assert(NSThread.isMainThread())

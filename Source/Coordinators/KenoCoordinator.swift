@@ -9,7 +9,7 @@
 import Foundation
 
 final class KenoCoordinator: NSObject {
-  let controller: KenoViewController
+  private let controller: KenoViewController
 
   init(controller: KenoViewController) {
     self.controller = controller

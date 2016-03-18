@@ -11,7 +11,6 @@
 		6274345F1C9B275D0054DCBD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6274345E1C9B275D0054DCBD /* AppCoordinator.swift */; };
 		627434611C9B27810054DCBD /* KenoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627434601C9B27810054DCBD /* KenoCoordinator.swift */; };
 		627434631C9B27920054DCBD /* WinningNumbersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627434621C9B27920054DCBD /* WinningNumbersCoordinator.swift */; };
-		62866EFF1C9A3ECA00D57228 /* MassLotteryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62866EFE1C9A3ECA00D57228 /* MassLotteryRequest.swift */; };
 		62866F0E1C9A3F4900D57228 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62866F0A1C9A3F4900D57228 /* Curry.framework */; };
 		62866F0F1C9A3F4900D57228 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62866F0B1C9A3F4900D57228 /* Argo.framework */; };
 		62866F101C9A3F4900D57228 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62866F0C1C9A3F4900D57228 /* Result.framework */; };
@@ -56,7 +55,6 @@
 		6274345E1C9B275D0054DCBD /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		627434601C9B27810054DCBD /* KenoCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenoCoordinator.swift; sourceTree = "<group>"; };
 		627434621C9B27920054DCBD /* WinningNumbersCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinningNumbersCoordinator.swift; sourceTree = "<group>"; };
-		62866EFE1C9A3ECA00D57228 /* MassLotteryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MassLotteryRequest.swift; sourceTree = "<group>"; };
 		62866F091C9A3F4900D57228 /* Swish.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swish.framework; path = Carthage/Build/iOS/Swish.framework; sourceTree = "<group>"; };
 		62866F0A1C9A3F4900D57228 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
 		62866F0B1C9A3F4900D57228 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				62CBBC531C7E497900C27DAD /* MassLottery.swift */,
-				62866EFE1C9A3ECA00D57228 /* MassLotteryRequest.swift */,
 				62B8320E1C9A5181007831B4 /* WinningNumbersRequest.swift */,
 			);
 			path = API;
@@ -197,13 +194,13 @@
 		62CBBC0E1C7E317F00C27DAD /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */,
+				627434591C9B12E20054DCBD /* Helpers.swift */,
 				62534B271C7E901E0008C2EF /* API */,
 				6274345C1C9B238A0054DCBD /* Controllers */,
 				622E6C3D1C9B533700007EBE /* Coordinators */,
 				6274345D1C9B239E0054DCBD /* Models */,
 				6274345B1C9B23830054DCBD /* Views */,
-				62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */,
-				627434591C9B12E20054DCBD /* Helpers.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -423,7 +420,6 @@
 				6274345F1C9B275D0054DCBD /* AppCoordinator.swift in Sources */,
 				62CBBC431C7E36CA00C27DAD /* WinningNumber.swift in Sources */,
 				62CBBC461C7E371100C27DAD /* WinningNumbersController.swift in Sources */,
-				62866EFF1C9A3ECA00D57228 /* MassLotteryRequest.swift in Sources */,
 				62CBBC101C7E317F00C27DAD /* AppDelegate.swift in Sources */,
 				62CBBC691C7E541E00C27DAD /* Drawing.swift in Sources */,
 				6274345A1C9B12E20054DCBD /* Helpers.swift in Sources */,

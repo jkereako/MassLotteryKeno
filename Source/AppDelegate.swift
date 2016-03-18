@@ -18,7 +18,12 @@ extension AppDelegate: UIApplicationDelegate {
     application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?)
     -> Bool {
 
-      AppCoordinator().start()
+      let request = WinningNumbersRequest(
+        baseURL: NSURL(string: "http://www.masslottery.com/data/json")!,
+        path: MassLottery.Keno.WinningNumbers
+      )
+
+      AppCoordinator(request: request).start()
 
       return true
   }
