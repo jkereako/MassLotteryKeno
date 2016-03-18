@@ -21,7 +21,7 @@ final class AppCoordinator: NSObject {
   }
 
   func start() {
-    request.makeRequest(completion: { (success: Bool, game: Keno?) in
+    request.makeRequest(completion: { (success: Bool, game: Day?) in
 
       assert(NSThread.isMainThread())
 

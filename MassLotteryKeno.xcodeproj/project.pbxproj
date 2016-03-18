@@ -18,7 +18,7 @@
 		62B7B5531C9B514700A0DC47 /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B7B5521C9B514700A0DC47 /* Wrapper.swift */; };
 		62B8320D1C9A4BBF007831B4 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B8320C1C9A4BBF007831B4 /* Path.swift */; };
 		62B8320F1C9A5181007831B4 /* WinningNumbersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B8320E1C9A5181007831B4 /* WinningNumbersRequest.swift */; };
-		62B832111C9A55A1007831B4 /* Keno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B832101C9A55A1007831B4 /* Keno.swift */; };
+		62B832111C9A55A1007831B4 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B832101C9A55A1007831B4 /* Day.swift */; };
 		62CBBC101C7E317F00C27DAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */; };
 		62CBBC121C7E317F00C27DAD /* KenoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC111C7E317F00C27DAD /* KenoViewController.swift */; };
 		62CBBC151C7E317F00C27DAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62CBBC131C7E317F00C27DAD /* Main.storyboard */; };
@@ -62,7 +62,7 @@
 		62B7B5521C9B514700A0DC47 /* Wrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
 		62B8320C1C9A4BBF007831B4 /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		62B8320E1C9A5181007831B4 /* WinningNumbersRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinningNumbersRequest.swift; sourceTree = "<group>"; };
-		62B832101C9A55A1007831B4 /* Keno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keno.swift; sourceTree = "<group>"; };
+		62B832101C9A55A1007831B4 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		62CBBC0C1C7E317F00C27DAD /* MassLotteryKeno.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MassLotteryKeno.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62CBBC111C7E317F00C27DAD /* KenoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenoViewController.swift; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				62CBBC681C7E541E00C27DAD /* Drawing.swift */,
-				62B832101C9A55A1007831B4 /* Keno.swift */,
+				62B832101C9A55A1007831B4 /* Day.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -413,7 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				627434631C9B27920054DCBD /* WinningNumbersCoordinator.swift in Sources */,
-				62B832111C9A55A1007831B4 /* Keno.swift in Sources */,
+				62B832111C9A55A1007831B4 /* Day.swift in Sources */,
 				627434611C9B27810054DCBD /* KenoCoordinator.swift in Sources */,
 				62CBBC121C7E317F00C27DAD /* KenoViewController.swift in Sources */,
 				62B7B5531C9B514700A0DC47 /* Wrapper.swift in Sources */,

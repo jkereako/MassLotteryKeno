@@ -11,7 +11,7 @@ import Argo
 import Swish
 
 struct WinningNumbersRequest: Request {
-  typealias ResponseObject = Keno
+  typealias ResponseObject = Day
 
   private let baseURL: NSURL
   private let path: Path
@@ -35,24 +35,24 @@ struct WinningNumbersRequest: Request {
 
   /// Parse the response
   func parse(j: JSON) -> Result<ResponseObject, NSError> {
-    let keno = Keno.decode(j)
+    let keno = Day.decode(j)
     
     return .fromDecoded(keno)
   }
 
   /// Send the request
-  func makeRequest(completion completion: ((success: Bool, game: Keno?) -> Void)?) {
+  func makeRequest(completion completion: ((success: Bool, day: Day?) -> Void)?) {
     APIClient().performRequest(self,
       completionHandler: { (response: Result<ResponseObject, NSError>) in
 
         switch response {
         case let .Success(keno):
-          completion?(success: true, game: keno)
+          completion?(success: true, day: keno)
 
         case .Failure(_):
           print("Unable to parse.")
 
-          completion?(success: false, game: nil)
+          completion?(success: false, day: nil)
         }
       }
     )

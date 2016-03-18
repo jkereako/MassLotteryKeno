@@ -29,7 +29,7 @@ final class WinningNumbersCoordinator: NSObject {
   }
 
   func setNumbers(note: NSNotification) {
-    guard let object = note.object as? Wrapper<Keno> else {
+    guard let object = note.object as? Wrapper<Day> else {
       assertionFailure("Expected a Wrapper<Keno> object")
       return
     }

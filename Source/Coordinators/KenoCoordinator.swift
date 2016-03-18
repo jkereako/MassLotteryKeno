@@ -29,11 +29,11 @@ final class KenoCoordinator: NSObject {
   }
 
   func setGame(note: NSNotification) {
-    guard let object = note.object as? Wrapper<Keno> else {
+    guard let object = note.object as? Wrapper<Day> else {
       assertionFailure("Expected a Wrapper<Keno> object")
       return
     }
 
-    controller.game = object.aStruct
+    controller.day = object.aStruct
   }
 }
