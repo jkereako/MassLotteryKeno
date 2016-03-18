@@ -1,5 +1,5 @@
-# MassStateKeno
-Reports the results for the most recent game
+# MassLotteryKeno
+Reports the results for the most recent game.
 
 <img src="https://raw.githubusercontent.com/jkereako/MassStateKeno/master/Images/screen.png" alt="KENO" width="320" height="568" />
 
