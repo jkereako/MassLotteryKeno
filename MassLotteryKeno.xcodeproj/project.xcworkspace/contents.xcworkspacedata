@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MassStateKeno.xcodeproj">
+      location = "self:/Users/JKereakoglow/src/swift/MassStateKeno/MassLotteryKeno.xcodeproj">
    </FileRef>
 </Workspace>

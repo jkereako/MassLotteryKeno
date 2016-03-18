@@ -8,7 +8,6 @@
 
 import Swish
 
-public protocol KenoRequest: Request {
+public protocol MassLotteryRequest: Request {
   var baseURL: NSURL { get }
-  func baseRequest(url url: NSURL, method: RequestMethod) -> NSURLRequest
 }

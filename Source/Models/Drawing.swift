@@ -25,6 +25,7 @@ struct Drawing: Decodable {
 
   static func decode(j: JSON) -> Decoded<Drawing> {
     // https://github.com/thoughtbot/Argo/issues/272
+    
     let f = curry(self.init)
     return f
       <^> (j <| "draw_id" >>- toInt)

@@ -10,19 +10,30 @@ import Result
 import Argo
 import Swish
 
-struct WinningNumbersRequest: KenoRequest {
-  var baseURL: NSURL { return NSURL(string: "http://www.masslottery.com/data/json")! }
+struct WinningNumbersRequest: MassLotteryRequest {
   typealias ResponseObject = Keno
+  var baseURL: NSURL { return NSURL(string: "http://www.masslottery.com/data/json")! }
 
-  func baseRequest(url url: NSURL, method: RequestMethod) -> NSURLRequest {
+  /// Build the request
+  func build() -> NSURLRequest {
+    let url = baseURL.URLByAppendingPathComponent(MassLottery.Keno.WinningNumbers.path)
+
     let request = NSMutableURLRequest(URL: url)
 
     request.setValue("application/json", forHTTPHeaderField: "Accept")
-    request.HTTPMethod = method.rawValue
+    request.HTTPMethod = RequestMethod.GET.rawValue
 
     return request
   }
 
+  /// Parse the response
+  func parse(j: JSON) -> Result<ResponseObject, NSError> {
+    let keno = Keno.decode(j)
+    
+    return .fromDecoded(keno)
+  }
+
+  /// Send the request
   func makeRequest(completion completion: ((success: Bool, game: Keno?) -> Void)?) {
     APIClient().performRequest(self,
       completionHandler: { (response: Result<ResponseObject, NSError>) in
@@ -39,17 +50,4 @@ struct WinningNumbersRequest: KenoRequest {
       }
     )
   }
-
-  func build() -> NSURLRequest {
-    let url = baseURL.URLByAppendingPathComponent(MassLottery.Keno.WinningNumbers.path)
-
-    return baseRequest(url: url, method: .GET)
-  }
-
-  func parse(j: JSON) -> Result<ResponseObject, NSError> {
-    let keno = Keno.decode(j)
-    
-    return .fromDecoded(keno)
-  }
-  
 }
