@@ -1,5 +1,5 @@
 //
-//  Helpers.swift
+//  DecoderHelpers.swift
 //  MassStateKeno
 //
 //  Created by Jeff Kereakoglow on 3/17/16.

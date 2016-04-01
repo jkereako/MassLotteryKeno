@@ -60,8 +60,10 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>DecoderHelpers.swift</string>
 			<key>path</key>
-			<string>Helpers.swift</string>
+			<string>DecoderHelpers.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -106,6 +108,7 @@
 			<array>
 				<string>62B832101C9A55A1007831B4</string>
 				<string>62CBBC681C7E541E00C27DAD</string>
+				<string>627434591C9B12E20054DCBD</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -231,8 +234,6 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>MassLotteryAPI</string>
 			<key>path</key>
 			<string>MassLotteryAPI</string>
 			<key>sourceTree</key>
@@ -554,7 +555,6 @@
 				<string>6274345D1C9B239E0054DCBD</string>
 				<string>6274345B1C9B23830054DCBD</string>
 				<string>62CBBC0F1C7E317F00C27DAD</string>
-				<string>627434591C9B12E20054DCBD</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
