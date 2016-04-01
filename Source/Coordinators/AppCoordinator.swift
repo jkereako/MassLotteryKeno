@@ -29,8 +29,8 @@ final class AppCoordinator: NSObject {
         case .Success:
           if let json = response.result.value as? JSONDictionary, let j: AnyObject = json,
             let decoded: DecodedDay = decode(j) {
-
-            print(decoded)
+            
+            self.day = decoded
           }
 
         case .Failure(let error):

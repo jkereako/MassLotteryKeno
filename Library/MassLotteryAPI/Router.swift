@@ -6,9 +6,6 @@
 //  Copyright © 2016 Alexis Digital. All rights reserved.
 //
 
-import Foundation
-
-
 import Alamofire
 
 // https://github.com/Alamofire/Alamofire#api-parameter-abstraction
