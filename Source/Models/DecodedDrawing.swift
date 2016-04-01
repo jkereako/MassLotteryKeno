@@ -18,12 +18,12 @@ import Curry
 "bonus_value": "3"
 */
 
-struct Drawing: Decodable {
+struct DecodedDrawing: Decodable {
   let identifier: Int
   let winningNumbers: String
   let bonusMultiplier: Int
 
-  static func decode(j: JSON) -> Decoded<Drawing> {
+  static func decode(j: JSON) -> Decoded<DecodedDrawing> {
     // https://github.com/thoughtbot/Argo/issues/272
     
     let f = curry(self.init)

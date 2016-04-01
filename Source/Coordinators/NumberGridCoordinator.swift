@@ -9,7 +9,7 @@
 import Foundation
 
 final class NumberGridCoordinator: NSObject, Coordinator {
-  var day: Day? {
+  var day: DecodedDay? {
     didSet {
       self.controller.numbers = splitWinningNumbers(day!.drawings.first?.winningNumbers ?? "")
     }

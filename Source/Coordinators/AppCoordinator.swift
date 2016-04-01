@@ -6,11 +6,12 @@
 //  Copyright © 2016 Alexis Digital. All rights reserved.
 //
 
-import Foundation
+import Alamofire
+import Argo
 
 final class AppCoordinator: NSObject {
   var coordinators = [Coordinator]()
-  private var day: Day! {
+  private var day: DecodedDay! {
     didSet {
 
       for var coordinator in coordinators {
@@ -20,19 +21,21 @@ final class AppCoordinator: NSObject {
   }
 
   func start() {
-    let request = WinningNumbersRequest(
-      baseURL: NSURL(string: "http://www.masslottery.com/data/json")!,
-      path: MassLottery.Keno.WinningNumbers
-    )
+    Alamofire.request(Router.WinningNumbers)
+      .validate(contentType: ["text/plain"])
+      .responseJSON { response in
 
-    request.makeRequest(completion: { [unowned self] (success: Bool, day: Day?) in
+        switch response.result {
+        case .Success:
+          if let json = response.result.value as? JSONDictionary, let j: AnyObject = json,
+            let decoded: DecodedDay = decode(j) {
 
-      guard success, let aDay = day else {
-        return
-      }
+            print(decoded)
+          }
 
-      self.day = aDay
-      
-      })
+        case .Failure(let error):
+          print(error)
+        }
+    }
   }
 }

@@ -17,11 +17,11 @@ import Curry
 "draws": []
 */
 
-struct Day: Decodable {
+struct DecodedDay: Decodable {
   let date: NSDate
-  let drawings: [Drawing]
+  let drawings: [DecodedDrawing]
 
-  static func decode(j: JSON) -> Decoded<Day> {
+  static func decode(j: JSON) -> Decoded<DecodedDay> {
     // https://github.com/thoughtbot/Argo/issues/272
     let f = curry(self.init)
 

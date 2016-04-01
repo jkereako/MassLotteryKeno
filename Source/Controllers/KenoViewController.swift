@@ -16,7 +16,7 @@ final class KenoViewController: UIViewController, Controller {
   @IBOutlet weak var drawingsDate: UILabel!
   @IBOutlet weak var bonusMultiplier: UILabel!
 
-  var day: Day? {
+  var day: DecodedDay? {
     didSet {
       guard let aDay = day, let drawing = aDay.drawings.first else {
         return
