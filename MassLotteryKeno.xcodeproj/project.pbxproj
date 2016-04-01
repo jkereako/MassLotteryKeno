@@ -1,763 +1,1602 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		6274345A1C9B12E20054DCBD /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627434591C9B12E20054DCBD /* Helpers.swift */; };
-		6274345F1C9B275D0054DCBD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6274345E1C9B275D0054DCBD /* AppCoordinator.swift */; };
-		627434611C9B27810054DCBD /* KenoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627434601C9B27810054DCBD /* KenoCoordinator.swift */; };
-		627434631C9B27920054DCBD /* NumberGridCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627434621C9B27920054DCBD /* NumberGridCoordinator.swift */; };
-		628E6C611CAE0F1600B07671 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 622EEC5F1CA65F08000327AE /* Curry.framework */; };
-		628E6C621CAE0F1600B07671 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 622EEC601CA65F08000327AE /* Argo.framework */; };
-		628E6C641CAE110E00B07671 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628E6C631CAE110E00B07671 /* Router.swift */; };
-		628E6C671CAE126000B07671 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628E6C661CAE126000B07671 /* TypeAliases.swift */; };
-		628E6C691CAE154800B07671 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 628E6C681CAE154800B07671 /* Alamofire.framework */; };
-		62B7B5531C9B514700A0DC47 /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B7B5521C9B514700A0DC47 /* Wrapper.swift */; };
-		62B8320D1C9A4BBF007831B4 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B8320C1C9A4BBF007831B4 /* Path.swift */; };
-		62B832111C9A55A1007831B4 /* DecodedDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B832101C9A55A1007831B4 /* DecodedDay.swift */; };
-		62BD2E891C9CCA4800B2DF64 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD2E881C9CCA4800B2DF64 /* CoordinatorProtocol.swift */; };
-		62BD2E8B1C9CCB2D00B2DF64 /* ControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD2E8A1C9CCB2D00B2DF64 /* ControllerProtocol.swift */; };
-		62CBBC101C7E317F00C27DAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */; };
-		62CBBC121C7E317F00C27DAD /* KenoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC111C7E317F00C27DAD /* KenoViewController.swift */; };
-		62CBBC151C7E317F00C27DAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62CBBC131C7E317F00C27DAD /* Main.storyboard */; };
-		62CBBC171C7E317F00C27DAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62CBBC161C7E317F00C27DAD /* Assets.xcassets */; };
-		62CBBC1A1C7E317F00C27DAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62CBBC181C7E317F00C27DAD /* LaunchScreen.storyboard */; };
-		62CBBC251C7E317F00C27DAD /* MassStateKenoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC241C7E317F00C27DAD /* MassStateKenoTests.swift */; };
-		62CBBC301C7E317F00C27DAD /* MassStateKenoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC2F1C7E317F00C27DAD /* MassStateKenoUITests.swift */; };
-		62CBBC411C7E31E100C27DAD /* LinearGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC401C7E31E100C27DAD /* LinearGradient.swift */; };
-		62CBBC431C7E36CA00C27DAD /* NumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC421C7E36CA00C27DAD /* NumberCell.swift */; };
-		62CBBC461C7E371100C27DAD /* NumberGridController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC451C7E371100C27DAD /* NumberGridController.swift */; };
-		62CBBC541C7E497900C27DAD /* MassLottery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC531C7E497900C27DAD /* MassLottery.swift */; };
-		62CBBC691C7E541E00C27DAD /* DecodedDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC681C7E541E00C27DAD /* DecodedDrawing.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		62CBBC211C7E317F00C27DAD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 62CBBC041C7E317F00C27DAD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 62CBBC0B1C7E317F00C27DAD;
-			remoteInfo = MassStateKeno;
-		};
-		62CBBC2C1C7E317F00C27DAD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 62CBBC041C7E317F00C27DAD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 62CBBC0B1C7E317F00C27DAD;
-			remoteInfo = MassStateKeno;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		622EEC5F1CA65F08000327AE /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
-		622EEC601CA65F08000327AE /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = "<group>"; };
-		627434591C9B12E20054DCBD /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		6274345E1C9B275D0054DCBD /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		627434601C9B27810054DCBD /* KenoCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenoCoordinator.swift; sourceTree = "<group>"; };
-		627434621C9B27920054DCBD /* NumberGridCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberGridCoordinator.swift; sourceTree = "<group>"; };
-		628E6C631CAE110E00B07671 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		628E6C661CAE126000B07671 /* TypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
-		628E6C681CAE154800B07671 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		62B7B5521C9B514700A0DC47 /* Wrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
-		62B8320C1C9A4BBF007831B4 /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
-		62B832101C9A55A1007831B4 /* DecodedDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodedDay.swift; sourceTree = "<group>"; };
-		62BD2E881C9CCA4800B2DF64 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
-		62BD2E8A1C9CCB2D00B2DF64 /* ControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerProtocol.swift; sourceTree = "<group>"; };
-		62CBBC0C1C7E317F00C27DAD /* MassLotteryKeno.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MassLotteryKeno.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		62CBBC111C7E317F00C27DAD /* KenoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenoViewController.swift; sourceTree = "<group>"; };
-		62CBBC141C7E317F00C27DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		62CBBC161C7E317F00C27DAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		62CBBC191C7E317F00C27DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		62CBBC1B1C7E317F00C27DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62CBBC201C7E317F00C27DAD /* MassLotteryKeno.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MassLotteryKeno.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		62CBBC241C7E317F00C27DAD /* MassStateKenoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassStateKenoTests.swift; sourceTree = "<group>"; };
-		62CBBC261C7E317F00C27DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62CBBC2B1C7E317F00C27DAD /* MassLotteryKeno.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MassLotteryKeno.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		62CBBC2F1C7E317F00C27DAD /* MassStateKenoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassStateKenoUITests.swift; sourceTree = "<group>"; };
-		62CBBC311C7E317F00C27DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62CBBC401C7E31E100C27DAD /* LinearGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearGradient.swift; sourceTree = "<group>"; };
-		62CBBC421C7E36CA00C27DAD /* NumberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberCell.swift; sourceTree = "<group>"; };
-		62CBBC451C7E371100C27DAD /* NumberGridController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberGridController.swift; sourceTree = "<group>"; };
-		62CBBC531C7E497900C27DAD /* MassLottery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MassLottery.swift; sourceTree = "<group>"; };
-		62CBBC681C7E541E00C27DAD /* DecodedDrawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodedDrawing.swift; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		62CBBC091C7E317F00C27DAD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				628E6C691CAE154800B07671 /* Alamofire.framework in Frameworks */,
-				628E6C611CAE0F1600B07671 /* Curry.framework in Frameworks */,
-				628E6C621CAE0F1600B07671 /* Argo.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		62CBBC1D1C7E317F00C27DAD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		62CBBC281C7E317F00C27DAD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		622E6C3D1C9B533700007EBE /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-				6274345E1C9B275D0054DCBD /* AppCoordinator.swift */,
-				62BD2E881C9CCA4800B2DF64 /* CoordinatorProtocol.swift */,
-				627434601C9B27810054DCBD /* KenoCoordinator.swift */,
-				627434621C9B27920054DCBD /* NumberGridCoordinator.swift */,
-			);
-			path = Coordinators;
-			sourceTree = "<group>";
-		};
-		62534B271C7E901E0008C2EF /* API */ = {
-			isa = PBXGroup;
-			children = (
-				62CBBC531C7E497900C27DAD /* MassLottery.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		6274345B1C9B23830054DCBD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				62CBBC421C7E36CA00C27DAD /* NumberCell.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		6274345C1C9B238A0054DCBD /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				62BD2E8A1C9CCB2D00B2DF64 /* ControllerProtocol.swift */,
-				62CBBC111C7E317F00C27DAD /* KenoViewController.swift */,
-				62CBBC451C7E371100C27DAD /* NumberGridController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		6274345D1C9B239E0054DCBD /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				62B832101C9A55A1007831B4 /* DecodedDay.swift */,
-				62CBBC681C7E541E00C27DAD /* DecodedDrawing.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		62866F081C9A3F2C00D57228 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				628E6C681CAE154800B07671 /* Alamofire.framework */,
-				622EEC5F1CA65F08000327AE /* Curry.framework */,
-				622EEC601CA65F08000327AE /* Argo.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		628E6C651CAE11A900B07671 /* MassLotteryAPI */ = {
-			isa = PBXGroup;
-			children = (
-				628E6C631CAE110E00B07671 /* Router.swift */,
-			);
-			name = MassLotteryAPI;
-			sourceTree = "<group>";
-		};
-		62CBBC031C7E317F00C27DAD = {
-			isa = PBXGroup;
-			children = (
-				62866F081C9A3F2C00D57228 /* Frameworks */,
-				62CBBC441C7E36CE00C27DAD /* Library */,
-				62CBBC0D1C7E317F00C27DAD /* Products */,
-				62CBBC3D1C7E31A200C27DAD /* Resources */,
-				62CBBC0E1C7E317F00C27DAD /* Source */,
-				62CBBC3F1C7E31BC00C27DAD /* SupportFiles */,
-				62CBBC3E1C7E31A900C27DAD /* Tests */,
-			);
-			sourceTree = "<group>";
-		};
-		62CBBC0D1C7E317F00C27DAD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				62CBBC0C1C7E317F00C27DAD /* MassLotteryKeno.app */,
-				62CBBC201C7E317F00C27DAD /* MassLotteryKeno.xctest */,
-				62CBBC2B1C7E317F00C27DAD /* MassLotteryKeno.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		62CBBC0E1C7E317F00C27DAD /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				62534B271C7E901E0008C2EF /* API */,
-				6274345C1C9B238A0054DCBD /* Controllers */,
-				622E6C3D1C9B533700007EBE /* Coordinators */,
-				6274345D1C9B239E0054DCBD /* Models */,
-				6274345B1C9B23830054DCBD /* Views */,
-				62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */,
-				627434591C9B12E20054DCBD /* Helpers.swift */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		62CBBC231C7E317F00C27DAD /* UnitTests */ = {
-			isa = PBXGroup;
-			children = (
-				62CBBC261C7E317F00C27DAD /* Info.plist */,
-				62CBBC241C7E317F00C27DAD /* MassStateKenoTests.swift */,
-			);
-			path = UnitTests;
-			sourceTree = "<group>";
-		};
-		62CBBC2E1C7E317F00C27DAD /* UITests */ = {
-			isa = PBXGroup;
-			children = (
-				62CBBC311C7E317F00C27DAD /* Info.plist */,
-				62CBBC2F1C7E317F00C27DAD /* MassStateKenoUITests.swift */,
-			);
-			path = UITests;
-			sourceTree = "<group>";
-		};
-		62CBBC3D1C7E31A200C27DAD /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				62CBBC161C7E317F00C27DAD /* Assets.xcassets */,
-				62CBBC181C7E317F00C27DAD /* LaunchScreen.storyboard */,
-				62CBBC131C7E317F00C27DAD /* Main.storyboard */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		62CBBC3E1C7E31A900C27DAD /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				62CBBC2E1C7E317F00C27DAD /* UITests */,
-				62CBBC231C7E317F00C27DAD /* UnitTests */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		62CBBC3F1C7E31BC00C27DAD /* SupportFiles */ = {
-			isa = PBXGroup;
-			children = (
-				62CBBC1B1C7E317F00C27DAD /* Info.plist */,
-			);
-			path = SupportFiles;
-			sourceTree = "<group>";
-		};
-		62CBBC441C7E36CE00C27DAD /* Library */ = {
-			isa = PBXGroup;
-			children = (
-				628E6C651CAE11A900B07671 /* MassLotteryAPI */,
-				62CBBC401C7E31E100C27DAD /* LinearGradient.swift */,
-				62B8320C1C9A4BBF007831B4 /* Path.swift */,
-				62B7B5521C9B514700A0DC47 /* Wrapper.swift */,
-				628E6C661CAE126000B07671 /* TypeAliases.swift */,
-			);
-			path = Library;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		62CBBC0B1C7E317F00C27DAD /* MassLotteryKeno */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 62CBBC341C7E317F00C27DAD /* Build configuration list for PBXNativeTarget "MassLotteryKeno" */;
-			buildPhases = (
-				62CBBC081C7E317F00C27DAD /* Sources */,
-				62CBBC091C7E317F00C27DAD /* Frameworks */,
-				62CBBC0A1C7E317F00C27DAD /* Resources */,
-				62CF547D1C9A3C39004197F0 /* Run Script */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MassLotteryKeno;
-			productName = MassStateKeno;
-			productReference = 62CBBC0C1C7E317F00C27DAD /* MassLotteryKeno.app */;
-			productType = "com.apple.product-type.application";
-		};
-		62CBBC1F1C7E317F00C27DAD /* MassLotteryKenoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 62CBBC371C7E317F00C27DAD /* Build configuration list for PBXNativeTarget "MassLotteryKenoTests" */;
-			buildPhases = (
-				62CBBC1C1C7E317F00C27DAD /* Sources */,
-				62CBBC1D1C7E317F00C27DAD /* Frameworks */,
-				62CBBC1E1C7E317F00C27DAD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				62CBBC221C7E317F00C27DAD /* PBXTargetDependency */,
-			);
-			name = MassLotteryKenoTests;
-			productName = MassStateKenoTests;
-			productReference = 62CBBC201C7E317F00C27DAD /* MassLotteryKeno.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		62CBBC2A1C7E317F00C27DAD /* MassLotteryKenoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 62CBBC3A1C7E317F00C27DAD /* Build configuration list for PBXNativeTarget "MassLotteryKenoUITests" */;
-			buildPhases = (
-				62CBBC271C7E317F00C27DAD /* Sources */,
-				62CBBC281C7E317F00C27DAD /* Frameworks */,
-				62CBBC291C7E317F00C27DAD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				62CBBC2D1C7E317F00C27DAD /* PBXTargetDependency */,
-			);
-			name = MassLotteryKenoUITests;
-			productName = MassStateKenoUITests;
-			productReference = 62CBBC2B1C7E317F00C27DAD /* MassLotteryKeno.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		62CBBC041C7E317F00C27DAD /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "Alexis Digital";
-				TargetAttributes = {
-					62CBBC0B1C7E317F00C27DAD = {
-						CreatedOnToolsVersion = 7.2.1;
-					};
-					62CBBC1F1C7E317F00C27DAD = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = 62CBBC0B1C7E317F00C27DAD;
-					};
-					62CBBC2A1C7E317F00C27DAD = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = 62CBBC0B1C7E317F00C27DAD;
-					};
-				};
-			};
-			buildConfigurationList = 62CBBC071C7E317F00C27DAD /* Build configuration list for PBXProject "MassLotteryKeno" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 62CBBC031C7E317F00C27DAD;
-			productRefGroup = 62CBBC0D1C7E317F00C27DAD /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				62CBBC0B1C7E317F00C27DAD /* MassLotteryKeno */,
-				62CBBC1F1C7E317F00C27DAD /* MassLotteryKenoTests */,
-				62CBBC2A1C7E317F00C27DAD /* MassLotteryKenoUITests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		62CBBC0A1C7E317F00C27DAD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				62CBBC1A1C7E317F00C27DAD /* LaunchScreen.storyboard in Resources */,
-				62CBBC171C7E317F00C27DAD /* Assets.xcassets in Resources */,
-				62CBBC151C7E317F00C27DAD /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		62CBBC1E1C7E317F00C27DAD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		62CBBC291C7E317F00C27DAD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		62CF547D1C9A3C39004197F0 /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Curry.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Argo.framework",
-			);
-			name = "Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		62CBBC081C7E317F00C27DAD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				627434631C9B27920054DCBD /* NumberGridCoordinator.swift in Sources */,
-				62B832111C9A55A1007831B4 /* DecodedDay.swift in Sources */,
-				627434611C9B27810054DCBD /* KenoCoordinator.swift in Sources */,
-				62CBBC121C7E317F00C27DAD /* KenoViewController.swift in Sources */,
-				62B7B5531C9B514700A0DC47 /* Wrapper.swift in Sources */,
-				6274345F1C9B275D0054DCBD /* AppCoordinator.swift in Sources */,
-				62CBBC431C7E36CA00C27DAD /* NumberCell.swift in Sources */,
-				62CBBC461C7E371100C27DAD /* NumberGridController.swift in Sources */,
-				62CBBC101C7E317F00C27DAD /* AppDelegate.swift in Sources */,
-				62CBBC691C7E541E00C27DAD /* DecodedDrawing.swift in Sources */,
-				62BD2E891C9CCA4800B2DF64 /* CoordinatorProtocol.swift in Sources */,
-				6274345A1C9B12E20054DCBD /* Helpers.swift in Sources */,
-				628E6C671CAE126000B07671 /* TypeAliases.swift in Sources */,
-				62CBBC541C7E497900C27DAD /* MassLottery.swift in Sources */,
-				628E6C641CAE110E00B07671 /* Router.swift in Sources */,
-				62B8320D1C9A4BBF007831B4 /* Path.swift in Sources */,
-				62BD2E8B1C9CCB2D00B2DF64 /* ControllerProtocol.swift in Sources */,
-				62CBBC411C7E31E100C27DAD /* LinearGradient.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		62CBBC1C1C7E317F00C27DAD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				62CBBC251C7E317F00C27DAD /* MassStateKenoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		62CBBC271C7E317F00C27DAD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				62CBBC301C7E317F00C27DAD /* MassStateKenoUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		62CBBC221C7E317F00C27DAD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 62CBBC0B1C7E317F00C27DAD /* MassLotteryKeno */;
-			targetProxy = 62CBBC211C7E317F00C27DAD /* PBXContainerItemProxy */;
-		};
-		62CBBC2D1C7E317F00C27DAD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 62CBBC0B1C7E317F00C27DAD /* MassLotteryKeno */;
-			targetProxy = 62CBBC2C1C7E317F00C27DAD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		62CBBC131C7E317F00C27DAD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				62CBBC141C7E317F00C27DAD /* Base */,
-			);
-			name = Main.storyboard;
-			path = .;
-			sourceTree = "<group>";
-		};
-		62CBBC181C7E317F00C27DAD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				62CBBC191C7E317F00C27DAD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			path = .;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		62CBBC321C7E317F00C27DAD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_ASSIGN_ENUM = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
-				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
-				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
-				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_PEDANTIC = YES;
-				GCC_WARN_SHADOW = YES;
-				GCC_WARN_SIGN_COMPARE = YES;
-				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNKNOWN_PRAGMAS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_LABEL = YES;
-				GCC_WARN_UNUSED_PARAMETER = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		62CBBC331C7E317F00C27DAD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_ASSIGN_ENUM = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
-				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
-				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
-				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_PEDANTIC = YES;
-				GCC_WARN_SHADOW = YES;
-				GCC_WARN_SIGN_COMPARE = YES;
-				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNKNOWN_PRAGMAS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_LABEL = YES;
-				GCC_WARN_UNUSED_PARAMETER = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		62CBBC351C7E317F00C27DAD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				GCC_WARN_UNKNOWN_PRAGMAS = YES;
-				GCC_WARN_UNUSED_LABEL = YES;
-				GCC_WARN_UNUSED_PARAMETER = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/SupportFiles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.MassLotteryKeno;
-				PRODUCT_NAME = MassLotteryKeno;
-				PROVISIONING_PROFILE = "";
-			};
-			name = Debug;
-		};
-		62CBBC361C7E317F00C27DAD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				GCC_WARN_UNKNOWN_PRAGMAS = YES;
-				GCC_WARN_UNUSED_LABEL = YES;
-				GCC_WARN_UNUSED_PARAMETER = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/SupportFiles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.MassLotteryKeno;
-				PRODUCT_NAME = MassLotteryKeno;
-				PROVISIONING_PROFILE = "";
-			};
-			name = Release;
-		};
-		62CBBC381C7E317F00C27DAD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.MassStateKenoTests;
-				PRODUCT_NAME = MassLotteryKeno;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MassLotteryKeno.app/MassLotteryKeno";
-			};
-			name = Debug;
-		};
-		62CBBC391C7E317F00C27DAD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.MassStateKenoTests;
-				PRODUCT_NAME = MassLotteryKeno;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MassLotteryKeno.app/MassLotteryKeno";
-			};
-			name = Release;
-		};
-		62CBBC3B1C7E317F00C27DAD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = Tests/UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.MassStateKenoUITests;
-				PRODUCT_NAME = MassLotteryKeno;
-				TEST_TARGET_NAME = MassStateKeno;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		62CBBC3C1C7E317F00C27DAD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = Tests/UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.MassStateKenoUITests;
-				PRODUCT_NAME = MassLotteryKeno;
-				TEST_TARGET_NAME = MassStateKeno;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		62CBBC071C7E317F00C27DAD /* Build configuration list for PBXProject "MassLotteryKeno" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				62CBBC321C7E317F00C27DAD /* Debug */,
-				62CBBC331C7E317F00C27DAD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		62CBBC341C7E317F00C27DAD /* Build configuration list for PBXNativeTarget "MassLotteryKeno" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				62CBBC351C7E317F00C27DAD /* Debug */,
-				62CBBC361C7E317F00C27DAD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		62CBBC371C7E317F00C27DAD /* Build configuration list for PBXNativeTarget "MassLotteryKenoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				62CBBC381C7E317F00C27DAD /* Debug */,
-				62CBBC391C7E317F00C27DAD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		62CBBC3A1C7E317F00C27DAD /* Build configuration list for PBXNativeTarget "MassLotteryKenoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				62CBBC3B1C7E317F00C27DAD /* Debug */,
-				62CBBC3C1C7E317F00C27DAD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 62CBBC041C7E317F00C27DAD /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>622E6C3D1C9B533700007EBE</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6274345E1C9B275D0054DCBD</string>
+				<string>62BD2E881C9CCA4800B2DF64</string>
+				<string>627434601C9B27810054DCBD</string>
+				<string>627434621C9B27920054DCBD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Coordinators</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>622EEC5F1CA65F08000327AE</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Curry.framework</string>
+			<key>path</key>
+			<string>Carthage/Build/iOS/Curry.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>622EEC601CA65F08000327AE</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Argo.framework</string>
+			<key>path</key>
+			<string>Carthage/Build/iOS/Argo.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>627434591C9B12E20054DCBD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Helpers.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6274345A1C9B12E20054DCBD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>627434591C9B12E20054DCBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6274345B1C9B23830054DCBD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>62CBBC421C7E36CA00C27DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Views</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6274345C1C9B238A0054DCBD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>62BD2E8A1C9CCB2D00B2DF64</string>
+				<string>62CBBC111C7E317F00C27DAD</string>
+				<string>62CBBC451C7E371100C27DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Controllers</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6274345D1C9B239E0054DCBD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>62B832101C9A55A1007831B4</string>
+				<string>62CBBC681C7E541E00C27DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Models</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6274345E1C9B275D0054DCBD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppCoordinator.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6274345F1C9B275D0054DCBD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6274345E1C9B275D0054DCBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>627434601C9B27810054DCBD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>KenoCoordinator.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>627434611C9B27810054DCBD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>627434601C9B27810054DCBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>627434621C9B27920054DCBD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>NumberGridCoordinator.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>627434631C9B27920054DCBD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>627434621C9B27920054DCBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>62866F081C9A3F2C00D57228</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>628E6C681CAE154800B07671</string>
+				<string>622EEC5F1CA65F08000327AE</string>
+				<string>622EEC601CA65F08000327AE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>628E6C611CAE0F1600B07671</key>
+		<dict>
+			<key>fileRef</key>
+			<string>622EEC5F1CA65F08000327AE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>628E6C621CAE0F1600B07671</key>
+		<dict>
+			<key>fileRef</key>
+			<string>622EEC601CA65F08000327AE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>628E6C631CAE110E00B07671</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Router.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>628E6C641CAE110E00B07671</key>
+		<dict>
+			<key>fileRef</key>
+			<string>628E6C631CAE110E00B07671</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>628E6C651CAE11A900B07671</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>628E6C631CAE110E00B07671</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>MassLotteryAPI</string>
+			<key>path</key>
+			<string>MassLotteryAPI</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>628E6C661CAE126000B07671</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TypeAliases.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>628E6C671CAE126000B07671</key>
+		<dict>
+			<key>fileRef</key>
+			<string>628E6C661CAE126000B07671</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>628E6C681CAE154800B07671</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Alamofire.framework</string>
+			<key>path</key>
+			<string>Carthage/Build/iOS/Alamofire.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>628E6C691CAE154800B07671</key>
+		<dict>
+			<key>fileRef</key>
+			<string>628E6C681CAE154800B07671</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>62B832101C9A55A1007831B4</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>DecodedDay.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62B832111C9A55A1007831B4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>62B832101C9A55A1007831B4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>62BD2E881C9CCA4800B2DF64</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>CoordinatorProtocol.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62BD2E891C9CCA4800B2DF64</key>
+		<dict>
+			<key>fileRef</key>
+			<string>62BD2E881C9CCA4800B2DF64</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>62BD2E8A1C9CCB2D00B2DF64</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ControllerProtocol.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62BD2E8B1C9CCB2D00B2DF64</key>
+		<dict>
+			<key>fileRef</key>
+			<string>62BD2E8A1C9CCB2D00B2DF64</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>62CBBC031C7E317F00C27DAD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>62866F081C9A3F2C00D57228</string>
+				<string>62CBBC441C7E36CE00C27DAD</string>
+				<string>62CBBC0D1C7E317F00C27DAD</string>
+				<string>62CBBC3D1C7E31A200C27DAD</string>
+				<string>62CBBC0E1C7E317F00C27DAD</string>
+				<string>62CBBC3F1C7E31BC00C27DAD</string>
+				<string>62CBBC3E1C7E31A900C27DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC041C7E317F00C27DAD</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0720</string>
+				<key>LastUpgradeCheck</key>
+				<string>0720</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Alexis Digital</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>62CBBC0B1C7E317F00C27DAD</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.2.1</string>
+					</dict>
+					<key>62CBBC1F1C7E317F00C27DAD</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.2.1</string>
+						<key>TestTargetID</key>
+						<string>62CBBC0B1C7E317F00C27DAD</string>
+					</dict>
+					<key>62CBBC2A1C7E317F00C27DAD</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.2.1</string>
+						<key>TestTargetID</key>
+						<string>62CBBC0B1C7E317F00C27DAD</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>62CBBC071C7E317F00C27DAD</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>62CBBC031C7E317F00C27DAD</string>
+			<key>productRefGroup</key>
+			<string>62CBBC0D1C7E317F00C27DAD</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>62CBBC0B1C7E317F00C27DAD</string>
+				<string>62CBBC1F1C7E317F00C27DAD</string>
+				<string>62CBBC2A1C7E317F00C27DAD</string>
+			</array>
+		</dict>
+		<key>62CBBC071C7E317F00C27DAD</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>62CBBC321C7E317F00C27DAD</string>
+				<string>62CBBC331C7E317F00C27DAD</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>62CBBC081C7E317F00C27DAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>627434631C9B27920054DCBD</string>
+				<string>62B832111C9A55A1007831B4</string>
+				<string>627434611C9B27810054DCBD</string>
+				<string>62CBBC121C7E317F00C27DAD</string>
+				<string>6274345F1C9B275D0054DCBD</string>
+				<string>62CBBC431C7E36CA00C27DAD</string>
+				<string>62CBBC461C7E371100C27DAD</string>
+				<string>62CBBC101C7E317F00C27DAD</string>
+				<string>62CBBC691C7E541E00C27DAD</string>
+				<string>62BD2E891C9CCA4800B2DF64</string>
+				<string>6274345A1C9B12E20054DCBD</string>
+				<string>628E6C671CAE126000B07671</string>
+				<string>628E6C641CAE110E00B07671</string>
+				<string>62BD2E8B1C9CCB2D00B2DF64</string>
+				<string>62CBBC411C7E31E100C27DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>62CBBC091C7E317F00C27DAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>628E6C691CAE154800B07671</string>
+				<string>628E6C611CAE0F1600B07671</string>
+				<string>628E6C621CAE0F1600B07671</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>62CBBC0A1C7E317F00C27DAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>62CBBC1A1C7E317F00C27DAD</string>
+				<string>62CBBC171C7E317F00C27DAD</string>
+				<string>62CBBC151C7E317F00C27DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>62CBBC0B1C7E317F00C27DAD</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>62CBBC341C7E317F00C27DAD</string>
+			<key>buildPhases</key>
+			<array>
+				<string>62CBBC081C7E317F00C27DAD</string>
+				<string>62CBBC091C7E317F00C27DAD</string>
+				<string>62CBBC0A1C7E317F00C27DAD</string>
+				<string>62CF547D1C9A3C39004197F0</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>MassLotteryKeno</string>
+			<key>productName</key>
+			<string>MassStateKeno</string>
+			<key>productReference</key>
+			<string>62CBBC0C1C7E317F00C27DAD</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>62CBBC0C1C7E317F00C27DAD</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>MassLotteryKeno.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>62CBBC0D1C7E317F00C27DAD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>62CBBC0C1C7E317F00C27DAD</string>
+				<string>62CBBC201C7E317F00C27DAD</string>
+				<string>62CBBC2B1C7E317F00C27DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC0E1C7E317F00C27DAD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6274345C1C9B238A0054DCBD</string>
+				<string>622E6C3D1C9B533700007EBE</string>
+				<string>6274345D1C9B239E0054DCBD</string>
+				<string>6274345B1C9B23830054DCBD</string>
+				<string>62CBBC0F1C7E317F00C27DAD</string>
+				<string>627434591C9B12E20054DCBD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Source</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC0F1C7E317F00C27DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC101C7E317F00C27DAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>62CBBC0F1C7E317F00C27DAD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>62CBBC111C7E317F00C27DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>KenoViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC121C7E317F00C27DAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>62CBBC111C7E317F00C27DAD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>62CBBC131C7E317F00C27DAD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>62CBBC141C7E317F00C27DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>path</key>
+			<string>.</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC141C7E317F00C27DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC151C7E317F00C27DAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>62CBBC131C7E317F00C27DAD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>62CBBC161C7E317F00C27DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC171C7E317F00C27DAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>62CBBC161C7E317F00C27DAD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>62CBBC181C7E317F00C27DAD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>62CBBC191C7E317F00C27DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>path</key>
+			<string>.</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC191C7E317F00C27DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC1A1C7E317F00C27DAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>62CBBC181C7E317F00C27DAD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>62CBBC1B1C7E317F00C27DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC1C1C7E317F00C27DAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>62CBBC251C7E317F00C27DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>62CBBC1D1C7E317F00C27DAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>62CBBC1E1C7E317F00C27DAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>62CBBC1F1C7E317F00C27DAD</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>62CBBC371C7E317F00C27DAD</string>
+			<key>buildPhases</key>
+			<array>
+				<string>62CBBC1C1C7E317F00C27DAD</string>
+				<string>62CBBC1D1C7E317F00C27DAD</string>
+				<string>62CBBC1E1C7E317F00C27DAD</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>62CBBC221C7E317F00C27DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>MassLotteryKenoTests</string>
+			<key>productName</key>
+			<string>MassStateKenoTests</string>
+			<key>productReference</key>
+			<string>62CBBC201C7E317F00C27DAD</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>62CBBC201C7E317F00C27DAD</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>MassLotteryKeno.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>62CBBC211C7E317F00C27DAD</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>62CBBC041C7E317F00C27DAD</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>62CBBC0B1C7E317F00C27DAD</string>
+			<key>remoteInfo</key>
+			<string>MassStateKeno</string>
+		</dict>
+		<key>62CBBC221C7E317F00C27DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>62CBBC0B1C7E317F00C27DAD</string>
+			<key>targetProxy</key>
+			<string>62CBBC211C7E317F00C27DAD</string>
+		</dict>
+		<key>62CBBC231C7E317F00C27DAD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>62CBBC261C7E317F00C27DAD</string>
+				<string>62CBBC241C7E317F00C27DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>UnitTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC241C7E317F00C27DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>MassStateKenoTests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC251C7E317F00C27DAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>62CBBC241C7E317F00C27DAD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>62CBBC261C7E317F00C27DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC271C7E317F00C27DAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>62CBBC301C7E317F00C27DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>62CBBC281C7E317F00C27DAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>62CBBC291C7E317F00C27DAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>62CBBC2A1C7E317F00C27DAD</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>62CBBC3A1C7E317F00C27DAD</string>
+			<key>buildPhases</key>
+			<array>
+				<string>62CBBC271C7E317F00C27DAD</string>
+				<string>62CBBC281C7E317F00C27DAD</string>
+				<string>62CBBC291C7E317F00C27DAD</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>62CBBC2D1C7E317F00C27DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>MassLotteryKenoUITests</string>
+			<key>productName</key>
+			<string>MassStateKenoUITests</string>
+			<key>productReference</key>
+			<string>62CBBC2B1C7E317F00C27DAD</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.ui-testing</string>
+		</dict>
+		<key>62CBBC2B1C7E317F00C27DAD</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>MassLotteryKeno.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>62CBBC2C1C7E317F00C27DAD</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>62CBBC041C7E317F00C27DAD</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>62CBBC0B1C7E317F00C27DAD</string>
+			<key>remoteInfo</key>
+			<string>MassStateKeno</string>
+		</dict>
+		<key>62CBBC2D1C7E317F00C27DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>62CBBC0B1C7E317F00C27DAD</string>
+			<key>targetProxy</key>
+			<string>62CBBC2C1C7E317F00C27DAD</string>
+		</dict>
+		<key>62CBBC2E1C7E317F00C27DAD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>62CBBC311C7E317F00C27DAD</string>
+				<string>62CBBC2F1C7E317F00C27DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>UITests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC2F1C7E317F00C27DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>MassStateKenoUITests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC301C7E317F00C27DAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>62CBBC2F1C7E317F00C27DAD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>62CBBC311C7E317F00C27DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC321C7E317F00C27DAD</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ASSIGN_ENUM</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_IMPLICIT_SIGN_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS</key>
+				<string>YES</string>
+				<key>GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS</key>
+				<string>YES</string>
+				<key>GCC_TREAT_WARNINGS_AS_ERRORS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_MISSING_NEWLINE</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_MISSING_PROTOTYPES</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_FOUR_CHARACTER_CONSTANTS</key>
+				<string>YES</string>
+				<key>GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED</key>
+				<string>YES</string>
+				<key>GCC_WARN_PEDANTIC</key>
+				<string>YES</string>
+				<key>GCC_WARN_SHADOW</key>
+				<string>YES</string>
+				<key>GCC_WARN_SIGN_COMPARE</key>
+				<string>YES</string>
+				<key>GCC_WARN_STRICT_SELECTOR_MATCH</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNKNOWN_PRAGMAS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_LABEL</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_PARAMETER</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.2</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>62CBBC331C7E317F00C27DAD</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ASSIGN_ENUM</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_IMPLICIT_SIGN_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS</key>
+				<string>YES</string>
+				<key>GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS</key>
+				<string>YES</string>
+				<key>GCC_TREAT_WARNINGS_AS_ERRORS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_MISSING_NEWLINE</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_MISSING_PROTOTYPES</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_FOUR_CHARACTER_CONSTANTS</key>
+				<string>YES</string>
+				<key>GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED</key>
+				<string>YES</string>
+				<key>GCC_WARN_PEDANTIC</key>
+				<string>YES</string>
+				<key>GCC_WARN_SHADOW</key>
+				<string>YES</string>
+				<key>GCC_WARN_SIGN_COMPARE</key>
+				<string>YES</string>
+				<key>GCC_WARN_STRICT_SELECTOR_MATCH</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNKNOWN_PRAGMAS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_LABEL</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_PARAMETER</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.2</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>62CBBC341C7E317F00C27DAD</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>62CBBC351C7E317F00C27DAD</string>
+				<string>62CBBC361C7E317F00C27DAD</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>62CBBC351C7E317F00C27DAD</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)/Carthage/Build/iOS</string>
+				</array>
+				<key>GCC_WARN_UNKNOWN_PRAGMAS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_LABEL</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_PARAMETER</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>$(SRCROOT)/SupportFiles/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.alexisdigital.MassLotteryKeno</string>
+				<key>PRODUCT_NAME</key>
+				<string>MassLotteryKeno</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>62CBBC361C7E317F00C27DAD</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)/Carthage/Build/iOS</string>
+				</array>
+				<key>GCC_WARN_UNKNOWN_PRAGMAS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_LABEL</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_PARAMETER</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>$(SRCROOT)/SupportFiles/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.alexisdigital.MassLotteryKeno</string>
+				<key>PRODUCT_NAME</key>
+				<string>MassLotteryKeno</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>62CBBC371C7E317F00C27DAD</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>62CBBC381C7E317F00C27DAD</string>
+				<string>62CBBC391C7E317F00C27DAD</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>62CBBC381C7E317F00C27DAD</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Tests/UnitTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.alexisdigital.MassStateKenoTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>MassLotteryKeno</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/MassLotteryKeno.app/MassLotteryKeno</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>62CBBC391C7E317F00C27DAD</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Tests/UnitTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.alexisdigital.MassStateKenoTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>MassLotteryKeno</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/MassLotteryKeno.app/MassLotteryKeno</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>62CBBC3A1C7E317F00C27DAD</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>62CBBC3B1C7E317F00C27DAD</string>
+				<string>62CBBC3C1C7E317F00C27DAD</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>62CBBC3B1C7E317F00C27DAD</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>Tests/UITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.alexisdigital.MassStateKenoUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>MassLotteryKeno</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>MassStateKeno</string>
+				<key>USES_XCTRUNNER</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>62CBBC3C1C7E317F00C27DAD</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>Tests/UITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.alexisdigital.MassStateKenoUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>MassLotteryKeno</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>MassStateKeno</string>
+				<key>USES_XCTRUNNER</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>62CBBC3D1C7E31A200C27DAD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>62CBBC161C7E317F00C27DAD</string>
+				<string>62CBBC181C7E317F00C27DAD</string>
+				<string>62CBBC131C7E317F00C27DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC3E1C7E31A900C27DAD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>62CBBC2E1C7E317F00C27DAD</string>
+				<string>62CBBC231C7E317F00C27DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Tests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC3F1C7E31BC00C27DAD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>62CBBC1B1C7E317F00C27DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>SupportFiles</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC401C7E31E100C27DAD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>LinearGradient.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC411C7E31E100C27DAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>62CBBC401C7E31E100C27DAD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>62CBBC421C7E36CA00C27DAD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>NumberCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC431C7E36CA00C27DAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>62CBBC421C7E36CA00C27DAD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>62CBBC441C7E36CE00C27DAD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>628E6C651CAE11A900B07671</string>
+				<string>62CBBC401C7E31E100C27DAD</string>
+				<string>628E6C661CAE126000B07671</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Library</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC451C7E371100C27DAD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>NumberGridController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC461C7E371100C27DAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>62CBBC451C7E371100C27DAD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>62CBBC681C7E541E00C27DAD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>DecodedDrawing.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62CBBC691C7E541E00C27DAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>62CBBC681C7E541E00C27DAD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>62CF547D1C9A3C39004197F0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array>
+				<string>$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework</string>
+				<string>$(SRCROOT)/Carthage/Build/iOS/Curry.framework</string>
+				<string>$(SRCROOT)/Carthage/Build/iOS/Argo.framework</string>
+			</array>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Run Script</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>/usr/local/bin/carthage copy-frameworks</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>62CBBC041C7E317F00C27DAD</string>
+</dict>
+</plist>
