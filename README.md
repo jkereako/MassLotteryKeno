@@ -1,5 +1,5 @@
 # MassLotteryKeno
-Reports the results for a single drawing of Mass State Keno.
+Reports the results of a single drawing of Mass State Keno.
 
 <img src="https://raw.githubusercontent.com/jkereako/MassStateKeno/master/Images/screen.png" alt="KENO" width="320" height="568" />
 
