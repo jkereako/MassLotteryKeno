@@ -1,4 +1,4 @@
 github "Alamofire/Alamofire" ~> 3.3.0
-github "jkereako/Argo" "v2.3.0"
+github "thoughtbot/Argo" "v3.0.1"
 github "thoughtbot/Curry" "v2.0.0"
 
