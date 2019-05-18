@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05D849E1609D580E9DC2A1E2 /* Pods_MassLotteryKenoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA480B55BAA03E368457166E /* Pods_MassLotteryKenoTests.framework */; };
+		3D626E41F8A07D8B52A1340E /* Pods_MassLotteryKenoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C9B8933F6A23C3B765A0C9 /* Pods_MassLotteryKenoUITests.framework */; };
+		51BC8EF4DCBE0932DB51B66E /* Pods_MassLotteryKeno.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4611EE5B629924467B7E449 /* Pods_MassLotteryKeno.framework */; };
 		6274345F1C9B275D0054DCBD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6274345E1C9B275D0054DCBD /* AppCoordinator.swift */; };
 		627434611C9B27810054DCBD /* KenoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627434601C9B27810054DCBD /* KenoCoordinator.swift */; };
 		627434631C9B27920054DCBD /* NumberGridCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627434621C9B27920054DCBD /* NumberGridCoordinator.swift */; };
-		628E6C641CAE110E00B07671 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628E6C631CAE110E00B07671 /* Router.swift */; };
+		628BC4FA2290C179008AD258 /* MassLotteryEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628BC4F92290C179008AD258 /* MassLotteryEndpoint.swift */; };
 		62B832111C9A55A1007831B4 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B832101C9A55A1007831B4 /* Day.swift */; };
 		62BD2E891C9CCA4800B2DF64 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD2E881C9CCA4800B2DF64 /* CoordinatorProtocol.swift */; };
 		62BD2E8B1C9CCB2D00B2DF64 /* ControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD2E8A1C9CCB2D00B2DF64 /* ControllerProtocol.swift */; };
@@ -45,10 +48,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		053135189A709C0F6AD121F5 /* Pods-MassLotteryKenoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassLotteryKenoTests.debug.xcconfig"; path = "Target Support Files/Pods-MassLotteryKenoTests/Pods-MassLotteryKenoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		30C9B8933F6A23C3B765A0C9 /* Pods_MassLotteryKenoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MassLotteryKenoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50DC6E416FB39DC9B78EA73C /* Pods-MassLotteryKenoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassLotteryKenoTests.release.xcconfig"; path = "Target Support Files/Pods-MassLotteryKenoTests/Pods-MassLotteryKenoTests.release.xcconfig"; sourceTree = "<group>"; };
 		6274345E1C9B275D0054DCBD /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		627434601C9B27810054DCBD /* KenoCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenoCoordinator.swift; sourceTree = "<group>"; };
 		627434621C9B27920054DCBD /* NumberGridCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberGridCoordinator.swift; sourceTree = "<group>"; };
-		628E6C631CAE110E00B07671 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		628BC4F92290C179008AD258 /* MassLotteryEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassLotteryEndpoint.swift; sourceTree = "<group>"; };
 		62B832101C9A55A1007831B4 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		62BD2E881C9CCA4800B2DF64 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		62BD2E8A1C9CCB2D00B2DF64 /* ControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerProtocol.swift; sourceTree = "<group>"; };
@@ -69,6 +75,12 @@
 		62CBBC421C7E36CA00C27DAD /* NumberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberCell.swift; sourceTree = "<group>"; };
 		62CBBC451C7E371100C27DAD /* NumberCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberCollectionViewController.swift; sourceTree = "<group>"; };
 		62CBBC681C7E541E00C27DAD /* Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
+		73BD1A360D3ADD78FCE11EA7 /* Pods-MassLotteryKeno.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassLotteryKeno.debug.xcconfig"; path = "Target Support Files/Pods-MassLotteryKeno/Pods-MassLotteryKeno.debug.xcconfig"; sourceTree = "<group>"; };
+		8F0944E8F76FEC24878DEBA1 /* Pods-MassLotteryKenoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassLotteryKenoUITests.release.xcconfig"; path = "Target Support Files/Pods-MassLotteryKenoUITests/Pods-MassLotteryKenoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9B60E3380649B2F402AEF0C4 /* Pods-MassLotteryKenoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassLotteryKenoUITests.debug.xcconfig"; path = "Target Support Files/Pods-MassLotteryKenoUITests/Pods-MassLotteryKenoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA480B55BAA03E368457166E /* Pods_MassLotteryKenoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MassLotteryKenoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4611EE5B629924467B7E449 /* Pods_MassLotteryKeno.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MassLotteryKeno.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3992F96C40DB6A5942A1059 /* Pods-MassLotteryKeno.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassLotteryKeno.release.xcconfig"; path = "Target Support Files/Pods-MassLotteryKeno/Pods-MassLotteryKeno.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51BC8EF4DCBE0932DB51B66E /* Pods_MassLotteryKeno.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05D849E1609D580E9DC2A1E2 /* Pods_MassLotteryKenoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +104,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D626E41F8A07D8B52A1340E /* Pods_MassLotteryKenoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5EBF9C58D34FE2F43A504339 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4611EE5B629924467B7E449 /* Pods_MassLotteryKeno.framework */,
+				BA480B55BAA03E368457166E /* Pods_MassLotteryKenoTests.framework */,
+				30C9B8933F6A23C3B765A0C9 /* Pods_MassLotteryKenoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		622E6C3D1C9B533700007EBE /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,14 +159,6 @@
 			path = Contracts;
 			sourceTree = "<group>";
 		};
-		628E6C651CAE11A900B07671 /* MassLotteryAPI */ = {
-			isa = PBXGroup;
-			children = (
-				628E6C631CAE110E00B07671 /* Router.swift */,
-			);
-			path = MassLotteryAPI;
-			sourceTree = "<group>";
-		};
 		62CBBC031C7E317F00C27DAD = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +168,8 @@
 				62CBBC0E1C7E317F00C27DAD /* Sources */,
 				62CBBC3F1C7E31BC00C27DAD /* SupportFiles */,
 				62CBBC3E1C7E31A900C27DAD /* Tests */,
+				7FA99C54F6AB1F315DF73DB4 /* Pods */,
+				5EBF9C58D34FE2F43A504339 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,6 +191,7 @@
 				6274345D1C9B239E0054DCBD /* Contracts */,
 				6274345B1C9B23830054DCBD /* Views */,
 				62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */,
+				628BC4F92290C179008AD258 /* MassLotteryEndpoint.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -224,10 +244,22 @@
 		62CBBC441C7E36CE00C27DAD /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				628E6C651CAE11A900B07671 /* MassLotteryAPI */,
 				62CBBC401C7E31E100C27DAD /* LinearGradient.swift */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		7FA99C54F6AB1F315DF73DB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73BD1A360D3ADD78FCE11EA7 /* Pods-MassLotteryKeno.debug.xcconfig */,
+				F3992F96C40DB6A5942A1059 /* Pods-MassLotteryKeno.release.xcconfig */,
+				053135189A709C0F6AD121F5 /* Pods-MassLotteryKenoTests.debug.xcconfig */,
+				50DC6E416FB39DC9B78EA73C /* Pods-MassLotteryKenoTests.release.xcconfig */,
+				9B60E3380649B2F402AEF0C4 /* Pods-MassLotteryKenoUITests.debug.xcconfig */,
+				8F0944E8F76FEC24878DEBA1 /* Pods-MassLotteryKenoUITests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,9 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62CBBC341C7E317F00C27DAD /* Build configuration list for PBXNativeTarget "MassLotteryKeno" */;
 			buildPhases = (
+				8F7AFF1662CB4BB458A076F0 /* [CP] Check Pods Manifest.lock */,
 				62CBBC081C7E317F00C27DAD /* Sources */,
 				62CBBC091C7E317F00C27DAD /* Frameworks */,
 				62CBBC0A1C7E317F00C27DAD /* Resources */,
+				9F0AB6DA5784020797D8F53B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,6 +288,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62CBBC371C7E317F00C27DAD /* Build configuration list for PBXNativeTarget "MassLotteryKenoTests" */;
 			buildPhases = (
+				12D47C110FF11ADA0575DDA6 /* [CP] Check Pods Manifest.lock */,
 				62CBBC1C1C7E317F00C27DAD /* Sources */,
 				62CBBC1D1C7E317F00C27DAD /* Frameworks */,
 				62CBBC1E1C7E317F00C27DAD /* Resources */,
@@ -272,6 +307,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62CBBC3A1C7E317F00C27DAD /* Build configuration list for PBXNativeTarget "MassLotteryKenoUITests" */;
 			buildPhases = (
+				1F0F7DE1794801513629B910 /* [CP] Check Pods Manifest.lock */,
 				62CBBC271C7E317F00C27DAD /* Sources */,
 				62CBBC281C7E317F00C27DAD /* Frameworks */,
 				62CBBC291C7E317F00C27DAD /* Resources */,
@@ -357,11 +393,107 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		12D47C110FF11ADA0575DDA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MassLotteryKenoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F0F7DE1794801513629B910 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MassLotteryKenoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F7AFF1662CB4BB458A076F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MassLotteryKeno-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F0AB6DA5784020797D8F53B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MassLotteryKeno/Pods-MassLotteryKeno-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kringle/Kringle.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kringle.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promises.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MassLotteryKeno/Pods-MassLotteryKeno-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		62CBBC081C7E317F00C27DAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				628BC4FA2290C179008AD258 /* MassLotteryEndpoint.swift in Sources */,
 				627434631C9B27920054DCBD /* NumberGridCoordinator.swift in Sources */,
 				62B832111C9A55A1007831B4 /* Day.swift in Sources */,
 				627434611C9B27810054DCBD /* KenoCoordinator.swift in Sources */,
@@ -372,7 +504,6 @@
 				62CBBC101C7E317F00C27DAD /* AppDelegate.swift in Sources */,
 				62CBBC691C7E541E00C27DAD /* Drawing.swift in Sources */,
 				62BD2E891C9CCA4800B2DF64 /* CoordinatorProtocol.swift in Sources */,
-				628E6C641CAE110E00B07671 /* Router.swift in Sources */,
 				62BD2E8B1C9CCB2D00B2DF64 /* ControllerProtocol.swift in Sources */,
 				62CBBC411C7E31E100C27DAD /* LinearGradient.swift in Sources */,
 			);
@@ -579,6 +710,7 @@
 		};
 		62CBBC351C7E317F00C27DAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73BD1A360D3ADD78FCE11EA7 /* Pods-MassLotteryKeno.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -604,6 +736,7 @@
 		};
 		62CBBC361C7E317F00C27DAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3992F96C40DB6A5942A1059 /* Pods-MassLotteryKeno.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -629,6 +762,7 @@
 		};
 		62CBBC381C7E317F00C27DAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 053135189A709C0F6AD121F5 /* Pods-MassLotteryKenoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
@@ -645,6 +779,7 @@
 		};
 		62CBBC391C7E317F00C27DAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50DC6E416FB39DC9B78EA73C /* Pods-MassLotteryKenoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
@@ -661,6 +796,7 @@
 		};
 		62CBBC3B1C7E317F00C27DAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B60E3380649B2F402AEF0C4 /* Pods-MassLotteryKenoUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -677,6 +813,7 @@
 		};
 		62CBBC3C1C7E317F00C27DAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F0944E8F76FEC24878DEBA1 /* Pods-MassLotteryKenoUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
