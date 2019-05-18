@@ -9,7 +9,7 @@
 import Foundation
 
 final class KenoCoordinator: NSObject, Coordinator {
-  var day: DecodedDay? {
+  var day: Day? {
     didSet {
       self.controller.day = day
     }

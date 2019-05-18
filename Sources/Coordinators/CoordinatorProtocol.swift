@@ -9,5 +9,5 @@
 import Foundation
 
 protocol Coordinator {
-  var day: DecodedDay? { get set }
+  var day: Day? { get set }
 }
