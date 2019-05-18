@@ -19,7 +19,6 @@ extension MassLotteryEndpoint: Endpoint {
         switch self {
         case .todaysGames:
             return "/search/dailygames/todays/15.json"
-
         }
     }
 }
