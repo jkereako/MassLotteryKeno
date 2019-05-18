@@ -14,6 +14,8 @@
 		627434611C9B27810054DCBD /* KenoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627434601C9B27810054DCBD /* KenoCoordinator.swift */; };
 		627434631C9B27920054DCBD /* NumberGridCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627434621C9B27920054DCBD /* NumberGridCoordinator.swift */; };
 		628BC4FA2290C179008AD258 /* MassLotteryEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628BC4F92290C179008AD258 /* MassLotteryEndpoint.swift */; };
+		628BC4FD2290CC2C008AD258 /* NumberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628BC4FB2290CC2C008AD258 /* NumberCollectionViewCell.swift */; };
+		628BC4FE2290CC2C008AD258 /* NumberCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 628BC4FC2290CC2C008AD258 /* NumberCollectionViewCell.xib */; };
 		62B832111C9A55A1007831B4 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B832101C9A55A1007831B4 /* Day.swift */; };
 		62BD2E891C9CCA4800B2DF64 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD2E881C9CCA4800B2DF64 /* CoordinatorProtocol.swift */; };
 		62BD2E8B1C9CCB2D00B2DF64 /* ControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD2E8A1C9CCB2D00B2DF64 /* ControllerProtocol.swift */; };
@@ -55,6 +57,8 @@
 		627434601C9B27810054DCBD /* KenoCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenoCoordinator.swift; sourceTree = "<group>"; };
 		627434621C9B27920054DCBD /* NumberGridCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberGridCoordinator.swift; sourceTree = "<group>"; };
 		628BC4F92290C179008AD258 /* MassLotteryEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassLotteryEndpoint.swift; sourceTree = "<group>"; };
+		628BC4FB2290CC2C008AD258 /* NumberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCollectionViewCell.swift; sourceTree = "<group>"; };
+		628BC4FC2290CC2C008AD258 /* NumberCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberCollectionViewCell.xib; sourceTree = "<group>"; };
 		62B832101C9A55A1007831B4 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		62BD2E881C9CCA4800B2DF64 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		62BD2E8A1C9CCB2D00B2DF64 /* ControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerProtocol.swift; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				62CBBC421C7E36CA00C27DAD /* NumberCell.swift */,
+				628BC4FB2290CC2C008AD258 /* NumberCollectionViewCell.swift */,
+				628BC4FC2290CC2C008AD258 /* NumberCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -372,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62CBBC1A1C7E317F00C27DAD /* LaunchScreen.storyboard in Resources */,
+				628BC4FE2290CC2C008AD258 /* NumberCollectionViewCell.xib in Resources */,
 				62CBBC171C7E317F00C27DAD /* Assets.xcassets in Resources */,
 				62CBBC151C7E317F00C27DAD /* Main.storyboard in Resources */,
 			);
@@ -494,6 +501,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				628BC4FA2290C179008AD258 /* MassLotteryEndpoint.swift in Sources */,
+				628BC4FD2290CC2C008AD258 /* NumberCollectionViewCell.swift in Sources */,
 				627434631C9B27920054DCBD /* NumberGridCoordinator.swift in Sources */,
 				62B832111C9A55A1007831B4 /* Day.swift in Sources */,
 				627434611C9B27810054DCBD /* KenoCoordinator.swift in Sources */,
