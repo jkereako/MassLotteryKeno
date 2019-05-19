@@ -11,13 +11,11 @@ import Kringle
 
 final class AppCoordinator {
     var homeViewController: UIViewController {
+        let viewController = NumberViewController()
+        let dateFormatter = DateFormatter()
         let promise = networkClient.get(
             MassLotteryEndpoint.todaysGames, decodingResponseTo: GameDayContract.self
         )
-        
-        let viewController = NumberViewController()
-        
-        let dateFormatter = DateFormatter()
         
         promise.then { gameDay in
             guard let drawing = gameDay.drawings.first else {
@@ -33,16 +31,16 @@ final class AppCoordinator {
             numberViewModel.delegate = viewController
             viewController.viewModel = numberViewModel
             }.catch { _ in
-
+                
                 // Displays an alert if the promise is rejected
                 let alertController = UIAlertController(
                     title: "Network Error",
                     message: "We weren't able to load today's winning numbers. Please try again later.",
                     preferredStyle: .alert
                 )
-
+                
                 alertController.addAction(UIAlertAction(title: "Okay", style: .cancel))
-
+                
                 viewController.show(alertController, sender: self)
         }
         

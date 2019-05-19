@@ -165,6 +165,14 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		628BC51422911137008AD258 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				628BC50F2290F4DA008AD258 /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		62CBBC031C7E317F00C27DAD = {
 			isa = PBXGroup;
 			children = (
@@ -192,12 +200,12 @@
 		62CBBC0E1C7E317F00C27DAD /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				628BC51422911137008AD258 /* Coordinators */,
 				62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */,
 				628BC51122910AE5008AD258 /* API */,
 				628BC50A2290E0CF008AD258 /* Models */,
 				628BC5072290D93A008AD258 /* ViewModels */,
 				6274345B1C9B23830054DCBD /* Views */,
-				628BC50F2290F4DA008AD258 /* AppCoordinator.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
