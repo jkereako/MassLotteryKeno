@@ -11,27 +11,32 @@ import Kringle
 
 final class AppCoordinator {
     var homeViewController: UIViewController {
-        let viewController = NumberViewController()
-        let dateFormatter = DateFormatter()
+        let drawingTableViewController = DrawingTableViewController()
         let promise = networkClient.get(
             MassLotteryEndpoint.todaysGames, decodingResponseTo: GameDayContract.self
         )
-        
-        promise.then { gameDay in
-            guard let drawing = gameDay.drawings.first else {
-                return
+
+        promise.then { [weak self] gameDay in
+            var drawingViewModels =  [DrawingViewModel]()
+            let aDateFormatter = self?.dateFormatter ?? DateFormatter()
+
+            gameDay.drawings.forEach { drawingContract in
+                let drawingModel = DrawingModel(
+                    contract: drawingContract, dateFormatter: aDateFormatter
+                )
+
+                drawingViewModels.append(
+                    DrawingViewModel(model: drawingModel)
+                )
             }
+
+            let drawingTableViewModel = DrawingTableViewModel(drawingViewModels: drawingViewModels)
+
+            drawingTableViewModel.dataSource = drawingTableViewController
+            drawingTableViewModel.delegate = self
+            drawingTableViewController.viewModel = drawingTableViewModel
             
-            let drawingModel = DrawingModel(contract: drawing, dateFormatter: dateFormatter)
-            let numberViewModel = NumberViewModel(
-                drawing: drawingModel,
-                dateFormatter: dateFormatter
-            )
-            
-            numberViewModel.delegate = viewController
-            viewController.viewModel = numberViewModel
             }.catch { _ in
-                
                 // Displays an alert if the promise is rejected
                 let alertController = UIAlertController(
                     title: "Network Error",
@@ -41,15 +46,37 @@ final class AppCoordinator {
                 
                 alertController.addAction(UIAlertAction(title: "Okay", style: .cancel))
                 
-                viewController.show(alertController, sender: self)
+                drawingTableViewController.show(alertController, sender: self)
         }
-        
-        return viewController
+
+        navigationController = UINavigationController(
+            rootViewController: drawingTableViewController
+        )
+
+        return navigationController!
     }
     
     private let networkClient: NetworkClientType
-    
+    private let dateFormatter: DateFormatter
+    private var navigationController: UINavigationController?
+
     init(networkClient: NetworkClientType) {
         self.networkClient = networkClient
+        dateFormatter = DateFormatter()
+    }
+}
+
+// MARK: - DrawingTableViewModelDelegate
+extension AppCoordinator: DrawingTableViewModelDelegate {
+    func didSelect(_ drawingViewModel: DrawingViewModel) {
+        let numberViewController = NumberViewController()
+        let numberViewModel = NumberViewModel(
+            drawing: drawingViewModel.model, dateFormatter: dateFormatter
+        )
+
+        numberViewModel.dataSource = numberViewController
+        numberViewController.viewModel = numberViewModel
+        
+        navigationController?.show(numberViewController, sender: self)
     }
 }

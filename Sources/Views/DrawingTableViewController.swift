@@ -9,19 +9,41 @@
 import UIKit
 
 final class DrawingTableViewController: UITableViewController {
+    var viewModel: DrawingTableViewModel? {
+        didSet {
+            tableView.dataSource = viewModel
+            tableView.delegate = viewModel
+            tableView.reloadData()
+        }
+    }
+
+    init() {
+        super.init(style: .grouped)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        title = "Today's Drawings"
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        let nib = UINib(
+            nibName: cellReuseIdentifier, bundle: Bundle(for: DrawingTableViewCell.self)
+        )
+
+        tableView.register(nib, forCellReuseIdentifier: cellReuseIdentifier)
+        tableView.backgroundColor = UIColor(named: "MediumBlue")
+        tableView.separatorStyle = .none
+        tableView.dataSource = viewModel
+        tableView.delegate = viewModel
     }
 }
 
-extension DrawingTableViewController: DrawingTableViewModelDelegate {
+// MARK: - DrawingTableViewModelDataSource
+extension DrawingTableViewController: DrawingTableViewModelDataSource {
     var cellReuseIdentifier: String {
         return "DrawingTableViewCell"
     }

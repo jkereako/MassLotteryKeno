@@ -14,41 +14,27 @@ final class NumberViewController: UIViewController {
     @IBOutlet private weak var bonusMultiplier: UILabel!
     @IBOutlet private weak var numberCollectionView: UICollectionView!
 
-    private let collectionViewCellType: UICollectionViewCell.Type
-    private let aCellReuseIdentifier: String
-
-    var viewModel: NumberViewModel! {
-        didSet {
-            gameIdentifier.text = viewModel.gameIdentifier
-            drawDate.text = viewModel.drawDate
-            bonusMultiplier.text = viewModel.bonusMultiplier
-
-            numberCollectionView.dataSource = viewModel
-            numberCollectionView.delegate = viewModel
-            numberCollectionView.reloadData()
-        }
-    }
+    var viewModel: NumberViewModel?
 
     init() {
-        collectionViewCellType = NumberCollectionViewCell.self
-        aCellReuseIdentifier = String(describing: collectionViewCellType)
-
         super.init(nibName: "NumberView", bundle: Bundle(for: NumberViewController.self))
     }
 
     required init?(coder aDecoder: NSCoder) {
-        collectionViewCellType = NumberCollectionViewCell.self
-        aCellReuseIdentifier = String(describing: collectionViewCellType)
-
         super.init(coder: aDecoder)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        gameIdentifier.text = nil
-        drawDate.text = nil
-        bonusMultiplier.text = nil
+        title = "Winning Numbers"
+
+        numberCollectionView.dataSource = viewModel
+        numberCollectionView.delegate = viewModel
+
+        gameIdentifier.text = viewModel?.gameIdentifier
+        drawDate.text = viewModel?.drawDate
+        bonusMultiplier.text = viewModel?.bonusMultiplier
 
         guard let layout = numberCollectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
             assertionFailure("Expected a UICollectionViewFlowLayout.")
@@ -58,19 +44,26 @@ final class NumberViewController: UIViewController {
         layout.itemSize = CGSize(width: 64, height: 64)
 
         let nib = UINib(
-            nibName: cellReuseIdentifier, bundle: Bundle(for: collectionViewCellType)
+            nibName: cellReuseIdentifier, bundle: Bundle(for: NumberCollectionViewCell.self)
         )
 
         numberCollectionView.register(
             nib, forCellWithReuseIdentifier: cellReuseIdentifier
         )
     }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        viewModel?.dataSource = nil
+        viewModel = nil
+    }
 }
 
-// MARK: - NumberViewModelDelegate
-extension NumberViewController: NumberViewModelDelegate {
+// MARK: - NumberViewModelDataSource
+extension NumberViewController: NumberViewModelDataSource {
     var cellReuseIdentifier: String {
-        return aCellReuseIdentifier
+        return "NumberCollectionViewCell"
     }
 
     func configure(_ cell: UICollectionViewCell, with number: String) -> UICollectionViewCell {

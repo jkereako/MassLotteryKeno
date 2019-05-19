@@ -8,15 +8,19 @@
 
 import Foundation
 
-final class DrawingViewModel {
+struct DrawingViewModel {
+    let model: DrawingModel
     let gameIdentifier: String
     let bonus: String
-
-    private let model: DrawingModel
-
+    
     init(model: DrawingModel) {
         self.model = model
         gameIdentifier = "#\(model.id)"
-        bonus = "\(model.bonus)X"
+        
+        if model.bonus > 1 {
+            bonus = "\(model.bonus)X"
+        } else {
+            bonus = ""
+        }
     }
 }

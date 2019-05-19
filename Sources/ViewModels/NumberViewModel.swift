@@ -8,14 +8,14 @@
 
 import UIKit
 
-protocol NumberViewModelDelegate: class {
+protocol NumberViewModelDataSource: class {
     var cellReuseIdentifier: String { get }
 
     func configure(_ cell: UICollectionViewCell, with number: String) -> UICollectionViewCell
 }
 
 final class NumberViewModel: NSObject {
-    weak var delegate: NumberViewModelDelegate?
+    weak var dataSource: NumberViewModelDataSource?
 
     let gameIdentifier: String
     let drawDate: String
@@ -55,7 +55,7 @@ extension NumberViewModel: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        guard let cellReuseIdentifier = delegate?.cellReuseIdentifier else {
+        guard let cellReuseIdentifier = dataSource?.cellReuseIdentifier else {
             assertionFailure("Expected a value")
 
             return UICollectionViewCell()
@@ -65,7 +65,7 @@ extension NumberViewModel: UICollectionViewDataSource {
             withReuseIdentifier: cellReuseIdentifier, for: indexPath
         )
 
-        return delegate?.configure(cell, with: numbers[indexPath.row]) ?? UICollectionViewCell()
+        return dataSource?.configure(cell, with: numbers[indexPath.row]) ?? UICollectionViewCell()
     }
 }
 

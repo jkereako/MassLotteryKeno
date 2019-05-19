@@ -33,7 +33,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" name="Black"/>
+                <color key="backgroundColor" name="MediumBlue"/>
                 <constraints>
                     <constraint firstItem="xp9-3e-are" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7Ah-Ju-1vH"/>
                     <constraint firstItem="1WG-QK-cTy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="dQ4-6u-ZHQ"/>
@@ -43,14 +43,18 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bonusMultiplier" destination="xp9-3e-are" id="Ney-zW-tiH"/>
+                <outlet property="gameIdentifier" destination="1WG-QK-cTy" id="RHe-X4-5Sg"/>
+            </connections>
         </tableViewCell>
     </objects>
     <resources>
-        <namedColor name="Black">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Gold">
             <color red="0.71372549019607845" green="0.80000000000000004" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MediumBlue">
+            <color red="0.0" green="0.25099998712539673" blue="0.50199997425079346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -8,42 +8,59 @@
 
 import UIKit
 
-protocol DrawingTableViewModelDelegate: class {
+protocol DrawingTableViewModelDataSource: class {
     var cellReuseIdentifier: String { get }
     
     func configure(_ cell: UITableViewCell, with drawingViewModel: DrawingViewModel) -> UITableViewCell
 }
 
+protocol DrawingTableViewModelDelegate: class {
+    func didSelect(_ drawingViewModel: DrawingViewModel)
+}
+
 final class DrawingTableViewModel: NSObject {
+    weak var dataSource: DrawingTableViewModelDataSource?
     weak var delegate: DrawingTableViewModelDelegate?
-
+    
     private let drawingViewModels: [DrawingViewModel]
-
+    
     init(drawingViewModels: [DrawingViewModel]) {
         self.drawingViewModels = drawingViewModels
     }
 }
 
+// MARK: - UITableViewDataSource
 extension DrawingTableViewModel: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return drawingViewModels.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cellReuseIdentifier = delegate?.cellReuseIdentifier else {
+        guard let cellReuseIdentifier = dataSource?.cellReuseIdentifier else {
             assertionFailure("Expected a value")
-
+            
             return UITableViewCell()
         }
-
+        
         let cell = tableView.dequeueReusableCell(
             withIdentifier: cellReuseIdentifier, for: indexPath
         )
+        
+        return dataSource?.configure(cell, with: drawingViewModels[indexPath.row]) ?? UITableViewCell()
+    }
+}
 
-        return delegate?.configure(cell, with: drawingViewModels[indexPath.row]) ?? UITableViewCell()
+// MARK: - UITableViewDelegate
+extension DrawingTableViewModel: UITableViewDelegate {
+    func tableView(_ tableView: UITableView,
+                   heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 64
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.didSelect(drawingViewModels[indexPath.row])
     }
 }
