@@ -10,6 +10,11 @@
 		05D849E1609D580E9DC2A1E2 /* Pods_MassLotteryKenoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA480B55BAA03E368457166E /* Pods_MassLotteryKenoTests.framework */; };
 		3D626E41F8A07D8B52A1340E /* Pods_MassLotteryKenoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C9B8933F6A23C3B765A0C9 /* Pods_MassLotteryKenoUITests.framework */; };
 		51BC8EF4DCBE0932DB51B66E /* Pods_MassLotteryKeno.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4611EE5B629924467B7E449 /* Pods_MassLotteryKeno.framework */; };
+		6213BA7E229199070028BB8E /* DrawingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6213BA7D229199070028BB8E /* DrawingTableViewController.swift */; };
+		6213BA81229199D60028BB8E /* DrawingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6213BA7F229199D60028BB8E /* DrawingTableViewCell.swift */; };
+		6213BA82229199D60028BB8E /* DrawingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6213BA80229199D60028BB8E /* DrawingTableViewCell.xib */; };
+		6213BA8422919C320028BB8E /* DrawingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6213BA8322919C320028BB8E /* DrawingViewModel.swift */; };
+		6213BA8622919EDD0028BB8E /* DrawingTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6213BA8522919EDD0028BB8E /* DrawingTableViewModel.swift */; };
 		628BC4FA2290C179008AD258 /* MassLotteryEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628BC4F92290C179008AD258 /* MassLotteryEndpoint.swift */; };
 		628BC4FD2290CC2C008AD258 /* NumberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628BC4FB2290CC2C008AD258 /* NumberCollectionViewCell.swift */; };
 		628BC4FE2290CC2C008AD258 /* NumberCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 628BC4FC2290CC2C008AD258 /* NumberCollectionViewCell.xib */; };
@@ -50,6 +55,11 @@
 		053135189A709C0F6AD121F5 /* Pods-MassLotteryKenoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassLotteryKenoTests.debug.xcconfig"; path = "Target Support Files/Pods-MassLotteryKenoTests/Pods-MassLotteryKenoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		30C9B8933F6A23C3B765A0C9 /* Pods_MassLotteryKenoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MassLotteryKenoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50DC6E416FB39DC9B78EA73C /* Pods-MassLotteryKenoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassLotteryKenoTests.release.xcconfig"; path = "Target Support Files/Pods-MassLotteryKenoTests/Pods-MassLotteryKenoTests.release.xcconfig"; sourceTree = "<group>"; };
+		6213BA7D229199070028BB8E /* DrawingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingTableViewController.swift; sourceTree = "<group>"; };
+		6213BA7F229199D60028BB8E /* DrawingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingTableViewCell.swift; sourceTree = "<group>"; };
+		6213BA80229199D60028BB8E /* DrawingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawingTableViewCell.xib; sourceTree = "<group>"; };
+		6213BA8322919C320028BB8E /* DrawingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewModel.swift; sourceTree = "<group>"; };
+		6213BA8522919EDD0028BB8E /* DrawingTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingTableViewModel.swift; sourceTree = "<group>"; };
 		628BC4F92290C179008AD258 /* MassLotteryEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassLotteryEndpoint.swift; sourceTree = "<group>"; };
 		628BC4FB2290CC2C008AD258 /* NumberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCollectionViewCell.swift; sourceTree = "<group>"; };
 		628BC4FC2290CC2C008AD258 /* NumberCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -126,6 +136,9 @@
 				628BC4FC2290CC2C008AD258 /* NumberCollectionViewCell.xib */,
 				628BC5032290D21C008AD258 /* NumberViewController.swift */,
 				628BC5042290D21C008AD258 /* NumberView.xib */,
+				6213BA7D229199070028BB8E /* DrawingTableViewController.swift */,
+				6213BA7F229199D60028BB8E /* DrawingTableViewCell.swift */,
+				6213BA80229199D60028BB8E /* DrawingTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				628BC5082290D975008AD258 /* NumberViewModel.swift */,
+				6213BA8322919C320028BB8E /* DrawingViewModel.swift */,
+				6213BA8522919EDD0028BB8E /* DrawingTableViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -386,6 +401,7 @@
 			files = (
 				628BC5132291102A008AD258 /* LaunchScreen.xib in Resources */,
 				628BC5062290D21C008AD258 /* NumberView.xib in Resources */,
+				6213BA82229199D60028BB8E /* DrawingTableViewCell.xib in Resources */,
 				628BC4FE2290CC2C008AD258 /* NumberCollectionViewCell.xib in Resources */,
 				62CBBC171C7E317F00C27DAD /* Assets.xcassets in Resources */,
 			);
@@ -507,15 +523,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6213BA7E229199070028BB8E /* DrawingTableViewController.swift in Sources */,
 				628BC5102290F4DA008AD258 /* AppCoordinator.swift in Sources */,
 				628BC4FA2290C179008AD258 /* MassLotteryEndpoint.swift in Sources */,
+				6213BA8622919EDD0028BB8E /* DrawingTableViewModel.swift in Sources */,
 				628BC4FD2290CC2C008AD258 /* NumberCollectionViewCell.swift in Sources */,
+				6213BA81229199D60028BB8E /* DrawingTableViewCell.swift in Sources */,
 				628BC50C2290E0E3008AD258 /* DrawingModel.swift in Sources */,
 				62B832111C9A55A1007831B4 /* GameDayContract.swift in Sources */,
 				628BC5092290D975008AD258 /* NumberViewModel.swift in Sources */,
 				628BC5052290D21C008AD258 /* NumberViewController.swift in Sources */,
 				62CBBC101C7E317F00C27DAD /* AppDelegate.swift in Sources */,
 				628BC50E2290E3E7008AD258 /* GameDayModel.swift in Sources */,
+				6213BA8422919C320028BB8E /* DrawingViewModel.swift in Sources */,
 				62CBBC691C7E541E00C27DAD /* DrawingContract.swift in Sources */,
 				62CBBC411C7E31E100C27DAD /* LinearGradient.swift in Sources */,
 			);
