@@ -1,15 +1,9 @@
-# MassLotteryKeno
+# Mass Lottery Keno
 Reports the results of a single drawing of Mass State Keno.
 
 <img src="https://raw.githubusercontent.com/jkereako/MassStateKeno/master/Images/screen.png" alt="KENO" width="320" height="568" />
 
-This was a fun project to see if I could recreate the striking UI of Mass State
-Keno and as an exercise with [Argo] and [Alamofire]. Additionally, I also tried
-my hand at [coordinators][coord]. It's a bastardized version of coordinators, so
-much so that I'm not sure if it offers any benefit. This is a direct symptom of
-relying on InterfaceBuilder.
+This app demonstrates the use of the networking framework [Kringle] and
+presents one method of how to employ MVVM in Swift.
 
-[Argo]: https://github.com/thoughtbot/Argo
-[Alamofire]: https://github.com/Alamofire/Alamofire
-[coord]: http://khanlou.com/2015/10/coordinators-redux/
-
+[Kringle]: https://github.com/jkereako/Kringle
