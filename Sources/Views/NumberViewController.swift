@@ -43,8 +43,12 @@ final class NumberViewController: UIViewController {
         super.init(coder: aDecoder)
     }
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        gameIdentifier.text = nil
+        drawDate.text = nil
+        bonusMultiplier.text = nil
 
         let nib = UINib(
             nibName: cellReuseIdentifier, bundle: Bundle(for: collectionViewCellType)

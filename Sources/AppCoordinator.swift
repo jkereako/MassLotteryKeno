@@ -32,6 +32,8 @@ final class AppCoordinator {
             
             numberViewModel.delegate = viewController
             viewController.viewModel = numberViewModel
+            }.catch { error in
+                print("Oh no!")
         }
         
         return viewController
