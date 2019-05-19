@@ -1,5 +1,5 @@
 //
-//  Day.swift
+//  GameDayContract.swift
 //  MassStateKeno
 //
 //  Created by Jeff Kereakoglow on 3/16/16.
@@ -16,9 +16,9 @@
 
 import Foundation
 
-struct Day: Codable {
-    let date: Date
-    let drawings: [Drawing]
+struct GameDayContract: Codable {
+    let date: String
+    let drawings: [DrawingContract]
 
     enum CodingKeys: String, CodingKey {
         case date

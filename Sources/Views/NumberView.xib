@@ -13,6 +13,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NumberViewController" customModule="MassLotteryKeno" customModuleProvider="target">
             <connections>
+                <outlet property="bonusMultiplier" destination="oiO-Hz-Qpd" id="OT0-e9-q7s"/>
+                <outlet property="drawDate" destination="Dal-D1-tN7" id="IVo-gU-VDR"/>
+                <outlet property="gameIdentifier" destination="Ena-ou-gIz" id="2em-f5-8tV"/>
                 <outlet property="numberCollectionView" destination="R3t-XQ-Lau" id="trJ-si-Z0W"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import Kringle
 
 @UIApplicationMain
 final class AppDelegate: UIResponder {
-  var window: UIWindow?
+    var window: UIWindow?
+
+    private var appCoordinator: AppCoordinator!
 }
 
 // MARK: - UIApplicationDelegate
@@ -18,9 +21,11 @@ extension AppDelegate: UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
+        appCoordinator = AppCoordinator(networkClient: NetworkClient())
+
         // The ol' fashioned way.
         window = UIWindow(frame: UIScreen.main.bounds)
-        window!.rootViewController = NumberViewController()
+        window!.rootViewController = appCoordinator.homeViewController
         window!.makeKeyAndVisible()
 
         return true

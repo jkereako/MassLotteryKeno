@@ -1,5 +1,5 @@
 PODS:
-  - Kringle (0.0.3):
+  - Kringle (0.0.4):
     - PromisesSwift (~> 1.2.8)
   - PromisesObjC (1.2.8)
   - PromisesSwift (1.2.8):
@@ -15,7 +15,7 @@ SPEC REPOS:
     - PromisesSwift
 
 SPEC CHECKSUMS:
-  Kringle: f5b03c4daabc632a4da62d4fe4163cba5f77aa38
+  Kringle: f5db4363831b8cc811b1094eefdad073b183bbe1
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   PromisesSwift: 37bad6f4daddb02f7c9c531efe91e8b21c13ee2f
 
