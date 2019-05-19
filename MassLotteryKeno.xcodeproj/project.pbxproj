@@ -10,27 +10,19 @@
 		05D849E1609D580E9DC2A1E2 /* Pods_MassLotteryKenoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA480B55BAA03E368457166E /* Pods_MassLotteryKenoTests.framework */; };
 		3D626E41F8A07D8B52A1340E /* Pods_MassLotteryKenoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C9B8933F6A23C3B765A0C9 /* Pods_MassLotteryKenoUITests.framework */; };
 		51BC8EF4DCBE0932DB51B66E /* Pods_MassLotteryKeno.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4611EE5B629924467B7E449 /* Pods_MassLotteryKeno.framework */; };
-		6274345F1C9B275D0054DCBD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6274345E1C9B275D0054DCBD /* AppCoordinator.swift */; };
-		627434611C9B27810054DCBD /* KenoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627434601C9B27810054DCBD /* KenoCoordinator.swift */; };
-		627434631C9B27920054DCBD /* NumberGridCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627434621C9B27920054DCBD /* NumberGridCoordinator.swift */; };
 		628BC4FA2290C179008AD258 /* MassLotteryEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628BC4F92290C179008AD258 /* MassLotteryEndpoint.swift */; };
 		628BC4FD2290CC2C008AD258 /* NumberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628BC4FB2290CC2C008AD258 /* NumberCollectionViewCell.swift */; };
 		628BC4FE2290CC2C008AD258 /* NumberCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 628BC4FC2290CC2C008AD258 /* NumberCollectionViewCell.xib */; };
 		628BC5052290D21C008AD258 /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628BC5032290D21C008AD258 /* NumberViewController.swift */; };
-		628BC5062290D21C008AD258 /* NumberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 628BC5042290D21C008AD258 /* NumberViewController.xib */; };
+		628BC5062290D21C008AD258 /* NumberView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 628BC5042290D21C008AD258 /* NumberView.xib */; };
 		62B832111C9A55A1007831B4 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B832101C9A55A1007831B4 /* Day.swift */; };
-		62BD2E891C9CCA4800B2DF64 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD2E881C9CCA4800B2DF64 /* CoordinatorProtocol.swift */; };
-		62BD2E8B1C9CCB2D00B2DF64 /* ControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD2E8A1C9CCB2D00B2DF64 /* ControllerProtocol.swift */; };
 		62CBBC101C7E317F00C27DAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */; };
-		62CBBC121C7E317F00C27DAD /* KenoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC111C7E317F00C27DAD /* KenoViewController.swift */; };
-		62CBBC151C7E317F00C27DAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62CBBC131C7E317F00C27DAD /* Main.storyboard */; };
 		62CBBC171C7E317F00C27DAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62CBBC161C7E317F00C27DAD /* Assets.xcassets */; };
 		62CBBC1A1C7E317F00C27DAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62CBBC181C7E317F00C27DAD /* LaunchScreen.storyboard */; };
 		62CBBC251C7E317F00C27DAD /* MassStateKenoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC241C7E317F00C27DAD /* MassStateKenoTests.swift */; };
 		62CBBC301C7E317F00C27DAD /* MassStateKenoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC2F1C7E317F00C27DAD /* MassStateKenoUITests.swift */; };
 		62CBBC411C7E31E100C27DAD /* LinearGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC401C7E31E100C27DAD /* LinearGradient.swift */; };
 		62CBBC431C7E36CA00C27DAD /* NumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC421C7E36CA00C27DAD /* NumberCell.swift */; };
-		62CBBC461C7E371100C27DAD /* NumberCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC451C7E371100C27DAD /* NumberCollectionViewController.swift */; };
 		62CBBC691C7E541E00C27DAD /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC681C7E541E00C27DAD /* Drawing.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,21 +47,14 @@
 		053135189A709C0F6AD121F5 /* Pods-MassLotteryKenoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassLotteryKenoTests.debug.xcconfig"; path = "Target Support Files/Pods-MassLotteryKenoTests/Pods-MassLotteryKenoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		30C9B8933F6A23C3B765A0C9 /* Pods_MassLotteryKenoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MassLotteryKenoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50DC6E416FB39DC9B78EA73C /* Pods-MassLotteryKenoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassLotteryKenoTests.release.xcconfig"; path = "Target Support Files/Pods-MassLotteryKenoTests/Pods-MassLotteryKenoTests.release.xcconfig"; sourceTree = "<group>"; };
-		6274345E1C9B275D0054DCBD /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		627434601C9B27810054DCBD /* KenoCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenoCoordinator.swift; sourceTree = "<group>"; };
-		627434621C9B27920054DCBD /* NumberGridCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberGridCoordinator.swift; sourceTree = "<group>"; };
 		628BC4F92290C179008AD258 /* MassLotteryEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassLotteryEndpoint.swift; sourceTree = "<group>"; };
 		628BC4FB2290CC2C008AD258 /* NumberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCollectionViewCell.swift; sourceTree = "<group>"; };
 		628BC4FC2290CC2C008AD258 /* NumberCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberCollectionViewCell.xib; sourceTree = "<group>"; };
 		628BC5032290D21C008AD258 /* NumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewController.swift; sourceTree = "<group>"; };
-		628BC5042290D21C008AD258 /* NumberViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberViewController.xib; sourceTree = "<group>"; };
+		628BC5042290D21C008AD258 /* NumberView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberView.xib; sourceTree = "<group>"; };
 		62B832101C9A55A1007831B4 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
-		62BD2E881C9CCA4800B2DF64 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
-		62BD2E8A1C9CCB2D00B2DF64 /* ControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerProtocol.swift; sourceTree = "<group>"; };
 		62CBBC0C1C7E317F00C27DAD /* MassLotteryKeno.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MassLotteryKeno.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		62CBBC111C7E317F00C27DAD /* KenoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenoViewController.swift; sourceTree = "<group>"; };
-		62CBBC141C7E317F00C27DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62CBBC161C7E317F00C27DAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62CBBC191C7E317F00C27DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62CBBC1B1C7E317F00C27DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,7 +66,6 @@
 		62CBBC311C7E317F00C27DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62CBBC401C7E31E100C27DAD /* LinearGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearGradient.swift; sourceTree = "<group>"; };
 		62CBBC421C7E36CA00C27DAD /* NumberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberCell.swift; sourceTree = "<group>"; };
-		62CBBC451C7E371100C27DAD /* NumberCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberCollectionViewController.swift; sourceTree = "<group>"; };
 		62CBBC681C7E541E00C27DAD /* Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
 		73BD1A360D3ADD78FCE11EA7 /* Pods-MassLotteryKeno.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassLotteryKeno.debug.xcconfig"; path = "Target Support Files/Pods-MassLotteryKeno/Pods-MassLotteryKeno.debug.xcconfig"; sourceTree = "<group>"; };
 		8F0944E8F76FEC24878DEBA1 /* Pods-MassLotteryKenoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassLotteryKenoUITests.release.xcconfig"; path = "Target Support Files/Pods-MassLotteryKenoUITests/Pods-MassLotteryKenoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,17 +113,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		622E6C3D1C9B533700007EBE /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-				6274345E1C9B275D0054DCBD /* AppCoordinator.swift */,
-				62BD2E881C9CCA4800B2DF64 /* CoordinatorProtocol.swift */,
-				627434601C9B27810054DCBD /* KenoCoordinator.swift */,
-				627434621C9B27920054DCBD /* NumberGridCoordinator.swift */,
-			);
-			path = Coordinators;
-			sourceTree = "<group>";
-		};
 		6274345B1C9B23830054DCBD /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,19 +120,9 @@
 				628BC4FB2290CC2C008AD258 /* NumberCollectionViewCell.swift */,
 				628BC4FC2290CC2C008AD258 /* NumberCollectionViewCell.xib */,
 				628BC5032290D21C008AD258 /* NumberViewController.swift */,
-				628BC5042290D21C008AD258 /* NumberViewController.xib */,
+				628BC5042290D21C008AD258 /* NumberView.xib */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		6274345C1C9B238A0054DCBD /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				62BD2E8A1C9CCB2D00B2DF64 /* ControllerProtocol.swift */,
-				62CBBC111C7E317F00C27DAD /* KenoViewController.swift */,
-				62CBBC451C7E371100C27DAD /* NumberCollectionViewController.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		6274345D1C9B239E0054DCBD /* Contracts */ = {
@@ -169,6 +132,13 @@
 				62CBBC681C7E541E00C27DAD /* Drawing.swift */,
 			);
 			path = Contracts;
+			sourceTree = "<group>";
+		};
+		628BC5072290D93A008AD258 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		62CBBC031C7E317F00C27DAD = {
@@ -198,8 +168,7 @@
 		62CBBC0E1C7E317F00C27DAD /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				6274345C1C9B238A0054DCBD /* Controllers */,
-				622E6C3D1C9B533700007EBE /* Coordinators */,
+				628BC5072290D93A008AD258 /* ViewModels */,
 				6274345D1C9B239E0054DCBD /* Contracts */,
 				6274345B1C9B23830054DCBD /* Views */,
 				62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */,
@@ -231,7 +200,6 @@
 			children = (
 				62CBBC161C7E317F00C27DAD /* Assets.xcassets */,
 				62CBBC181C7E317F00C27DAD /* LaunchScreen.storyboard */,
-				62CBBC131C7E317F00C27DAD /* Main.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -384,10 +352,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				62CBBC1A1C7E317F00C27DAD /* LaunchScreen.storyboard in Resources */,
-				628BC5062290D21C008AD258 /* NumberViewController.xib in Resources */,
+				628BC5062290D21C008AD258 /* NumberView.xib in Resources */,
 				628BC4FE2290CC2C008AD258 /* NumberCollectionViewCell.xib in Resources */,
 				62CBBC171C7E317F00C27DAD /* Assets.xcassets in Resources */,
-				62CBBC151C7E317F00C27DAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,18 +476,11 @@
 			files = (
 				628BC4FA2290C179008AD258 /* MassLotteryEndpoint.swift in Sources */,
 				628BC4FD2290CC2C008AD258 /* NumberCollectionViewCell.swift in Sources */,
-				627434631C9B27920054DCBD /* NumberGridCoordinator.swift in Sources */,
 				62B832111C9A55A1007831B4 /* Day.swift in Sources */,
-				627434611C9B27810054DCBD /* KenoCoordinator.swift in Sources */,
-				62CBBC121C7E317F00C27DAD /* KenoViewController.swift in Sources */,
-				6274345F1C9B275D0054DCBD /* AppCoordinator.swift in Sources */,
 				62CBBC431C7E36CA00C27DAD /* NumberCell.swift in Sources */,
-				62CBBC461C7E371100C27DAD /* NumberCollectionViewController.swift in Sources */,
 				628BC5052290D21C008AD258 /* NumberViewController.swift in Sources */,
 				62CBBC101C7E317F00C27DAD /* AppDelegate.swift in Sources */,
 				62CBBC691C7E541E00C27DAD /* Drawing.swift in Sources */,
-				62BD2E891C9CCA4800B2DF64 /* CoordinatorProtocol.swift in Sources */,
-				62BD2E8B1C9CCB2D00B2DF64 /* ControllerProtocol.swift in Sources */,
 				62CBBC411C7E31E100C27DAD /* LinearGradient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,15 +517,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		62CBBC131C7E317F00C27DAD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				62CBBC141C7E317F00C27DAD /* Base */,
-			);
-			name = Main.storyboard;
-			path = .;
-			sourceTree = "<group>";
-		};
 		62CBBC181C7E317F00C27DAD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
