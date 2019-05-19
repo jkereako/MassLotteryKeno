@@ -6,8 +6,7 @@
 //  Copyright © 2019 Alexis Digital. All rights reserved.
 //
 
-import Foundation
-import Kringle
+import UIKit
 
 protocol NumberViewModelDelegate: class {
     var cellReuseIdentifier: String { get }
@@ -73,6 +72,6 @@ extension NumberViewModel: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegate
 extension NumberViewModel: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Selected \(numbers[indexPath.row])")
+        print("Selected #\(numbers[indexPath.row])")
     }
 }

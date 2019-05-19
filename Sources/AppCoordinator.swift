@@ -32,8 +32,18 @@ final class AppCoordinator {
             
             numberViewModel.delegate = viewController
             viewController.viewModel = numberViewModel
-            }.catch { error in
-                print("Oh no!")
+            }.catch { _ in
+
+                // Displays an alert if the promise is rejected
+                let alertController = UIAlertController(
+                    title: "Network Error",
+                    message: "We weren't able to load today's winning numbers. Please try again later.",
+                    preferredStyle: .alert
+                )
+
+                alertController.addAction(UIAlertAction(title: "Okay", style: .cancel))
+
+                viewController.show(alertController, sender: self)
         }
         
         return viewController

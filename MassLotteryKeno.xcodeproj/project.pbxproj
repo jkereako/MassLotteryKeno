@@ -156,6 +156,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		628BC51122910AE5008AD258 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				628BC4F92290C179008AD258 /* MassLotteryEndpoint.swift */,
+				6274345D1C9B239E0054DCBD /* Contracts */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		62CBBC031C7E317F00C27DAD = {
 			isa = PBXGroup;
 			children = (
@@ -184,11 +193,10 @@
 			isa = PBXGroup;
 			children = (
 				62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */,
+				628BC51122910AE5008AD258 /* API */,
 				628BC50A2290E0CF008AD258 /* Models */,
 				628BC5072290D93A008AD258 /* ViewModels */,
-				6274345D1C9B239E0054DCBD /* Contracts */,
 				6274345B1C9B23830054DCBD /* Views */,
-				628BC4F92290C179008AD258 /* MassLotteryEndpoint.swift */,
 				628BC50F2290F4DA008AD258 /* AppCoordinator.swift */,
 			);
 			path = Sources;
