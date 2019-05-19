@@ -23,12 +23,12 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ME-aW-edl" userLabel="Number">
                         <rect key="frame" x="15" y="20.5" width="34" height="33"/>
                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="28"/>
-                        <color key="textColor" name="Number"/>
+                        <color key="textColor" name="OffWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
-            <color key="backgroundColor" name="NumberBackground"/>
+            <color key="backgroundColor" name="Maroon"/>
             <constraints>
                 <constraint firstItem="3ME-aW-edl" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="4S1-aJ-3L3"/>
                 <constraint firstItem="3ME-aW-edl" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="BQM-ac-Xns"/>
@@ -36,7 +36,7 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                    <color key="value" name="Number"/>
+                    <color key="value" name="White"/>
                 </userDefinedRuntimeAttribute>
                 <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                     <real key="value" value="3"/>
@@ -52,11 +52,14 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <namedColor name="Number">
+        <namedColor name="Maroon">
+            <color red="0.2630000114440918" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OffWhite">
             <color red="0.9649999737739563" green="0.9649999737739563" blue="0.90200001001358032" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="NumberBackground">
-            <color red="0.2630000114440918" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

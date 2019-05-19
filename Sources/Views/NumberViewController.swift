@@ -21,7 +21,7 @@ final class NumberViewController: UIViewController {
         didSet {
             gameIdentifier.text = viewModel.gameIdentifier
             drawDate.text = viewModel.drawDate
-            bonusMultiplier.text = viewModel.drawDate
+            bonusMultiplier.text = viewModel.bonusMultiplier
 
             numberCollectionView.dataSource = viewModel
             numberCollectionView.delegate = viewModel

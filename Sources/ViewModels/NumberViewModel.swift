@@ -73,6 +73,6 @@ extension NumberViewModel: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegate
 extension NumberViewModel: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Item selected")
+        print("Selected \(numbers[indexPath.row])")
     }
 }
