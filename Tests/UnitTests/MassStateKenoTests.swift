@@ -1,13 +1,13 @@
 //
 //  MassStateKenoTests.swift
-//  MassStateKenoTests
+//  MassLotteryKenoTests
 //
 //  Created by Jeff Kereakoglow on 2/24/16.
 //  Copyright © 2016 Alexis Digital. All rights reserved.
 //
 
 import XCTest
-@testable import MassStateKeno
+@testable import MassLotteryKeno
 
 class MassStateKenoTests: XCTestCase {
     

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  MassStateKeno
+//  MassLotteryKeno
 //
 //  Created by Jeff Kereakoglow on 2/24/16.
 //  Copyright © 2016 Alexis Digital. All rights reserved.

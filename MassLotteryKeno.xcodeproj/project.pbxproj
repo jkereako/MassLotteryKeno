@@ -129,9 +129,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		622A14D62291FA930068D64D /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				62CBBC401C7E31E100C27DAD /* LinearGradient.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
 		6274345B1C9B23830054DCBD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				622A14D62291FA930068D64D /* UIComponents */,
 				628BC4FB2290CC2C008AD258 /* NumberCollectionViewCell.swift */,
 				628BC4FC2290CC2C008AD258 /* NumberCollectionViewCell.xib */,
 				628BC5032290D21C008AD258 /* NumberViewController.swift */,
@@ -191,7 +200,6 @@
 		62CBBC031C7E317F00C27DAD = {
 			isa = PBXGroup;
 			children = (
-				62CBBC441C7E36CE00C27DAD /* Library */,
 				62CBBC0D1C7E317F00C27DAD /* Products */,
 				62CBBC3D1C7E31A200C27DAD /* Resources */,
 				62CBBC0E1C7E317F00C27DAD /* Sources */,
@@ -267,14 +275,6 @@
 				62CBBC1B1C7E317F00C27DAD /* Info.plist */,
 			);
 			path = SupportFiles;
-			sourceTree = "<group>";
-		};
-		62CBBC441C7E36CE00C27DAD /* Library */ = {
-			isa = PBXGroup;
-			children = (
-				62CBBC401C7E31E100C27DAD /* LinearGradient.swift */,
-			);
-			path = Library;
 			sourceTree = "<group>";
 		};
 		7FA99C54F6AB1F315DF73DB4 /* Pods */ = {
