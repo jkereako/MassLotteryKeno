@@ -22,7 +22,10 @@ final class DrawingTableViewCell: UITableViewCell {
     @IBInspectable private var innerContentBorderColor: UIColor = UIColor.white
     @IBInspectable private var innerContentBorderWidth: CGFloat = 3.0
     @IBInspectable private var innerContentCornerRadius: CGFloat = 15.0
-    
+
+    private let selectedBackgroundColor = UIColor(named: "DarkBlue")
+    private let unselectedBackgroundColor = UIColor(named: "MediumBlue")
+
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -31,11 +34,34 @@ final class DrawingTableViewCell: UITableViewCell {
         innerContent.layer.borderColor = innerContentBorderColor.cgColor
         innerContent.layer.borderWidth = innerContentBorderWidth
         innerContent.layer.cornerRadius = innerContentCornerRadius
+
+        selectionStyle = .none
+
     }
-    
+
+    override func setHighlighted(_ highlighted: Bool, animated: Bool) {
+        if (highlighted) {
+            innerContent.backgroundColor = selectedBackgroundColor
+
+            return
+        }
+
+        innerContent.backgroundColor = unselectedBackgroundColor
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        if (selected) {
+            innerContent.backgroundColor = selectedBackgroundColor
+
+            return
+        }
+
+        innerContent.backgroundColor = unselectedBackgroundColor
+    }
+
     override func layoutSubviews() {
         super.layoutSubviews()
-        
+
         #if TARGET_INTERFACE_BUILDER
         innerContent.layer.borderColor = innerContentBorderColor.cgColor
         innerContent.layer.borderWidth = innerContentBorderWidth
