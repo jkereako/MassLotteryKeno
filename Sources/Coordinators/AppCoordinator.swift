@@ -53,6 +53,7 @@ final class AppCoordinator {
             rootViewController: drawingTableViewController
         )
 
+
         return navigationController!
     }
     
@@ -63,6 +64,8 @@ final class AppCoordinator {
     init(networkClient: NetworkClientType) {
         self.networkClient = networkClient
         dateFormatter = DateFormatter()
+
+        styleNavigationBar()
     }
 }
 
@@ -78,5 +81,21 @@ extension AppCoordinator: DrawingTableViewModelDelegate {
         numberViewController.viewModel = numberViewModel
         
         navigationController?.show(numberViewController, sender: self)
+    }
+}
+
+// MARK: - Private Helpers
+private extension AppCoordinator {
+    func styleNavigationBar() {
+        // Bar title text color
+        let attributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.white,
+            .font: UIFont(name: "Arial Rounded MT Bold", size: 17.0)!
+        ]
+
+        UINavigationBar.appearance().titleTextAttributes = attributes
+        UINavigationBar.appearance().tintColor = UIColor.init(named: "MediumBlue")
+        UINavigationBar.appearance().barTintColor = UIColor.init(named: "DarkBlue")
+        UINavigationBar.appearance().isTranslucent = false
     }
 }
