@@ -11,6 +11,9 @@ import UIKit
 final class DrawingTableViewController: UITableViewController {
     var viewModel: DrawingTableViewModel? {
         didSet {
+
+            title = viewModel?.title
+
             tableView.dataSource = viewModel
             tableView.delegate = viewModel
             tableView.reloadData()
@@ -28,8 +31,6 @@ final class DrawingTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Today's Drawings"
-
         let nib = UINib(
             nibName: cellReuseIdentifier, bundle: Bundle(for: DrawingTableViewCell.self)
         )
@@ -37,8 +38,6 @@ final class DrawingTableViewController: UITableViewController {
         tableView.register(nib, forCellReuseIdentifier: cellReuseIdentifier)
         tableView.backgroundColor = UIColor(named: "DarkBlue")
         tableView.separatorStyle = .none
-        tableView.dataSource = viewModel
-        tableView.delegate = viewModel
     }
 }
 

@@ -19,12 +19,14 @@ protocol DrawingTableViewModelDelegate: class {
 }
 
 final class DrawingTableViewModel: NSObject {
+    let title: String
     weak var dataSource: DrawingTableViewModelDataSource?
     weak var delegate: DrawingTableViewModelDelegate?
 
     private let drawingViewModels: [DrawingViewModel]
 
     init(drawingViewModels: [DrawingViewModel]) {
+        title = "Today's Drawings"
         self.drawingViewModels = drawingViewModels
     }
 }

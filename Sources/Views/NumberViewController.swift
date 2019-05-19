@@ -27,21 +27,13 @@ final class NumberViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Winning Numbers"
-
         numberCollectionView.dataSource = viewModel
         numberCollectionView.delegate = viewModel
 
+        title = viewModel?.title
         gameIdentifier.text = viewModel?.gameIdentifier
         drawDate.text = viewModel?.drawDate
         bonusMultiplier.text = viewModel?.bonusMultiplier
-
-        guard let layout = numberCollectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
-            assertionFailure("Expected a UICollectionViewFlowLayout.")
-            return
-        }
-
-        layout.itemSize = CGSize(width: 64, height: 64)
 
         let nib = UINib(
             nibName: cellReuseIdentifier, bundle: Bundle(for: NumberCollectionViewCell.self)
