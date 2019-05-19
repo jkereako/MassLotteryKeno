@@ -19,10 +19,10 @@
 		628BC50C2290E0E3008AD258 /* DrawingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628BC50B2290E0E3008AD258 /* DrawingModel.swift */; };
 		628BC50E2290E3E7008AD258 /* GameDayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628BC50D2290E3E7008AD258 /* GameDayModel.swift */; };
 		628BC5102290F4DA008AD258 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628BC50F2290F4DA008AD258 /* AppCoordinator.swift */; };
+		628BC5132291102A008AD258 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 628BC5122291102A008AD258 /* LaunchScreen.xib */; };
 		62B832111C9A55A1007831B4 /* GameDayContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B832101C9A55A1007831B4 /* GameDayContract.swift */; };
 		62CBBC101C7E317F00C27DAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */; };
 		62CBBC171C7E317F00C27DAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62CBBC161C7E317F00C27DAD /* Assets.xcassets */; };
-		62CBBC1A1C7E317F00C27DAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62CBBC181C7E317F00C27DAD /* LaunchScreen.storyboard */; };
 		62CBBC251C7E317F00C27DAD /* MassStateKenoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC241C7E317F00C27DAD /* MassStateKenoTests.swift */; };
 		62CBBC301C7E317F00C27DAD /* MassStateKenoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC2F1C7E317F00C27DAD /* MassStateKenoUITests.swift */; };
 		62CBBC411C7E31E100C27DAD /* LinearGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBBC401C7E31E100C27DAD /* LinearGradient.swift */; };
@@ -59,11 +59,11 @@
 		628BC50B2290E0E3008AD258 /* DrawingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingModel.swift; sourceTree = "<group>"; };
 		628BC50D2290E3E7008AD258 /* GameDayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDayModel.swift; sourceTree = "<group>"; };
 		628BC50F2290F4DA008AD258 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		628BC5122291102A008AD258 /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		62B832101C9A55A1007831B4 /* GameDayContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDayContract.swift; sourceTree = "<group>"; };
 		62CBBC0C1C7E317F00C27DAD /* MassLotteryKeno.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MassLotteryKeno.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62CBBC0F1C7E317F00C27DAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62CBBC161C7E317F00C27DAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		62CBBC191C7E317F00C27DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62CBBC1B1C7E317F00C27DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62CBBC201C7E317F00C27DAD /* MassLotteryKeno.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MassLotteryKeno.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62CBBC241C7E317F00C27DAD /* MassStateKenoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassStateKenoTests.swift; sourceTree = "<group>"; };
@@ -224,7 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				62CBBC161C7E317F00C27DAD /* Assets.xcassets */,
-				62CBBC181C7E317F00C27DAD /* LaunchScreen.storyboard */,
+				628BC5122291102A008AD258 /* LaunchScreen.xib */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -376,7 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62CBBC1A1C7E317F00C27DAD /* LaunchScreen.storyboard in Resources */,
+				628BC5132291102A008AD258 /* LaunchScreen.xib in Resources */,
 				628BC5062290D21C008AD258 /* NumberView.xib in Resources */,
 				628BC4FE2290CC2C008AD258 /* NumberCollectionViewCell.xib in Resources */,
 				62CBBC171C7E317F00C27DAD /* Assets.xcassets in Resources */,
@@ -543,18 +543,6 @@
 			targetProxy = 62CBBC2C1C7E317F00C27DAD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		62CBBC181C7E317F00C27DAD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				62CBBC191C7E317F00C27DAD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			path = .;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		62CBBC321C7E317F00C27DAD /* Debug */ = {

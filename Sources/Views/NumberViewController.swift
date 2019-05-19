@@ -50,6 +50,13 @@ final class NumberViewController: UIViewController {
         drawDate.text = nil
         bonusMultiplier.text = nil
 
+        guard let layout = numberCollectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
+            assertionFailure("Expected a UICollectionViewFlowLayout.")
+            return
+        }
+
+        layout.itemSize = CGSize(width: 64, height: 64)
+
         let nib = UINib(
             nibName: cellReuseIdentifier, bundle: Bundle(for: collectionViewCellType)
         )
