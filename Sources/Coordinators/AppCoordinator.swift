@@ -26,7 +26,7 @@ final class AppCoordinator {
                 )
 
                 drawingViewModels.append(
-                    DrawingViewModel(model: drawingModel)
+                    DrawingViewModel(model: drawingModel, dateFormatter: aDateFormatter)
                 )
             }
 

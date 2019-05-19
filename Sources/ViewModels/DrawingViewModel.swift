@@ -10,13 +10,18 @@ import Foundation
 
 struct DrawingViewModel {
     let model: DrawingModel
+    let drawDate: String
     let gameIdentifier: String
     let bonus: String
-    
-    init(model: DrawingModel) {
+
+    init(model: DrawingModel, dateFormatter: DateFormatter) {
         self.model = model
+
+        dateFormatter.dateFormat = "m/dd/yyyy"
+
+        drawDate = dateFormatter.string(from: model.drawDate)
         gameIdentifier = "#\(model.id)"
-        
+
         if model.bonus > 1 {
             bonus = "\(model.bonus)X"
         } else {

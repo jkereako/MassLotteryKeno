@@ -35,7 +35,7 @@ final class DrawingTableViewController: UITableViewController {
         )
 
         tableView.register(nib, forCellReuseIdentifier: cellReuseIdentifier)
-        tableView.backgroundColor = UIColor(named: "MediumBlue")
+        tableView.backgroundColor = UIColor(named: "DarkBlue")
         tableView.separatorStyle = .none
         tableView.dataSource = viewModel
         tableView.delegate = viewModel
