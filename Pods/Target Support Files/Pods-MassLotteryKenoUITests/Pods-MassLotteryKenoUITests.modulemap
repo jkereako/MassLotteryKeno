@@ -1,0 +1,6 @@
+framework module Pods_MassLotteryKenoUITests {
+  umbrella header "Pods-MassLotteryKenoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

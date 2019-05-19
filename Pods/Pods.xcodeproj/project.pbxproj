@@ -1,0 +1,1690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		025CC746E523AE5F6E8EE097AA9B77CF /* FBLPromise+Testing.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D90909AED948980F84FA86582B2FE2 /* FBLPromise+Testing.m */; };
+		066F1A2AABFEAF2156C7E128D340F9AE /* CoderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ECA4679417B8DBBC11DE2CBC8590DA /* CoderType.swift */; };
+		0FB031A8E18C73128EC2EF577D256484 /* Kringle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A076F78D9614388C97ABDCC9C2EA3963 /* Kringle-dummy.m */; };
+		10E67DFC6DCB30133EEDB3B1AEC7E4E2 /* FBLPromise+Race.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = EF0A72243BB0D29ECA6A0C4E891DB066 /* FBLPromise+Race.h */; };
+		10FA03EDBC11A7C14F61CB461A438919 /* CookieJarType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D05C1626AC4A145A76D33A346EACA5F /* CookieJarType.swift */; };
+		11CB6C25B0619FC7CB35B199D5DBF037 /* Promise+Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D3D06F86BB53B72DA83160632FD140 /* Promise+Testing.swift */; };
+		185237E58DEA4918DF2DDE8D47F9C426 /* Promise+Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B278E1DD2DE04761768A9340E50958 /* Promise+Any.swift */; };
+		1B2CF2DAFCA17802C586FE2E5703C19B /* FBLPromise.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = E9D2DD071126C9EB71124C59E19D77C7 /* FBLPromise.h */; };
+		1E13F2C6DC77244F664C206E10F19B35 /* Promise+Recover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7501D2557312127B2EC88CF6E2A33BBF /* Promise+Recover.swift */; };
+		2089C30DD83E13CDA4235C67C10D9529 /* FBLPromise+Testing.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = BB090609A8E75BC8EEF2E9F854AEEBAC /* FBLPromise+Testing.h */; };
+		21DFA4FB35CAC326FC58A680F7BD7E37 /* CookieJar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC50F0823E5161478DD0A371497C291 /* CookieJar.swift */; };
+		2281BEB3DA90AB7DD6C2B8E6EB59DA90 /* Promise+Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A5BFAFA335DCA578BB66591BCB90F3 /* Promise+Delay.swift */; };
+		23349741885ADE1137F8E3EA1632C7C9 /* Promise+All.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5160A39213972952749D6FE69E3B11F /* Promise+All.swift */; };
+		240902F9220A5A4B629022C2C45CDE84 /* FBLPromise+All.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = D289622F6C77A9A174AC8693FAFAB899 /* FBLPromise+All.h */; };
+		269B9CEE8DE00FEB29B12CAF13E51BB2 /* FBLPromisePrivate.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = 0620493CE50678A8F7243940E4E81BC0 /* FBLPromisePrivate.h */; };
+		270108A450B8F8E7B510EDE05D3C49AF /* FBLPromise+Delay.h in Headers */ = {isa = PBXBuildFile; fileRef = 189609FD8EA6DDFBA62E896284DF6E51 /* FBLPromise+Delay.h */; };
+		27335075DA092A743806DFC2A97D3AB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3953E0E574E5959D6A1CF45E0A03E904 /* Foundation.framework */; };
+		36583603C14F25B4890B4B4B1663537B /* PromisesObjC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF8C4EC0EDA09A21458BD766582C18BC /* PromisesObjC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3675EE40F68A4E0D7BA3612069087FDA /* FBLPromise+Validate.h in Headers */ = {isa = PBXBuildFile; fileRef = B66547F54B9AB528D3C37785CEEB5A36 /* FBLPromise+Validate.h */; };
+		380F97EC1D54FDC9F633378685D52301 /* FBLPromise+Any.h in Headers */ = {isa = PBXBuildFile; fileRef = E08F670BB094153B54C7BDC797DFB5C7 /* FBLPromise+Any.h */; };
+		39CAE171E2190F1463B3ACC983C2B708 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3953E0E574E5959D6A1CF45E0A03E904 /* Foundation.framework */; };
+		3C494F61E2619AAABF9214BF14053CE9 /* FBLPromiseError.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C81F23946DEB15A840E2F0EE0B724A /* FBLPromiseError.m */; };
+		3D0136DF676CBE9C16AA98F148402759 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3953E0E574E5959D6A1CF45E0A03E904 /* Foundation.framework */; };
+		428E5B02DC78A8DAEB6B28D8931D4F62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3953E0E574E5959D6A1CF45E0A03E904 /* Foundation.framework */; };
+		4742D72A42E3613CB6F734EBF21E9725 /* PromisesSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BE098EDCCFC6EBA75F5D427D423368 /* PromisesSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E200CBDC35204312298FD14B66F87F1 /* FBLPromise+Async.h in Headers */ = {isa = PBXBuildFile; fileRef = 63036464A71AD15DD754ECF344F4C7D3 /* FBLPromise+Async.h */; };
+		4EB29DAD818FABBB419919280D4EAB5E /* FBLPromise+Catch.m in Sources */ = {isa = PBXBuildFile; fileRef = E76567A54D8F3AFBEE65072C13DEF8C7 /* FBLPromise+Catch.m */; };
+		501C4E281FE3A1A14B23A192BA7530A7 /* FBLPromise+Await.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C7B01F2E5A0FC8B3B7561DCDFD6A23 /* FBLPromise+Await.m */; };
+		524459FE0BD9F5999F65F506ADBE9E78 /* Promise+Await.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159F81FD18AA7C4B480C98C372E57FB /* Promise+Await.swift */; };
+		5377DCEBC671D1C77F718104D96921D4 /* PromisesObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1276197DD4745771BD63E18E4CFC1F81 /* PromisesObjC-dummy.m */; };
+		546D9719201865F1DF94552574B5367E /* FBLPromise+Timeout.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 4392857280EB3B94A02D42C231C44865 /* FBLPromise+Timeout.h */; };
+		55ECA084CFA315E80642A7F279317CB0 /* FBLPromise+Reduce.h in Headers */ = {isa = PBXBuildFile; fileRef = 202653A7E63E84973EBC11AD90E135D9 /* FBLPromise+Reduce.h */; };
+		56803F601EF2217286318BE5B6F75A00 /* FBLPromise+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABE9ED27E742FB08E1FB772E6CC6AC6 /* FBLPromise+Validate.m */; };
+		57679DD372A8A7AF73F23A66E141B1C8 /* FBLPromise+All.h in Headers */ = {isa = PBXBuildFile; fileRef = D289622F6C77A9A174AC8693FAFAB899 /* FBLPromise+All.h */; };
+		58E679BDC76492711F1AD7665E670B96 /* FBLPromise+Then.h in Headers */ = {isa = PBXBuildFile; fileRef = 1957D1E12A3DC837925FB0F4DFD2D49B /* FBLPromise+Then.h */; };
+		590574F1A2140EA135AA8B60638A2271 /* FBLPromise+Validate.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = B66547F54B9AB528D3C37785CEEB5A36 /* FBLPromise+Validate.h */; };
+		6186401EF6805E9D5AF02B8FFD29476A /* FBLPromise+Wrap.h in Headers */ = {isa = PBXBuildFile; fileRef = 43D880AC35C95E4479529E7A63241008 /* FBLPromise+Wrap.h */; };
+		6532D49197AC8C6661F1AC9C96D481C1 /* FBLPromise+Recover.h in Headers */ = {isa = PBXBuildFile; fileRef = 7372328E98AE636EC204DECECC0F2DED /* FBLPromise+Recover.h */; };
+		6B6E823C1643D1F8DD2002D918618C4C /* Promise+Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F7D8818DEC1F4254D575214E6972F9 /* Promise+Race.swift */; };
+		6BBB107B4326F219E89A331D871C2141 /* FBLPromise+Wrap.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 43D880AC35C95E4479529E7A63241008 /* FBLPromise+Wrap.h */; };
+		6C032FB2EA8E86F489AA60B6D6E924E9 /* FBLPromise+Testing.h in Headers */ = {isa = PBXBuildFile; fileRef = BB090609A8E75BC8EEF2E9F854AEEBAC /* FBLPromise+Testing.h */; };
+		6E617A0A78F9C177F83A648C6674DAE6 /* Promise+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D5A58DE28BBF8B528CA8D7E57948BB /* Promise+Async.swift */; };
+		6E9AB6E6EA65852748CC645EF3AFCFEB /* FBLPromise+Race.h in Headers */ = {isa = PBXBuildFile; fileRef = EF0A72243BB0D29ECA6A0C4E891DB066 /* FBLPromise+Race.h */; };
+		7145C51402C46788E8116563EFFD4873 /* FBLPromise+Await.h in Headers */ = {isa = PBXBuildFile; fileRef = 3231ABAA72FD20A7B032A07BA9D169DE /* FBLPromise+Await.h */; };
+		732B1386B861C64B3D63BA6C4C4056C0 /* Promise+Wrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B1273F7911268DB8FFD931E36B36BF /* Promise+Wrap.swift */; };
+		735AD382730B8E891B236EEE124093D9 /* FBLPromise+Recover.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 7372328E98AE636EC204DECECC0F2DED /* FBLPromise+Recover.h */; };
+		744F7E5F714A543E5F58D4E5B2671B01 /* FBLPromise+Then.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 1957D1E12A3DC837925FB0F4DFD2D49B /* FBLPromise+Then.h */; };
+		774325FC8C67A3F51F3339BBD04AAF65 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52272680921611C746B73A70B8E36DAC /* Endpoint.swift */; };
+		778B4E907415CF801A86411DF34E74FB /* FBLPromise+Await.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 3231ABAA72FD20A7B032A07BA9D169DE /* FBLPromise+Await.h */; };
+		7F19210F80FF7E4A686478DD99BE1E7A /* FBLPromise+Reduce.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1D52ADC70265BC77653242B9B6A2CC /* FBLPromise+Reduce.m */; };
+		829012A4806FFC78072F0AF2B06EF1B2 /* FBLPromise+Retry.h in Headers */ = {isa = PBXBuildFile; fileRef = DDE34FAB1D56DCC0A5E570679362F23B /* FBLPromise+Retry.h */; };
+		88510E8EEEB446687B415013EE7F4CB2 /* FBLPromiseError.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AE7747B6CD80F6C072236E192793C33 /* FBLPromiseError.h */; };
+		8983041C7E5906C0D9C0A40ECF63E1FC /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED7E0B3F0464EDA7B802A049E1D544 /* Promise.swift */; };
+		8B62B297996FA8BDE0DC6D0DBE705090 /* FBLPromise+Async.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 63036464A71AD15DD754ECF344F4C7D3 /* FBLPromise+Async.h */; };
+		8B9E7C63DB6E59F5B93073B0D66438F7 /* FBLPromiseError.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 1AE7747B6CD80F6C072236E192793C33 /* FBLPromiseError.h */; };
+		8BA43FC8D2303748F4A1F3A5B4D5A5B6 /* FBLPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 38002CCE14E1434C17F4ED90C8E3C6A7 /* FBLPromise.m */; };
+		8D070B62B3F2CEBDD73FB68B04CA7F1C /* FBLPromise+Retry.m in Sources */ = {isa = PBXBuildFile; fileRef = 3625D1C22878C276FDB68F00DF5650AD /* FBLPromise+Retry.m */; };
+		8ECC517B9017742AB13E546C65504D0A /* Promise+Always.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B09738530E7A6E00F1FA9670BEA77 /* Promise+Always.swift */; };
+		90EC0483FDA46156499D3930DEEC3ACF /* FBLPromises.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = FC57B0F1AB36DD84324FBCDD01B3A799 /* FBLPromises.h */; };
+		92AC58547736195B689CB80E0C3CE124 /* FBLPromise+Always.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDAFF426DF1CDA071C4CFE05991E9CC /* FBLPromise+Always.h */; };
+		95668B76A7006DF1E2452F33A03BD349 /* Pods-MassLotteryKenoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 840F757B1A548C3495C036893ECB2279 /* Pods-MassLotteryKenoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		977493E586260336045C06E2826A9076 /* FBLPromise+Retry.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = DDE34FAB1D56DCC0A5E570679362F23B /* FBLPromise+Retry.h */; };
+		979B4CB79DBAFADA9DA46E5B6B534402 /* Promise+Catch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD744E8BE20535FCD395B5E8A4D64279 /* Promise+Catch.swift */; };
+		9CD5D194B62FA5E0D77914A62941C379 /* FBLPromise+All.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA7C42E58C9D54E4553BE6643ACC45F /* FBLPromise+All.m */; };
+		A00446B4AD2316A275194A079BFD79E9 /* FBLPromise+Reduce.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 202653A7E63E84973EBC11AD90E135D9 /* FBLPromise+Reduce.h */; };
+		A22177A7A44F4860A7A56E614641D18F /* Promises.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268FEA92F27803FF07086B089B3902B1 /* Promises.framework */; };
+		A7BA5535204E0FD9EC947AF468294889 /* Promise+Retry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142A45348A1AF14CAE2244684E409F42 /* Promise+Retry.swift */; };
+		AAA93736762FE7A0A9E45EC629EFAA8F /* FBLPromise+Do.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 9B1F830341274EA934D7BFA8BDACD693 /* FBLPromise+Do.h */; };
+		ADCEEA6364A470D55DA12DC6C22ABAF3 /* FBLPromise+Race.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AA14D312F3BAB483C14C9C2A6AF08 /* FBLPromise+Race.m */; };
+		AFEF2B8497CD5759E2F609BF626BA19E /* FBLPromise+Delay.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DEF5FFC0F832CA448CB2AF92CFF487 /* FBLPromise+Delay.m */; };
+		B000D39AA05DC90228CDDC0B49ECF22A /* FBLPromises.h in Headers */ = {isa = PBXBuildFile; fileRef = FC57B0F1AB36DD84324FBCDD01B3A799 /* FBLPromises.h */; };
+		B64ADA46AC805F3FD3EB7E74768C0CBC /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410FF8BB8C062D4FFD0D865B6F35B5DD /* HTTPMethod.swift */; };
+		B7BBF5266DF389E5437BDB00114B93D6 /* FBLPromise+Recover.m in Sources */ = {isa = PBXBuildFile; fileRef = 10225581417165C8560E750E4E03D38D /* FBLPromise+Recover.m */; };
+		BB4613DFA180C0EAEF38D73359093495 /* FBLPromise+Wrap.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE70FF2A2DC153DF2485AA50D4B5F16 /* FBLPromise+Wrap.m */; };
+		BC8581068111F20BBD6282357AB71D68 /* PromisesSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E0FDF59A67F15056A9CB90D2A8D817 /* PromisesSwift-dummy.m */; };
+		BD023609941ADDC73939717CEE054155 /* FBLPromise+Do.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B1F830341274EA934D7BFA8BDACD693 /* FBLPromise+Do.h */; };
+		BE213C53D4D7DAFC9D6290DFEAC4CD09 /* FBLPromise+Any.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = E08F670BB094153B54C7BDC797DFB5C7 /* FBLPromise+Any.h */; };
+		BE2CE6457DE040C4F5617E5B1E4A78C4 /* Kringle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE92E3F112DC23581A8CD71DBEEA3DA6 /* Kringle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEAE87466172701F3D47643866AF916C /* Promise+Reduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C39C448069F4193A4D309A8F6EFFBF /* Promise+Reduce.swift */; };
+		BFC01910782F9E31A8304B880D779ABD /* Pods-MassLotteryKeno-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 44AF453B56D839B61241FBD73AA5ED18 /* Pods-MassLotteryKeno-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C09D3BA41D4B6FEB593D8D2EDE518F1A /* PromiseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66077AC44C1371C0414F9B60F6FFBB66 /* PromiseError.swift */; };
+		C13BB0298BF21CC63E0237163295A65B /* FBLPromise+Timeout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4392857280EB3B94A02D42C231C44865 /* FBLPromise+Timeout.h */; };
+		C1A31B49DFAAFC7371833386498CFB62 /* FBLPromise+Async.m in Sources */ = {isa = PBXBuildFile; fileRef = FE33F20E71632CFF135A79100DC96884 /* FBLPromise+Async.m */; };
+		C2B3B053A6C09F6D3CBDFCED8AD9C1C6 /* FBLPromise+Always.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 9CDAFF426DF1CDA071C4CFE05991E9CC /* FBLPromise+Always.h */; };
+		C6AE1D436D268F10F62D1260265DAF69 /* FBLPromise+Delay.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 189609FD8EA6DDFBA62E896284DF6E51 /* FBLPromise+Delay.h */; };
+		CBD87C2026FE34FFCBE5504EBDFB0F61 /* Promise+Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD05F3289CF237AD62995B3501917763 /* Promise+Validate.swift */; };
+		D0086D6E227C372712325F7694B59911 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3953E0E574E5959D6A1CF45E0A03E904 /* Foundation.framework */; };
+		D2C3CEB97732A8ED496A2FDC3C0C07B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3953E0E574E5959D6A1CF45E0A03E904 /* Foundation.framework */; };
+		D32B9C837F9DB88B16C8F647A95F4BB8 /* FBLPromise+Timeout.m in Sources */ = {isa = PBXBuildFile; fileRef = B23AF1152462162D943A7C52501643FF /* FBLPromise+Timeout.m */; };
+		D4648FB26164B4B6D006C214E6F1E08D /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4386867646CCA980B81F4B6C677F954 /* NetworkError.swift */; };
+		D5B6F2F977851951E18248EBBBE41A6D /* FBLPromises.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79610C558832F67A2AC82292195341C4 /* FBLPromises.framework */; };
+		D6C540528DE0DCFAE119DFE93C02C7A5 /* Pods-MassLotteryKenoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F84116E35FA0D6428AC641F5714FDC4 /* Pods-MassLotteryKenoTests-dummy.m */; };
+		DEAD09C3C530CE087EA7672C143DF454 /* FBLPromise+Catch.h in Headers */ = {isa = PBXBuildFile; fileRef = 71E5A369B2DA3BE48C7A12713B4A69A0 /* FBLPromise+Catch.h */; };
+		DF5A72A4CBF9A307C132116CE134766B /* Promise+Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ED8C58401CBF11D099316256F9E284 /* Promise+Then.swift */; };
+		DFF6DF99DC27F34C86368790F8556B2C /* FBLPromise+Always.m in Sources */ = {isa = PBXBuildFile; fileRef = 651C3B0A26E0B9A3F3E6861C51DE73E2 /* FBLPromise+Always.m */; };
+		DFFFD42764BC74BF48B6EAEB81E34D3B /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F7B927565B8622500963FC124AA69E /* NetworkClient.swift */; };
+		E0B95007160B74682FB07DEAA946D2B0 /* FBLPromise+Catch.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 71E5A369B2DA3BE48C7A12713B4A69A0 /* FBLPromise+Catch.h */; };
+		E257F7ABD8A34683823589F364DDA6F6 /* FBLPromise+Do.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B183366A60D571B1F686CE47165E92 /* FBLPromise+Do.m */; };
+		E4C98C7129C8D4B63F33F3798B2F6985 /* FBLPromise+Any.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F763461268B179BBA99ECBF1140BA89 /* FBLPromise+Any.m */; };
+		E916CAA25FAF6237D9A0EF979B84041C /* FBLPromise+Then.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1E8D2DC375FC82E17CD311B86A3771 /* FBLPromise+Then.m */; };
+		ED34B8FE136365DB048F1DF88A800AB9 /* FBLPromisePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0620493CE50678A8F7243940E4E81BC0 /* FBLPromisePrivate.h */; };
+		F37CECFFEF6C444887FA084B8B814D22 /* Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8632323D9E10B3C70926812493E7611 /* Coder.swift */; };
+		F529DA8FE3C759ED80B5A9450B01034C /* Pods-MassLotteryKenoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F05F4F81683A3CBD2ECCFC2B479C7B94 /* Pods-MassLotteryKenoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7235C03DC0840752F2BC5BBCF9CB2DE /* Promise+Do.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C26B70E168360BDA73FFE0F855587B /* Promise+Do.swift */; };
+		FBB54FA0FD21EDD714D40CB109A4A138 /* Pods-MassLotteryKeno-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 637E3AD253C9242AD9FF0A718B7F9F6F /* Pods-MassLotteryKeno-dummy.m */; };
+		FBEF7DC722A6FA6E71DFC017008C8C04 /* FBLPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = E9D2DD071126C9EB71124C59E19D77C7 /* FBLPromise.h */; };
+		FBFF3B0174BA5CC36CB31342AC9F9A1D /* Pods-MassLotteryKenoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D28EFDC826C6297075FBFD838F406 /* Pods-MassLotteryKenoUITests-dummy.m */; };
+		FCBAD0A5DD7D5A1A4059B0C7E503F81E /* Promise+Timeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B978648C1BC3972623193D540AD6DDC /* Promise+Timeout.swift */; };
+		FE1985ECC5E7EE3AE11E668F8A4140F7 /* NetworkClientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2ED8F9E094CD2BB68B8F3FE719E148 /* NetworkClientType.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B66D5A51B4E35E5F26C455DF99CE741 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0414F9002F6E5154879FAA1717B8D15A;
+			remoteInfo = "Pods-MassLotteryKeno";
+		};
+		215351B28931AECBAF2B7FBF98560D64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0414F9002F6E5154879FAA1717B8D15A;
+			remoteInfo = "Pods-MassLotteryKeno";
+		};
+		4720343D07CD8A7729224731BA0B7E14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54237A3F7A8BC7533AC8EC754FCC726C;
+			remoteInfo = Kringle;
+		};
+		51D5533E888045A4F320D4211D5BFF26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7F49203E2B6DFBEBA6FBC86F02230D6;
+			remoteInfo = PromisesSwift;
+		};
+		681BD9F8F30AC283BF6D9D0C48E72E54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 697DD76C04E03068B36270A62C223F29;
+			remoteInfo = PromisesObjC;
+		};
+		BD4B951E5AE77B9B088793474A97CF28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7F49203E2B6DFBEBA6FBC86F02230D6;
+			remoteInfo = PromisesSwift;
+		};
+		F7EA68F9415F7F142C482031386F1092 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 697DD76C04E03068B36270A62C223F29;
+			remoteInfo = PromisesObjC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		953F1EBA4DD343403712052272365D29 /* Copy . Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/.";
+			dstSubfolderSpec = 16;
+			files = (
+				240902F9220A5A4B629022C2C45CDE84 /* FBLPromise+All.h in Copy . Public Headers */,
+				C2B3B053A6C09F6D3CBDFCED8AD9C1C6 /* FBLPromise+Always.h in Copy . Public Headers */,
+				BE213C53D4D7DAFC9D6290DFEAC4CD09 /* FBLPromise+Any.h in Copy . Public Headers */,
+				8B62B297996FA8BDE0DC6D0DBE705090 /* FBLPromise+Async.h in Copy . Public Headers */,
+				778B4E907415CF801A86411DF34E74FB /* FBLPromise+Await.h in Copy . Public Headers */,
+				E0B95007160B74682FB07DEAA946D2B0 /* FBLPromise+Catch.h in Copy . Public Headers */,
+				C6AE1D436D268F10F62D1260265DAF69 /* FBLPromise+Delay.h in Copy . Public Headers */,
+				AAA93736762FE7A0A9E45EC629EFAA8F /* FBLPromise+Do.h in Copy . Public Headers */,
+				10E67DFC6DCB30133EEDB3B1AEC7E4E2 /* FBLPromise+Race.h in Copy . Public Headers */,
+				735AD382730B8E891B236EEE124093D9 /* FBLPromise+Recover.h in Copy . Public Headers */,
+				A00446B4AD2316A275194A079BFD79E9 /* FBLPromise+Reduce.h in Copy . Public Headers */,
+				977493E586260336045C06E2826A9076 /* FBLPromise+Retry.h in Copy . Public Headers */,
+				2089C30DD83E13CDA4235C67C10D9529 /* FBLPromise+Testing.h in Copy . Public Headers */,
+				744F7E5F714A543E5F58D4E5B2671B01 /* FBLPromise+Then.h in Copy . Public Headers */,
+				546D9719201865F1DF94552574B5367E /* FBLPromise+Timeout.h in Copy . Public Headers */,
+				590574F1A2140EA135AA8B60638A2271 /* FBLPromise+Validate.h in Copy . Public Headers */,
+				6BBB107B4326F219E89A331D871C2141 /* FBLPromise+Wrap.h in Copy . Public Headers */,
+				1B2CF2DAFCA17802C586FE2E5703C19B /* FBLPromise.h in Copy . Public Headers */,
+				8B9E7C63DB6E59F5B93073B0D66438F7 /* FBLPromiseError.h in Copy . Public Headers */,
+				90EC0483FDA46156499D3930DEEC3ACF /* FBLPromises.h in Copy . Public Headers */,
+			);
+			name = "Copy . Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE494E426E000D51EAF3199CBA20FA73 /* Copy . Private Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PRIVATE_HEADERS_FOLDER_PATH)/.";
+			dstSubfolderSpec = 16;
+			files = (
+				269B9CEE8DE00FEB29B12CAF13E51BB2 /* FBLPromisePrivate.h in Copy . Private Headers */,
+			);
+			name = "Copy . Private Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02F7B927565B8622500963FC124AA69E /* NetworkClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkClient.swift; path = Sources/Kringle/NetworkClient.swift; sourceTree = "<group>"; };
+		03D3D06F86BB53B72DA83160632FD140 /* Promise+Testing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Testing.swift"; path = "Sources/Promises/Promise+Testing.swift"; sourceTree = "<group>"; };
+		0620493CE50678A8F7243940E4E81BC0 /* FBLPromisePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLPromisePrivate.h; path = Sources/FBLPromises/include/FBLPromisePrivate.h; sourceTree = "<group>"; };
+		10225581417165C8560E750E4E03D38D /* FBLPromise+Recover.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Recover.m"; path = "Sources/FBLPromises/FBLPromise+Recover.m"; sourceTree = "<group>"; };
+		1276197DD4745771BD63E18E4CFC1F81 /* PromisesObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromisesObjC-dummy.m"; sourceTree = "<group>"; };
+		142A45348A1AF14CAE2244684E409F42 /* Promise+Retry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Retry.swift"; path = "Sources/Promises/Promise+Retry.swift"; sourceTree = "<group>"; };
+		14E0FDF59A67F15056A9CB90D2A8D817 /* PromisesSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromisesSwift-dummy.m"; sourceTree = "<group>"; };
+		189609FD8EA6DDFBA62E896284DF6E51 /* FBLPromise+Delay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Delay.h"; path = "Sources/FBLPromises/include/FBLPromise+Delay.h"; sourceTree = "<group>"; };
+		1957D1E12A3DC837925FB0F4DFD2D49B /* FBLPromise+Then.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Then.h"; path = "Sources/FBLPromises/include/FBLPromise+Then.h"; sourceTree = "<group>"; };
+		1AE7747B6CD80F6C072236E192793C33 /* FBLPromiseError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLPromiseError.h; path = Sources/FBLPromises/include/FBLPromiseError.h; sourceTree = "<group>"; };
+		1BA31091C28DF313C740DBA5FFEF811F /* Pods-MassLotteryKeno.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MassLotteryKeno.debug.xcconfig"; sourceTree = "<group>"; };
+		1F763461268B179BBA99ECBF1140BA89 /* FBLPromise+Any.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Any.m"; path = "Sources/FBLPromises/FBLPromise+Any.m"; sourceTree = "<group>"; };
+		1F973BE9091CFDB2A4280303376CF323 /* Pods-MassLotteryKenoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MassLotteryKenoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		202653A7E63E84973EBC11AD90E135D9 /* FBLPromise+Reduce.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Reduce.h"; path = "Sources/FBLPromises/include/FBLPromise+Reduce.h"; sourceTree = "<group>"; };
+		268FEA92F27803FF07086B089B3902B1 /* Promises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Promises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26ED8C58401CBF11D099316256F9E284 /* Promise+Then.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Then.swift"; path = "Sources/Promises/Promise+Then.swift"; sourceTree = "<group>"; };
+		2A2ED8F9E094CD2BB68B8F3FE719E148 /* NetworkClientType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkClientType.swift; path = Sources/Kringle/Protocols/NetworkClientType.swift; sourceTree = "<group>"; };
+		3231ABAA72FD20A7B032A07BA9D169DE /* FBLPromise+Await.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Await.h"; path = "Sources/FBLPromises/include/FBLPromise+Await.h"; sourceTree = "<group>"; };
+		3625D1C22878C276FDB68F00DF5650AD /* FBLPromise+Retry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Retry.m"; path = "Sources/FBLPromises/FBLPromise+Retry.m"; sourceTree = "<group>"; };
+		38002CCE14E1434C17F4ED90C8E3C6A7 /* FBLPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBLPromise.m; path = Sources/FBLPromises/FBLPromise.m; sourceTree = "<group>"; };
+		3953E0E574E5959D6A1CF45E0A03E904 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		39C39C448069F4193A4D309A8F6EFFBF /* Promise+Reduce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Reduce.swift"; path = "Sources/Promises/Promise+Reduce.swift"; sourceTree = "<group>"; };
+		3A064CAF4A62DB3E43EC88B11FBA14D4 /* PromisesObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromisesObjC.xcconfig; sourceTree = "<group>"; };
+		3ABE9ED27E742FB08E1FB772E6CC6AC6 /* FBLPromise+Validate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Validate.m"; path = "Sources/FBLPromises/FBLPromise+Validate.m"; sourceTree = "<group>"; };
+		3DC2806C4C2B960B5F0E7276288DE168 /* Pods_MassLotteryKeno.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MassLotteryKeno.framework; path = "Pods-MassLotteryKeno.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		410FF8BB8C062D4FFD0D865B6F35B5DD /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Sources/Kringle/HTTPMethod.swift; sourceTree = "<group>"; };
+		415AF23967D663859CC2B7BEF5819CE5 /* Pods-MassLotteryKeno-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MassLotteryKeno-frameworks.sh"; sourceTree = "<group>"; };
+		417D8D4E97D721123196FB130B3450BD /* Pods-MassLotteryKenoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MassLotteryKenoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		41D5A58DE28BBF8B528CA8D7E57948BB /* Promise+Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Async.swift"; path = "Sources/Promises/Promise+Async.swift"; sourceTree = "<group>"; };
+		430B2C5E35517A1D8F6C87DC7CB1DCD9 /* Pods-MassLotteryKeno.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MassLotteryKeno.release.xcconfig"; sourceTree = "<group>"; };
+		4392857280EB3B94A02D42C231C44865 /* FBLPromise+Timeout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Timeout.h"; path = "Sources/FBLPromises/include/FBLPromise+Timeout.h"; sourceTree = "<group>"; };
+		43D880AC35C95E4479529E7A63241008 /* FBLPromise+Wrap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Wrap.h"; path = "Sources/FBLPromises/include/FBLPromise+Wrap.h"; sourceTree = "<group>"; };
+		44AF453B56D839B61241FBD73AA5ED18 /* Pods-MassLotteryKeno-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MassLotteryKeno-umbrella.h"; sourceTree = "<group>"; };
+		44C26B70E168360BDA73FFE0F855587B /* Promise+Do.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Do.swift"; path = "Sources/Promises/Promise+Do.swift"; sourceTree = "<group>"; };
+		4A1E8D2DC375FC82E17CD311B86A3771 /* FBLPromise+Then.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Then.m"; path = "Sources/FBLPromises/FBLPromise+Then.m"; sourceTree = "<group>"; };
+		4B978648C1BC3972623193D540AD6DDC /* Promise+Timeout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Timeout.swift"; path = "Sources/Promises/Promise+Timeout.swift"; sourceTree = "<group>"; };
+		4D84211662E1D94B89D05463BF35718E /* Pods_MassLotteryKenoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MassLotteryKenoTests.framework; path = "Pods-MassLotteryKenoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DA94785F86FECBE4927CD2699023CFC /* PromisesSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromisesSwift.xcconfig; sourceTree = "<group>"; };
+		4F84116E35FA0D6428AC641F5714FDC4 /* Pods-MassLotteryKenoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MassLotteryKenoTests-dummy.m"; sourceTree = "<group>"; };
+		52272680921611C746B73A70B8E36DAC /* Endpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endpoint.swift; path = Sources/Kringle/Endpoint.swift; sourceTree = "<group>"; };
+		52BE098EDCCFC6EBA75F5D427D423368 /* PromisesSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromisesSwift-umbrella.h"; sourceTree = "<group>"; };
+		55B1F5306C9E16B3F1B19C732CE1913C /* Pods_MassLotteryKenoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MassLotteryKenoUITests.framework; path = "Pods-MassLotteryKenoUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58F7D8818DEC1F4254D575214E6972F9 /* Promise+Race.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Race.swift"; path = "Sources/Promises/Promise+Race.swift"; sourceTree = "<group>"; };
+		5CA8055AC6BF75B515689A328AEC6F43 /* Pods-MassLotteryKenoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MassLotteryKenoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6159F81FD18AA7C4B480C98C372E57FB /* Promise+Await.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Await.swift"; path = "Sources/Promises/Promise+Await.swift"; sourceTree = "<group>"; };
+		62C7B01F2E5A0FC8B3B7561DCDFD6A23 /* FBLPromise+Await.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Await.m"; path = "Sources/FBLPromises/FBLPromise+Await.m"; sourceTree = "<group>"; };
+		63036464A71AD15DD754ECF344F4C7D3 /* FBLPromise+Async.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Async.h"; path = "Sources/FBLPromises/include/FBLPromise+Async.h"; sourceTree = "<group>"; };
+		637E3AD253C9242AD9FF0A718B7F9F6F /* Pods-MassLotteryKeno-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MassLotteryKeno-dummy.m"; sourceTree = "<group>"; };
+		651C3B0A26E0B9A3F3E6861C51DE73E2 /* FBLPromise+Always.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Always.m"; path = "Sources/FBLPromises/FBLPromise+Always.m"; sourceTree = "<group>"; };
+		66077AC44C1371C0414F9B60F6FFBB66 /* PromiseError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PromiseError.swift; path = Sources/Promises/PromiseError.swift; sourceTree = "<group>"; };
+		66BD6B116A70D246C91A75883CA7D04C /* Pods-MassLotteryKenoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MassLotteryKenoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6B2AA14D312F3BAB483C14C9C2A6AF08 /* FBLPromise+Race.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Race.m"; path = "Sources/FBLPromises/FBLPromise+Race.m"; sourceTree = "<group>"; };
+		6CB387643A04F44A737251818EAD29F3 /* PromisesObjC-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PromisesObjC-Info.plist"; sourceTree = "<group>"; };
+		6DE12137EFF2ECB061E8102FC59ECC37 /* Kringle-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kringle-prefix.pch"; sourceTree = "<group>"; };
+		71E5A369B2DA3BE48C7A12713B4A69A0 /* FBLPromise+Catch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Catch.h"; path = "Sources/FBLPromises/include/FBLPromise+Catch.h"; sourceTree = "<group>"; };
+		7372328E98AE636EC204DECECC0F2DED /* FBLPromise+Recover.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Recover.h"; path = "Sources/FBLPromises/include/FBLPromise+Recover.h"; sourceTree = "<group>"; };
+		7386C16A41A39D5B3BC0520F58F5B3DF /* PromisesSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PromisesSwift.modulemap; sourceTree = "<group>"; };
+		7501D2557312127B2EC88CF6E2A33BBF /* Promise+Recover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Recover.swift"; path = "Sources/Promises/Promise+Recover.swift"; sourceTree = "<group>"; };
+		7715F3C7F6031E6C95CAA5DCEEADE5B8 /* PromisesSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PromisesSwift-Info.plist"; sourceTree = "<group>"; };
+		79610C558832F67A2AC82292195341C4 /* FBLPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBLPromises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		840F757B1A548C3495C036893ECB2279 /* Pods-MassLotteryKenoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MassLotteryKenoUITests-umbrella.h"; sourceTree = "<group>"; };
+		852117498266E32984FF61AEA8BF2A39 /* Pods-MassLotteryKenoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MassLotteryKenoTests.modulemap"; sourceTree = "<group>"; };
+		85BB54C4A40C5CF72A9E66595F3340D2 /* Kringle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kringle.framework; path = Kringle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88521F2C6F9D7F3977AFCCAB72C2CA76 /* Pods-MassLotteryKenoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MassLotteryKenoTests.release.xcconfig"; sourceTree = "<group>"; };
+		8B6B09738530E7A6E00F1FA9670BEA77 /* Promise+Always.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Always.swift"; path = "Sources/Promises/Promise+Always.swift"; sourceTree = "<group>"; };
+		8B70A3524A8FBD5A2547D08539ED0C8D /* PromisesSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromisesSwift-prefix.pch"; sourceTree = "<group>"; };
+		8D05C1626AC4A145A76D33A346EACA5F /* CookieJarType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CookieJarType.swift; path = Sources/Kringle/Protocols/CookieJarType.swift; sourceTree = "<group>"; };
+		9B0BE33AECF63ECFFD127F0F582DD6AA /* Pods-MassLotteryKenoTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MassLotteryKenoTests-Info.plist"; sourceTree = "<group>"; };
+		9B1F830341274EA934D7BFA8BDACD693 /* FBLPromise+Do.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Do.h"; path = "Sources/FBLPromises/include/FBLPromise+Do.h"; sourceTree = "<group>"; };
+		9CDAFF426DF1CDA071C4CFE05991E9CC /* FBLPromise+Always.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Always.h"; path = "Sources/FBLPromises/include/FBLPromise+Always.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A076F78D9614388C97ABDCC9C2EA3963 /* Kringle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kringle-dummy.m"; sourceTree = "<group>"; };
+		A4386867646CCA980B81F4B6C677F954 /* NetworkError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkError.swift; path = Sources/Kringle/NetworkError.swift; sourceTree = "<group>"; };
+		A52C041301480B9EC06B57BCBDC35B95 /* Pods-MassLotteryKeno-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MassLotteryKeno-acknowledgements.plist"; sourceTree = "<group>"; };
+		AC633FC8BAF17BFFDB48085755EE103F /* Kringle.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kringle.xcconfig; sourceTree = "<group>"; };
+		AD744E8BE20535FCD395B5E8A4D64279 /* Promise+Catch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Catch.swift"; path = "Sources/Promises/Promise+Catch.swift"; sourceTree = "<group>"; };
+		AE92E3F112DC23581A8CD71DBEEA3DA6 /* Kringle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kringle-umbrella.h"; sourceTree = "<group>"; };
+		B151D881B1E61927CCB26BA3E534E486 /* Pods-MassLotteryKenoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MassLotteryKenoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B1B1273F7911268DB8FFD931E36B36BF /* Promise+Wrap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Wrap.swift"; path = "Sources/Promises/Promise+Wrap.swift"; sourceTree = "<group>"; };
+		B21EC83F861F90CD82D3649A532BDCD5 /* PromisesObjC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PromisesObjC.modulemap; sourceTree = "<group>"; };
+		B23AF1152462162D943A7C52501643FF /* FBLPromise+Timeout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Timeout.m"; path = "Sources/FBLPromises/FBLPromise+Timeout.m"; sourceTree = "<group>"; };
+		B387A0ED72B4D6AFA1DBDF7E663DA4A1 /* Pods-MassLotteryKenoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MassLotteryKenoUITests.modulemap"; sourceTree = "<group>"; };
+		B3ECA4679417B8DBBC11DE2CBC8590DA /* CoderType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoderType.swift; path = Sources/Kringle/Protocols/CoderType.swift; sourceTree = "<group>"; };
+		B439EFF0FA0CE8923FCC5EF692592494 /* Kringle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Kringle.modulemap; sourceTree = "<group>"; };
+		B5C81F23946DEB15A840E2F0EE0B724A /* FBLPromiseError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBLPromiseError.m; path = Sources/FBLPromises/FBLPromiseError.m; sourceTree = "<group>"; };
+		B66547F54B9AB528D3C37785CEEB5A36 /* FBLPromise+Validate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Validate.h"; path = "Sources/FBLPromises/include/FBLPromise+Validate.h"; sourceTree = "<group>"; };
+		B780DB5C429CD3CCB8602A1E4032A72C /* FBLPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBLPromises.framework; path = PromisesObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9BAE71DEB00FB3B9CC718E0273167DE /* Promises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Promises.framework; path = PromisesSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC50F0823E5161478DD0A371497C291 /* CookieJar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CookieJar.swift; path = Sources/Kringle/CookieJar.swift; sourceTree = "<group>"; };
+		BB090609A8E75BC8EEF2E9F854AEEBAC /* FBLPromise+Testing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Testing.h"; path = "Sources/FBLPromises/include/FBLPromise+Testing.h"; sourceTree = "<group>"; };
+		BD05F3289CF237AD62995B3501917763 /* Promise+Validate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Validate.swift"; path = "Sources/Promises/Promise+Validate.swift"; sourceTree = "<group>"; };
+		C0A5BFAFA335DCA578BB66591BCB90F3 /* Promise+Delay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Delay.swift"; path = "Sources/Promises/Promise+Delay.swift"; sourceTree = "<group>"; };
+		C1D90909AED948980F84FA86582B2FE2 /* FBLPromise+Testing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Testing.m"; path = "Sources/FBLPromises/FBLPromise+Testing.m"; sourceTree = "<group>"; };
+		C5160A39213972952749D6FE69E3B11F /* Promise+All.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+All.swift"; path = "Sources/Promises/Promise+All.swift"; sourceTree = "<group>"; };
+		C5B65D548D8D313D25F5DC95AC3F111B /* Kringle-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Kringle-Info.plist"; sourceTree = "<group>"; };
+		C630D169511AB5F0049B76A095850948 /* Pods-MassLotteryKenoUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MassLotteryKenoUITests-Info.plist"; sourceTree = "<group>"; };
+		C8632323D9E10B3C70926812493E7611 /* Coder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coder.swift; path = Sources/Kringle/Coder.swift; sourceTree = "<group>"; };
+		CB5A830BAC905F1AAFAE064F2952581D /* Pods-MassLotteryKeno-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MassLotteryKeno-Info.plist"; sourceTree = "<group>"; };
+		CBA7C42E58C9D54E4553BE6643ACC45F /* FBLPromise+All.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+All.m"; path = "Sources/FBLPromises/FBLPromise+All.m"; sourceTree = "<group>"; };
+		CBE70FF2A2DC153DF2485AA50D4B5F16 /* FBLPromise+Wrap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Wrap.m"; path = "Sources/FBLPromises/FBLPromise+Wrap.m"; sourceTree = "<group>"; };
+		CEED7E0B3F0464EDA7B802A049E1D544 /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/Promises/Promise.swift; sourceTree = "<group>"; };
+		D289622F6C77A9A174AC8693FAFAB899 /* FBLPromise+All.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+All.h"; path = "Sources/FBLPromises/include/FBLPromise+All.h"; sourceTree = "<group>"; };
+		D2F7AD0A3BD28847987A4C448BFA8C1E /* Pods-MassLotteryKeno.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MassLotteryKeno.modulemap"; sourceTree = "<group>"; };
+		DDE34FAB1D56DCC0A5E570679362F23B /* FBLPromise+Retry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Retry.h"; path = "Sources/FBLPromises/include/FBLPromise+Retry.h"; sourceTree = "<group>"; };
+		E08F670BB094153B54C7BDC797DFB5C7 /* FBLPromise+Any.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Any.h"; path = "Sources/FBLPromises/include/FBLPromise+Any.h"; sourceTree = "<group>"; };
+		E33E9D0295071F1D051D15171C8A7189 /* Pods-MassLotteryKenoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MassLotteryKenoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E4B183366A60D571B1F686CE47165E92 /* FBLPromise+Do.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Do.m"; path = "Sources/FBLPromises/FBLPromise+Do.m"; sourceTree = "<group>"; };
+		E76567A54D8F3AFBEE65072C13DEF8C7 /* FBLPromise+Catch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Catch.m"; path = "Sources/FBLPromises/FBLPromise+Catch.m"; sourceTree = "<group>"; };
+		E8B278E1DD2DE04761768A9340E50958 /* Promise+Any.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Any.swift"; path = "Sources/Promises/Promise+Any.swift"; sourceTree = "<group>"; };
+		E9D2DD071126C9EB71124C59E19D77C7 /* FBLPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLPromise.h; path = Sources/FBLPromises/include/FBLPromise.h; sourceTree = "<group>"; };
+		EB298F780DAAD9713F7E2EEAEE845BF4 /* Pods-MassLotteryKeno-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MassLotteryKeno-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EC1D52ADC70265BC77653242B9B6A2CC /* FBLPromise+Reduce.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Reduce.m"; path = "Sources/FBLPromises/FBLPromise+Reduce.m"; sourceTree = "<group>"; };
+		EF0A72243BB0D29ECA6A0C4E891DB066 /* FBLPromise+Race.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Race.h"; path = "Sources/FBLPromises/include/FBLPromise+Race.h"; sourceTree = "<group>"; };
+		EF8C4EC0EDA09A21458BD766582C18BC /* PromisesObjC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromisesObjC-umbrella.h"; sourceTree = "<group>"; };
+		F05F4F81683A3CBD2ECCFC2B479C7B94 /* Pods-MassLotteryKenoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MassLotteryKenoTests-umbrella.h"; sourceTree = "<group>"; };
+		F6DEF5FFC0F832CA448CB2AF92CFF487 /* FBLPromise+Delay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Delay.m"; path = "Sources/FBLPromises/FBLPromise+Delay.m"; sourceTree = "<group>"; };
+		F76D28EFDC826C6297075FBFD838F406 /* Pods-MassLotteryKenoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MassLotteryKenoUITests-dummy.m"; sourceTree = "<group>"; };
+		FC57B0F1AB36DD84324FBCDD01B3A799 /* FBLPromises.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLPromises.h; path = Sources/FBLPromises/include/FBLPromises.h; sourceTree = "<group>"; };
+		FCD9E46A693487C11D7BE2F0C7DE2334 /* Pods-MassLotteryKenoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MassLotteryKenoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FE33F20E71632CFF135A79100DC96884 /* FBLPromise+Async.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Async.m"; path = "Sources/FBLPromises/FBLPromise+Async.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A615121604AA073B31A8D1B519E327F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0086D6E227C372712325F7694B59911 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D9533E75F74672A77B71977FDC9DB32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C3CEB97732A8ED496A2FDC3C0C07B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF2E43CBE791C1459985AA2E43DB405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D0136DF676CBE9C16AA98F148402759 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B211D37F6347F3EE5085B6B76878B0AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27335075DA092A743806DFC2A97D3AB4 /* Foundation.framework in Frameworks */,
+				A22177A7A44F4860A7A56E614641D18F /* Promises.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D121C7EFDF87B3603D7C2F2B0D6F6AE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B6F2F977851951E18248EBBBE41A6D /* FBLPromises.framework in Frameworks */,
+				39CAE171E2190F1463B3ACC983C2B708 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5B8BD4CECFBDDF7605ABD2EFF49B30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428E5B02DC78A8DAEB6B28D8931D4F62 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1704CBDB5C6C4807481DEA111E1E7578 /* Pods-MassLotteryKenoTests */ = {
+			isa = PBXGroup;
+			children = (
+				852117498266E32984FF61AEA8BF2A39 /* Pods-MassLotteryKenoTests.modulemap */,
+				417D8D4E97D721123196FB130B3450BD /* Pods-MassLotteryKenoTests-acknowledgements.markdown */,
+				5CA8055AC6BF75B515689A328AEC6F43 /* Pods-MassLotteryKenoTests-acknowledgements.plist */,
+				4F84116E35FA0D6428AC641F5714FDC4 /* Pods-MassLotteryKenoTests-dummy.m */,
+				9B0BE33AECF63ECFFD127F0F582DD6AA /* Pods-MassLotteryKenoTests-Info.plist */,
+				F05F4F81683A3CBD2ECCFC2B479C7B94 /* Pods-MassLotteryKenoTests-umbrella.h */,
+				B151D881B1E61927CCB26BA3E534E486 /* Pods-MassLotteryKenoTests.debug.xcconfig */,
+				88521F2C6F9D7F3977AFCCAB72C2CA76 /* Pods-MassLotteryKenoTests.release.xcconfig */,
+			);
+			name = "Pods-MassLotteryKenoTests";
+			path = "Target Support Files/Pods-MassLotteryKenoTests";
+			sourceTree = "<group>";
+		};
+		174B0CE289B79C544A2490757F79C355 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B780DB5C429CD3CCB8602A1E4032A72C /* FBLPromises.framework */,
+				85BB54C4A40C5CF72A9E66595F3340D2 /* Kringle.framework */,
+				3DC2806C4C2B960B5F0E7276288DE168 /* Pods_MassLotteryKeno.framework */,
+				4D84211662E1D94B89D05463BF35718E /* Pods_MassLotteryKenoTests.framework */,
+				55B1F5306C9E16B3F1B19C732CE1913C /* Pods_MassLotteryKenoUITests.framework */,
+				B9BAE71DEB00FB3B9CC718E0273167DE /* Promises.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1803F1D8A4BEEE5E2644E5C0C09DE315 /* Pods-MassLotteryKenoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B387A0ED72B4D6AFA1DBDF7E663DA4A1 /* Pods-MassLotteryKenoUITests.modulemap */,
+				66BD6B116A70D246C91A75883CA7D04C /* Pods-MassLotteryKenoUITests-acknowledgements.markdown */,
+				FCD9E46A693487C11D7BE2F0C7DE2334 /* Pods-MassLotteryKenoUITests-acknowledgements.plist */,
+				F76D28EFDC826C6297075FBFD838F406 /* Pods-MassLotteryKenoUITests-dummy.m */,
+				C630D169511AB5F0049B76A095850948 /* Pods-MassLotteryKenoUITests-Info.plist */,
+				840F757B1A548C3495C036893ECB2279 /* Pods-MassLotteryKenoUITests-umbrella.h */,
+				1F973BE9091CFDB2A4280303376CF323 /* Pods-MassLotteryKenoUITests.debug.xcconfig */,
+				E33E9D0295071F1D051D15171C8A7189 /* Pods-MassLotteryKenoUITests.release.xcconfig */,
+			);
+			name = "Pods-MassLotteryKenoUITests";
+			path = "Target Support Files/Pods-MassLotteryKenoUITests";
+			sourceTree = "<group>";
+		};
+		3641D5E645B28B5105A056CE3DF547E1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3953E0E574E5959D6A1CF45E0A03E904 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4AA623307B764C1C1E32DA367E0266B2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B439EFF0FA0CE8923FCC5EF692592494 /* Kringle.modulemap */,
+				AC633FC8BAF17BFFDB48085755EE103F /* Kringle.xcconfig */,
+				A076F78D9614388C97ABDCC9C2EA3963 /* Kringle-dummy.m */,
+				C5B65D548D8D313D25F5DC95AC3F111B /* Kringle-Info.plist */,
+				6DE12137EFF2ECB061E8102FC59ECC37 /* Kringle-prefix.pch */,
+				AE92E3F112DC23581A8CD71DBEEA3DA6 /* Kringle-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Kringle";
+			sourceTree = "<group>";
+		};
+		632812B38EFA93FDBA32FB7E52B41476 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B21EC83F861F90CD82D3649A532BDCD5 /* PromisesObjC.modulemap */,
+				3A064CAF4A62DB3E43EC88B11FBA14D4 /* PromisesObjC.xcconfig */,
+				1276197DD4745771BD63E18E4CFC1F81 /* PromisesObjC-dummy.m */,
+				6CB387643A04F44A737251818EAD29F3 /* PromisesObjC-Info.plist */,
+				EF8C4EC0EDA09A21458BD766582C18BC /* PromisesObjC-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PromisesObjC";
+			sourceTree = "<group>";
+		};
+		74D0AA644B3F2B57EB27927001CB4A59 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7386C16A41A39D5B3BC0520F58F5B3DF /* PromisesSwift.modulemap */,
+				4DA94785F86FECBE4927CD2699023CFC /* PromisesSwift.xcconfig */,
+				14E0FDF59A67F15056A9CB90D2A8D817 /* PromisesSwift-dummy.m */,
+				7715F3C7F6031E6C95CAA5DCEEADE5B8 /* PromisesSwift-Info.plist */,
+				8B70A3524A8FBD5A2547D08539ED0C8D /* PromisesSwift-prefix.pch */,
+				52BE098EDCCFC6EBA75F5D427D423368 /* PromisesSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PromisesSwift";
+			sourceTree = "<group>";
+		};
+		83B96876D0571802108062A018F71E2A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC373121B21E6ADCBABA45D059A25383 /* Pods-MassLotteryKeno */,
+				1704CBDB5C6C4807481DEA111E1E7578 /* Pods-MassLotteryKenoTests */,
+				1803F1D8A4BEEE5E2644E5C0C09DE315 /* Pods-MassLotteryKenoUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		972068EB14B0FCB34EC9D8938A4543FE /* Kringle */ = {
+			isa = PBXGroup;
+			children = (
+				C8632323D9E10B3C70926812493E7611 /* Coder.swift */,
+				B3ECA4679417B8DBBC11DE2CBC8590DA /* CoderType.swift */,
+				BAC50F0823E5161478DD0A371497C291 /* CookieJar.swift */,
+				8D05C1626AC4A145A76D33A346EACA5F /* CookieJarType.swift */,
+				52272680921611C746B73A70B8E36DAC /* Endpoint.swift */,
+				410FF8BB8C062D4FFD0D865B6F35B5DD /* HTTPMethod.swift */,
+				02F7B927565B8622500963FC124AA69E /* NetworkClient.swift */,
+				2A2ED8F9E094CD2BB68B8F3FE719E148 /* NetworkClientType.swift */,
+				A4386867646CCA980B81F4B6C677F954 /* NetworkError.swift */,
+				4AA623307B764C1C1E32DA367E0266B2 /* Support Files */,
+			);
+			name = Kringle;
+			path = Kringle;
+			sourceTree = "<group>";
+		};
+		A2A1852ED1D2B0DB9E2E0F4D2E4F19B7 /* PromisesSwift */ = {
+			isa = PBXGroup;
+			children = (
+				CEED7E0B3F0464EDA7B802A049E1D544 /* Promise.swift */,
+				C5160A39213972952749D6FE69E3B11F /* Promise+All.swift */,
+				8B6B09738530E7A6E00F1FA9670BEA77 /* Promise+Always.swift */,
+				E8B278E1DD2DE04761768A9340E50958 /* Promise+Any.swift */,
+				41D5A58DE28BBF8B528CA8D7E57948BB /* Promise+Async.swift */,
+				6159F81FD18AA7C4B480C98C372E57FB /* Promise+Await.swift */,
+				AD744E8BE20535FCD395B5E8A4D64279 /* Promise+Catch.swift */,
+				C0A5BFAFA335DCA578BB66591BCB90F3 /* Promise+Delay.swift */,
+				44C26B70E168360BDA73FFE0F855587B /* Promise+Do.swift */,
+				58F7D8818DEC1F4254D575214E6972F9 /* Promise+Race.swift */,
+				7501D2557312127B2EC88CF6E2A33BBF /* Promise+Recover.swift */,
+				39C39C448069F4193A4D309A8F6EFFBF /* Promise+Reduce.swift */,
+				142A45348A1AF14CAE2244684E409F42 /* Promise+Retry.swift */,
+				03D3D06F86BB53B72DA83160632FD140 /* Promise+Testing.swift */,
+				26ED8C58401CBF11D099316256F9E284 /* Promise+Then.swift */,
+				4B978648C1BC3972623193D540AD6DDC /* Promise+Timeout.swift */,
+				BD05F3289CF237AD62995B3501917763 /* Promise+Validate.swift */,
+				B1B1273F7911268DB8FFD931E36B36BF /* Promise+Wrap.swift */,
+				66077AC44C1371C0414F9B60F6FFBB66 /* PromiseError.swift */,
+				74D0AA644B3F2B57EB27927001CB4A59 /* Support Files */,
+			);
+			name = PromisesSwift;
+			path = PromisesSwift;
+			sourceTree = "<group>";
+		};
+		A85C804E82DC13734C5FA49A6EA2DB0B /* PromisesObjC */ = {
+			isa = PBXGroup;
+			children = (
+				E9D2DD071126C9EB71124C59E19D77C7 /* FBLPromise.h */,
+				38002CCE14E1434C17F4ED90C8E3C6A7 /* FBLPromise.m */,
+				D289622F6C77A9A174AC8693FAFAB899 /* FBLPromise+All.h */,
+				CBA7C42E58C9D54E4553BE6643ACC45F /* FBLPromise+All.m */,
+				9CDAFF426DF1CDA071C4CFE05991E9CC /* FBLPromise+Always.h */,
+				651C3B0A26E0B9A3F3E6861C51DE73E2 /* FBLPromise+Always.m */,
+				E08F670BB094153B54C7BDC797DFB5C7 /* FBLPromise+Any.h */,
+				1F763461268B179BBA99ECBF1140BA89 /* FBLPromise+Any.m */,
+				63036464A71AD15DD754ECF344F4C7D3 /* FBLPromise+Async.h */,
+				FE33F20E71632CFF135A79100DC96884 /* FBLPromise+Async.m */,
+				3231ABAA72FD20A7B032A07BA9D169DE /* FBLPromise+Await.h */,
+				62C7B01F2E5A0FC8B3B7561DCDFD6A23 /* FBLPromise+Await.m */,
+				71E5A369B2DA3BE48C7A12713B4A69A0 /* FBLPromise+Catch.h */,
+				E76567A54D8F3AFBEE65072C13DEF8C7 /* FBLPromise+Catch.m */,
+				189609FD8EA6DDFBA62E896284DF6E51 /* FBLPromise+Delay.h */,
+				F6DEF5FFC0F832CA448CB2AF92CFF487 /* FBLPromise+Delay.m */,
+				9B1F830341274EA934D7BFA8BDACD693 /* FBLPromise+Do.h */,
+				E4B183366A60D571B1F686CE47165E92 /* FBLPromise+Do.m */,
+				EF0A72243BB0D29ECA6A0C4E891DB066 /* FBLPromise+Race.h */,
+				6B2AA14D312F3BAB483C14C9C2A6AF08 /* FBLPromise+Race.m */,
+				7372328E98AE636EC204DECECC0F2DED /* FBLPromise+Recover.h */,
+				10225581417165C8560E750E4E03D38D /* FBLPromise+Recover.m */,
+				202653A7E63E84973EBC11AD90E135D9 /* FBLPromise+Reduce.h */,
+				EC1D52ADC70265BC77653242B9B6A2CC /* FBLPromise+Reduce.m */,
+				DDE34FAB1D56DCC0A5E570679362F23B /* FBLPromise+Retry.h */,
+				3625D1C22878C276FDB68F00DF5650AD /* FBLPromise+Retry.m */,
+				BB090609A8E75BC8EEF2E9F854AEEBAC /* FBLPromise+Testing.h */,
+				C1D90909AED948980F84FA86582B2FE2 /* FBLPromise+Testing.m */,
+				1957D1E12A3DC837925FB0F4DFD2D49B /* FBLPromise+Then.h */,
+				4A1E8D2DC375FC82E17CD311B86A3771 /* FBLPromise+Then.m */,
+				4392857280EB3B94A02D42C231C44865 /* FBLPromise+Timeout.h */,
+				B23AF1152462162D943A7C52501643FF /* FBLPromise+Timeout.m */,
+				B66547F54B9AB528D3C37785CEEB5A36 /* FBLPromise+Validate.h */,
+				3ABE9ED27E742FB08E1FB772E6CC6AC6 /* FBLPromise+Validate.m */,
+				43D880AC35C95E4479529E7A63241008 /* FBLPromise+Wrap.h */,
+				CBE70FF2A2DC153DF2485AA50D4B5F16 /* FBLPromise+Wrap.m */,
+				1AE7747B6CD80F6C072236E192793C33 /* FBLPromiseError.h */,
+				B5C81F23946DEB15A840E2F0EE0B724A /* FBLPromiseError.m */,
+				0620493CE50678A8F7243940E4E81BC0 /* FBLPromisePrivate.h */,
+				FC57B0F1AB36DD84324FBCDD01B3A799 /* FBLPromises.h */,
+				632812B38EFA93FDBA32FB7E52B41476 /* Support Files */,
+			);
+			name = PromisesObjC;
+			path = PromisesObjC;
+			sourceTree = "<group>";
+		};
+		AE472979114EFD00FFCB4B8BF2D46D02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79610C558832F67A2AC82292195341C4 /* FBLPromises.framework */,
+				268FEA92F27803FF07086B089B3902B1 /* Promises.framework */,
+				3641D5E645B28B5105A056CE3DF547E1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				AE472979114EFD00FFCB4B8BF2D46D02 /* Frameworks */,
+				EBDAEFCFAB92AB4D109669B70F794FB8 /* Pods */,
+				174B0CE289B79C544A2490757F79C355 /* Products */,
+				83B96876D0571802108062A018F71E2A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		EBDAEFCFAB92AB4D109669B70F794FB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				972068EB14B0FCB34EC9D8938A4543FE /* Kringle */,
+				A85C804E82DC13734C5FA49A6EA2DB0B /* PromisesObjC */,
+				A2A1852ED1D2B0DB9E2E0F4D2E4F19B7 /* PromisesSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC373121B21E6ADCBABA45D059A25383 /* Pods-MassLotteryKeno */ = {
+			isa = PBXGroup;
+			children = (
+				D2F7AD0A3BD28847987A4C448BFA8C1E /* Pods-MassLotteryKeno.modulemap */,
+				EB298F780DAAD9713F7E2EEAEE845BF4 /* Pods-MassLotteryKeno-acknowledgements.markdown */,
+				A52C041301480B9EC06B57BCBDC35B95 /* Pods-MassLotteryKeno-acknowledgements.plist */,
+				637E3AD253C9242AD9FF0A718B7F9F6F /* Pods-MassLotteryKeno-dummy.m */,
+				415AF23967D663859CC2B7BEF5819CE5 /* Pods-MassLotteryKeno-frameworks.sh */,
+				CB5A830BAC905F1AAFAE064F2952581D /* Pods-MassLotteryKeno-Info.plist */,
+				44AF453B56D839B61241FBD73AA5ED18 /* Pods-MassLotteryKeno-umbrella.h */,
+				1BA31091C28DF313C740DBA5FFEF811F /* Pods-MassLotteryKeno.debug.xcconfig */,
+				430B2C5E35517A1D8F6C87DC7CB1DCD9 /* Pods-MassLotteryKeno.release.xcconfig */,
+			);
+			name = "Pods-MassLotteryKeno";
+			path = "Target Support Files/Pods-MassLotteryKeno";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		001718E49B09FD9BD3E7234C860A0AA0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F529DA8FE3C759ED80B5A9450B01034C /* Pods-MassLotteryKenoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ADFA7F7A81424BC04543ECE88AB99AF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2CE6457DE040C4F5617E5B1E4A78C4 /* Kringle-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E620A4EF37822BED7400999E198F8A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95668B76A7006DF1E2452F33A03BD349 /* Pods-MassLotteryKenoUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0F009366C20D3E46600BDB50605CA1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4742D72A42E3613CB6F734EBF21E9725 /* PromisesSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948D17A44F645637377189EDC31B739F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC01910782F9E31A8304B880D779ABD /* Pods-MassLotteryKeno-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2BD95552257EAEDA120F00237416464 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57679DD372A8A7AF73F23A66E141B1C8 /* FBLPromise+All.h in Headers */,
+				92AC58547736195B689CB80E0C3CE124 /* FBLPromise+Always.h in Headers */,
+				380F97EC1D54FDC9F633378685D52301 /* FBLPromise+Any.h in Headers */,
+				4E200CBDC35204312298FD14B66F87F1 /* FBLPromise+Async.h in Headers */,
+				7145C51402C46788E8116563EFFD4873 /* FBLPromise+Await.h in Headers */,
+				DEAD09C3C530CE087EA7672C143DF454 /* FBLPromise+Catch.h in Headers */,
+				270108A450B8F8E7B510EDE05D3C49AF /* FBLPromise+Delay.h in Headers */,
+				BD023609941ADDC73939717CEE054155 /* FBLPromise+Do.h in Headers */,
+				6E9AB6E6EA65852748CC645EF3AFCFEB /* FBLPromise+Race.h in Headers */,
+				6532D49197AC8C6661F1AC9C96D481C1 /* FBLPromise+Recover.h in Headers */,
+				55ECA084CFA315E80642A7F279317CB0 /* FBLPromise+Reduce.h in Headers */,
+				829012A4806FFC78072F0AF2B06EF1B2 /* FBLPromise+Retry.h in Headers */,
+				6C032FB2EA8E86F489AA60B6D6E924E9 /* FBLPromise+Testing.h in Headers */,
+				58E679BDC76492711F1AD7665E670B96 /* FBLPromise+Then.h in Headers */,
+				C13BB0298BF21CC63E0237163295A65B /* FBLPromise+Timeout.h in Headers */,
+				3675EE40F68A4E0D7BA3612069087FDA /* FBLPromise+Validate.h in Headers */,
+				6186401EF6805E9D5AF02B8FFD29476A /* FBLPromise+Wrap.h in Headers */,
+				FBEF7DC722A6FA6E71DFC017008C8C04 /* FBLPromise.h in Headers */,
+				88510E8EEEB446687B415013EE7F4CB2 /* FBLPromiseError.h in Headers */,
+				ED34B8FE136365DB048F1DF88A800AB9 /* FBLPromisePrivate.h in Headers */,
+				B000D39AA05DC90228CDDC0B49ECF22A /* FBLPromises.h in Headers */,
+				36583603C14F25B4890B4B4B1663537B /* PromisesObjC-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0414F9002F6E5154879FAA1717B8D15A /* Pods-MassLotteryKeno */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96667A79056A0E4CEFA4602DD5FF365A /* Build configuration list for PBXNativeTarget "Pods-MassLotteryKeno" */;
+			buildPhases = (
+				948D17A44F645637377189EDC31B739F /* Headers */,
+				BF4D8BE3E4DF4B1DD770E308DDA6D6D6 /* Sources */,
+				9DF2E43CBE791C1459985AA2E43DB405 /* Frameworks */,
+				D7A7121E40FD0C67D4365D0280BBFA6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F51B6613DCEB56D0B4D3344D9D2E9AF7 /* PBXTargetDependency */,
+				F8D09286902F0535A85EB760A9705700 /* PBXTargetDependency */,
+				490F49AA52B024824B92A6A4F2D04C97 /* PBXTargetDependency */,
+			);
+			name = "Pods-MassLotteryKeno";
+			productName = "Pods-MassLotteryKeno";
+			productReference = 3DC2806C4C2B960B5F0E7276288DE168 /* Pods_MassLotteryKeno.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		17CD7AE05FE4F3FDDFCA219A6F5317BE /* Pods-MassLotteryKenoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D127859A4B0E81407A384601A8EA9B61 /* Build configuration list for PBXNativeTarget "Pods-MassLotteryKenoTests" */;
+			buildPhases = (
+				001718E49B09FD9BD3E7234C860A0AA0 /* Headers */,
+				E36F8A6C56405F3258579F7236529647 /* Sources */,
+				3A615121604AA073B31A8D1B519E327F /* Frameworks */,
+				B372C178156BDE3BC244456753C854E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4246FB0D07AEB15906B15CF877DF4B45 /* PBXTargetDependency */,
+			);
+			name = "Pods-MassLotteryKenoTests";
+			productName = "Pods-MassLotteryKenoTests";
+			productReference = 4D84211662E1D94B89D05463BF35718E /* Pods_MassLotteryKenoTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		54237A3F7A8BC7533AC8EC754FCC726C /* Kringle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E62E020D677BA320F54E34FA21F4C4DA /* Build configuration list for PBXNativeTarget "Kringle" */;
+			buildPhases = (
+				4ADFA7F7A81424BC04543ECE88AB99AF /* Headers */,
+				CF121E7F28645E3A74A10154B4BC4B04 /* Sources */,
+				B211D37F6347F3EE5085B6B76878B0AE /* Frameworks */,
+				E3DB46BA217EB3F952F109CDE229B0D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2959AFA9F164466E34DD6A9C1D545E7 /* PBXTargetDependency */,
+			);
+			name = Kringle;
+			productName = Kringle;
+			productReference = 85BB54C4A40C5CF72A9E66595F3340D2 /* Kringle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		697DD76C04E03068B36270A62C223F29 /* PromisesObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AF815E08E03F2EC437A43B067684992 /* Build configuration list for PBXNativeTarget "PromisesObjC" */;
+			buildPhases = (
+				B2BD95552257EAEDA120F00237416464 /* Headers */,
+				FDECC6C05A5549553904BBB6B3C8E5AA /* Sources */,
+				FA5B8BD4CECFBDDF7605ABD2EFF49B30 /* Frameworks */,
+				6881D6385925808FB5154CCB8CB566DA /* Resources */,
+				953F1EBA4DD343403712052272365D29 /* Copy . Public Headers */,
+				BE494E426E000D51EAF3199CBA20FA73 /* Copy . Private Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PromisesObjC;
+			productName = PromisesObjC;
+			productReference = B780DB5C429CD3CCB8602A1E4032A72C /* FBLPromises.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A7F49203E2B6DFBEBA6FBC86F02230D6 /* PromisesSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33181D2EAC6DE1650E502648D4B3427A /* Build configuration list for PBXNativeTarget "PromisesSwift" */;
+			buildPhases = (
+				8A0F009366C20D3E46600BDB50605CA1 /* Headers */,
+				9B7F56BCD54C4C899EBF0EB99859F10A /* Sources */,
+				D121C7EFDF87B3603D7C2F2B0D6F6AE9 /* Frameworks */,
+				6109A26C6BDA04AAD379717C7B31556E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E73D17C7FC5AB057722C822F196CA16 /* PBXTargetDependency */,
+			);
+			name = PromisesSwift;
+			productName = PromisesSwift;
+			productReference = B9BAE71DEB00FB3B9CC718E0273167DE /* Promises.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E44ACD3A71B07508A9B1352B15406F87 /* Pods-MassLotteryKenoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F1C18144DC44169A5ADACB5CE55DA6D /* Build configuration list for PBXNativeTarget "Pods-MassLotteryKenoUITests" */;
+			buildPhases = (
+				51E620A4EF37822BED7400999E198F8A /* Headers */,
+				C7B272EC68F84B9233038F01CB2F16BF /* Sources */,
+				3D9533E75F74672A77B71977FDC9DB32 /* Frameworks */,
+				30E7CBA973EFEFC5466C357625850CE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08AC3BA9B4C9EEF2CB1C84E4C445E7D0 /* PBXTargetDependency */,
+			);
+			name = "Pods-MassLotteryKenoUITests";
+			productName = "Pods-MassLotteryKenoUITests";
+			productReference = 55B1F5306C9E16B3F1B19C732CE1913C /* Pods_MassLotteryKenoUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 174B0CE289B79C544A2490757F79C355 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54237A3F7A8BC7533AC8EC754FCC726C /* Kringle */,
+				0414F9002F6E5154879FAA1717B8D15A /* Pods-MassLotteryKeno */,
+				17CD7AE05FE4F3FDDFCA219A6F5317BE /* Pods-MassLotteryKenoTests */,
+				E44ACD3A71B07508A9B1352B15406F87 /* Pods-MassLotteryKenoUITests */,
+				697DD76C04E03068B36270A62C223F29 /* PromisesObjC */,
+				A7F49203E2B6DFBEBA6FBC86F02230D6 /* PromisesSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30E7CBA973EFEFC5466C357625850CE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6109A26C6BDA04AAD379717C7B31556E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6881D6385925808FB5154CCB8CB566DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B372C178156BDE3BC244456753C854E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7A7121E40FD0C67D4365D0280BBFA6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DB46BA217EB3F952F109CDE229B0D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B7F56BCD54C4C899EBF0EB99859F10A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23349741885ADE1137F8E3EA1632C7C9 /* Promise+All.swift in Sources */,
+				8ECC517B9017742AB13E546C65504D0A /* Promise+Always.swift in Sources */,
+				185237E58DEA4918DF2DDE8D47F9C426 /* Promise+Any.swift in Sources */,
+				6E617A0A78F9C177F83A648C6674DAE6 /* Promise+Async.swift in Sources */,
+				524459FE0BD9F5999F65F506ADBE9E78 /* Promise+Await.swift in Sources */,
+				979B4CB79DBAFADA9DA46E5B6B534402 /* Promise+Catch.swift in Sources */,
+				2281BEB3DA90AB7DD6C2B8E6EB59DA90 /* Promise+Delay.swift in Sources */,
+				F7235C03DC0840752F2BC5BBCF9CB2DE /* Promise+Do.swift in Sources */,
+				6B6E823C1643D1F8DD2002D918618C4C /* Promise+Race.swift in Sources */,
+				1E13F2C6DC77244F664C206E10F19B35 /* Promise+Recover.swift in Sources */,
+				BEAE87466172701F3D47643866AF916C /* Promise+Reduce.swift in Sources */,
+				A7BA5535204E0FD9EC947AF468294889 /* Promise+Retry.swift in Sources */,
+				11CB6C25B0619FC7CB35B199D5DBF037 /* Promise+Testing.swift in Sources */,
+				DF5A72A4CBF9A307C132116CE134766B /* Promise+Then.swift in Sources */,
+				FCBAD0A5DD7D5A1A4059B0C7E503F81E /* Promise+Timeout.swift in Sources */,
+				CBD87C2026FE34FFCBE5504EBDFB0F61 /* Promise+Validate.swift in Sources */,
+				732B1386B861C64B3D63BA6C4C4056C0 /* Promise+Wrap.swift in Sources */,
+				8983041C7E5906C0D9C0A40ECF63E1FC /* Promise.swift in Sources */,
+				C09D3BA41D4B6FEB593D8D2EDE518F1A /* PromiseError.swift in Sources */,
+				BC8581068111F20BBD6282357AB71D68 /* PromisesSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF4D8BE3E4DF4B1DD770E308DDA6D6D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB54FA0FD21EDD714D40CB109A4A138 /* Pods-MassLotteryKeno-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B272EC68F84B9233038F01CB2F16BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFF3B0174BA5CC36CB31342AC9F9A1D /* Pods-MassLotteryKenoUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF121E7F28645E3A74A10154B4BC4B04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F37CECFFEF6C444887FA084B8B814D22 /* Coder.swift in Sources */,
+				066F1A2AABFEAF2156C7E128D340F9AE /* CoderType.swift in Sources */,
+				21DFA4FB35CAC326FC58A680F7BD7E37 /* CookieJar.swift in Sources */,
+				10FA03EDBC11A7C14F61CB461A438919 /* CookieJarType.swift in Sources */,
+				774325FC8C67A3F51F3339BBD04AAF65 /* Endpoint.swift in Sources */,
+				B64ADA46AC805F3FD3EB7E74768C0CBC /* HTTPMethod.swift in Sources */,
+				0FB031A8E18C73128EC2EF577D256484 /* Kringle-dummy.m in Sources */,
+				DFFFD42764BC74BF48B6EAEB81E34D3B /* NetworkClient.swift in Sources */,
+				FE1985ECC5E7EE3AE11E668F8A4140F7 /* NetworkClientType.swift in Sources */,
+				D4648FB26164B4B6D006C214E6F1E08D /* NetworkError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E36F8A6C56405F3258579F7236529647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C540528DE0DCFAE119DFE93C02C7A5 /* Pods-MassLotteryKenoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDECC6C05A5549553904BBB6B3C8E5AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD5D194B62FA5E0D77914A62941C379 /* FBLPromise+All.m in Sources */,
+				DFF6DF99DC27F34C86368790F8556B2C /* FBLPromise+Always.m in Sources */,
+				E4C98C7129C8D4B63F33F3798B2F6985 /* FBLPromise+Any.m in Sources */,
+				C1A31B49DFAAFC7371833386498CFB62 /* FBLPromise+Async.m in Sources */,
+				501C4E281FE3A1A14B23A192BA7530A7 /* FBLPromise+Await.m in Sources */,
+				4EB29DAD818FABBB419919280D4EAB5E /* FBLPromise+Catch.m in Sources */,
+				AFEF2B8497CD5759E2F609BF626BA19E /* FBLPromise+Delay.m in Sources */,
+				E257F7ABD8A34683823589F364DDA6F6 /* FBLPromise+Do.m in Sources */,
+				ADCEEA6364A470D55DA12DC6C22ABAF3 /* FBLPromise+Race.m in Sources */,
+				B7BBF5266DF389E5437BDB00114B93D6 /* FBLPromise+Recover.m in Sources */,
+				7F19210F80FF7E4A686478DD99BE1E7A /* FBLPromise+Reduce.m in Sources */,
+				8D070B62B3F2CEBDD73FB68B04CA7F1C /* FBLPromise+Retry.m in Sources */,
+				025CC746E523AE5F6E8EE097AA9B77CF /* FBLPromise+Testing.m in Sources */,
+				E916CAA25FAF6237D9A0EF979B84041C /* FBLPromise+Then.m in Sources */,
+				D32B9C837F9DB88B16C8F647A95F4BB8 /* FBLPromise+Timeout.m in Sources */,
+				56803F601EF2217286318BE5B6F75A00 /* FBLPromise+Validate.m in Sources */,
+				BB4613DFA180C0EAEF38D73359093495 /* FBLPromise+Wrap.m in Sources */,
+				8BA43FC8D2303748F4A1F3A5B4D5A5B6 /* FBLPromise.m in Sources */,
+				3C494F61E2619AAABF9214BF14053CE9 /* FBLPromiseError.m in Sources */,
+				5377DCEBC671D1C77F718104D96921D4 /* PromisesObjC-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08AC3BA9B4C9EEF2CB1C84E4C445E7D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MassLotteryKeno";
+			target = 0414F9002F6E5154879FAA1717B8D15A /* Pods-MassLotteryKeno */;
+			targetProxy = 1B66D5A51B4E35E5F26C455DF99CE741 /* PBXContainerItemProxy */;
+		};
+		3E73D17C7FC5AB057722C822F196CA16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromisesObjC;
+			target = 697DD76C04E03068B36270A62C223F29 /* PromisesObjC */;
+			targetProxy = 681BD9F8F30AC283BF6D9D0C48E72E54 /* PBXContainerItemProxy */;
+		};
+		4246FB0D07AEB15906B15CF877DF4B45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MassLotteryKeno";
+			target = 0414F9002F6E5154879FAA1717B8D15A /* Pods-MassLotteryKeno */;
+			targetProxy = 215351B28931AECBAF2B7FBF98560D64 /* PBXContainerItemProxy */;
+		};
+		490F49AA52B024824B92A6A4F2D04C97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromisesSwift;
+			target = A7F49203E2B6DFBEBA6FBC86F02230D6 /* PromisesSwift */;
+			targetProxy = BD4B951E5AE77B9B088793474A97CF28 /* PBXContainerItemProxy */;
+		};
+		B2959AFA9F164466E34DD6A9C1D545E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromisesSwift;
+			target = A7F49203E2B6DFBEBA6FBC86F02230D6 /* PromisesSwift */;
+			targetProxy = 51D5533E888045A4F320D4211D5BFF26 /* PBXContainerItemProxy */;
+		};
+		F51B6613DCEB56D0B4D3344D9D2E9AF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kringle;
+			target = 54237A3F7A8BC7533AC8EC754FCC726C /* Kringle */;
+			targetProxy = 4720343D07CD8A7729224731BA0B7E14 /* PBXContainerItemProxy */;
+		};
+		F8D09286902F0535A85EB760A9705700 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromisesObjC;
+			target = 697DD76C04E03068B36270A62C223F29 /* PromisesObjC */;
+			targetProxy = F7EA68F9415F7F142C482031386F1092 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1548029932E448066098AC9DD7CF3B45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BA31091C28DF313C740DBA5FFEF811F /* Pods-MassLotteryKeno.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MassLotteryKeno/Pods-MassLotteryKeno-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MassLotteryKeno/Pods-MassLotteryKeno.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1B1E6632B696AC83358F1463CA9396DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E33E9D0295071F1D051D15171C8A7189 /* Pods-MassLotteryKenoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MassLotteryKenoUITests/Pods-MassLotteryKenoUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MassLotteryKenoUITests/Pods-MassLotteryKenoUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		38D70BCEC37AF96D20325175881F6C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A064CAF4A62DB3E43EC88B11FBA14D4 /* PromisesObjC.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/PromisesObjC/PromisesObjC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PromisesObjC/PromisesObjC.modulemap";
+				PRODUCT_MODULE_NAME = FBLPromises;
+				PRODUCT_NAME = FBLPromises;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4CE281642D6EE9FAB113046B4B6328A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		5E1A4D71A402FD7877204B76F47CD787 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F973BE9091CFDB2A4280303376CF323 /* Pods-MassLotteryKenoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MassLotteryKenoUITests/Pods-MassLotteryKenoUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MassLotteryKenoUITests/Pods-MassLotteryKenoUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		64088A888A854F1D7252F8B17764274E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC633FC8BAF17BFFDB48085755EE103F /* Kringle.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Kringle/Kringle-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kringle/Kringle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Kringle/Kringle.modulemap";
+				PRODUCT_MODULE_NAME = Kringle;
+				PRODUCT_NAME = Kringle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		67F6418AC617C61694C69099AF397EC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A064CAF4A62DB3E43EC88B11FBA14D4 /* PromisesObjC.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/PromisesObjC/PromisesObjC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PromisesObjC/PromisesObjC.modulemap";
+				PRODUCT_MODULE_NAME = FBLPromises;
+				PRODUCT_NAME = FBLPromises;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6BDACF07C70F7CB10915844E9A6A387F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 430B2C5E35517A1D8F6C87DC7CB1DCD9 /* Pods-MassLotteryKeno.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MassLotteryKeno/Pods-MassLotteryKeno-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MassLotteryKeno/Pods-MassLotteryKeno.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6DFA1578582149B7E24AD55CBA30F07A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6E00CE26FF2ADD6874E3428B425E2568 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DA94785F86FECBE4927CD2699023CFC /* PromisesSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PromisesSwift/PromisesSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PromisesSwift/PromisesSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PromisesSwift/PromisesSwift.modulemap";
+				PRODUCT_MODULE_NAME = Promises;
+				PRODUCT_NAME = Promises;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		767928DE86DB58464C5F19E09AE184ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88521F2C6F9D7F3977AFCCAB72C2CA76 /* Pods-MassLotteryKenoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MassLotteryKenoTests/Pods-MassLotteryKenoTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MassLotteryKenoTests/Pods-MassLotteryKenoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E09F2D74E81993321C6A5BFE1F3706DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DA94785F86FECBE4927CD2699023CFC /* PromisesSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PromisesSwift/PromisesSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PromisesSwift/PromisesSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PromisesSwift/PromisesSwift.modulemap";
+				PRODUCT_MODULE_NAME = Promises;
+				PRODUCT_NAME = Promises;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB53ADAAA0627DD2DC436622E16B9931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B151D881B1E61927CCB26BA3E534E486 /* Pods-MassLotteryKenoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MassLotteryKenoTests/Pods-MassLotteryKenoTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MassLotteryKenoTests/Pods-MassLotteryKenoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4855D3DB23DECC5275C7C962F82D36A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC633FC8BAF17BFFDB48085755EE103F /* Kringle.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Kringle/Kringle-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kringle/Kringle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Kringle/Kringle.modulemap";
+				PRODUCT_MODULE_NAME = Kringle;
+				PRODUCT_NAME = Kringle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33181D2EAC6DE1650E502648D4B3427A /* Build configuration list for PBXNativeTarget "PromisesSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E09F2D74E81993321C6A5BFE1F3706DD /* Debug */,
+				6E00CE26FF2ADD6874E3428B425E2568 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DFA1578582149B7E24AD55CBA30F07A /* Debug */,
+				4CE281642D6EE9FAB113046B4B6328A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AF815E08E03F2EC437A43B067684992 /* Build configuration list for PBXNativeTarget "PromisesObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38D70BCEC37AF96D20325175881F6C4B /* Debug */,
+				67F6418AC617C61694C69099AF397EC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F1C18144DC44169A5ADACB5CE55DA6D /* Build configuration list for PBXNativeTarget "Pods-MassLotteryKenoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E1A4D71A402FD7877204B76F47CD787 /* Debug */,
+				1B1E6632B696AC83358F1463CA9396DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96667A79056A0E4CEFA4602DD5FF365A /* Build configuration list for PBXNativeTarget "Pods-MassLotteryKeno" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1548029932E448066098AC9DD7CF3B45 /* Debug */,
+				6BDACF07C70F7CB10915844E9A6A387F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D127859A4B0E81407A384601A8EA9B61 /* Build configuration list for PBXNativeTarget "Pods-MassLotteryKenoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB53ADAAA0627DD2DC436622E16B9931 /* Debug */,
+				767928DE86DB58464C5F19E09AE184ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E62E020D677BA320F54E34FA21F4C4DA /* Build configuration list for PBXNativeTarget "Kringle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64088A888A854F1D7252F8B17764274E /* Debug */,
+				F4855D3DB23DECC5275C7C962F82D36A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
