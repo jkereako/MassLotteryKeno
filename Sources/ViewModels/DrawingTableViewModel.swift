@@ -16,6 +16,7 @@ protocol DrawingTableViewModelDataSource: class {
 
 protocol DrawingTableViewModelDelegate: class {
     func didSelect(_ drawingViewModel: DrawingViewModel)
+    func refreshData(for viewController: DrawingTableViewController)
 }
 
 final class DrawingTableViewModel: NSObject {
@@ -62,7 +63,18 @@ extension DrawingTableViewModel: UITableViewDelegate {
                    heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         delegate?.didSelect(drawingViewModels[indexPath.row])
+    }
+}
+
+// MARK: - Target-actions
+extension DrawingTableViewModel: DrawingTableViewControllerDelegate {
+    func didPullToRefresh(tableViewController: DrawingTableViewController,
+                          refreshControl: UIRefreshControl) {
+
+        // Just a pass-through
+        delegate?.refreshData(for: tableViewController)
     }
 }
