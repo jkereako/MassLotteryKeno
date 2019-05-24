@@ -12,20 +12,12 @@ import Kringle
 final class AppCoordinator {
     var homeViewController: UIViewController {
         let drawingTableViewController = DrawingTableViewController()
-        let promise = networkClient.get(
-            MassLotteryEndpoint.todaysGames, decodingResponseTo: GameDayContract.self
-        )
 
-        promise.then { [weak self] gameDayContract in
-            self?.buildViewModel(for: drawingTableViewController, with: gameDayContract)
-            }.catch { [weak self] _ in
-                self?.showNetworkErrorAlert(on: drawingTableViewController)
-        }
+        refreshData(for: drawingTableViewController)
 
         navigationController = UINavigationController(
             rootViewController: drawingTableViewController
         )
-
 
         return navigationController!
     }
