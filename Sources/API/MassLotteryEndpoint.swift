@@ -13,7 +13,7 @@ enum MassLotteryEndpoint {
 }
 
 extension MassLotteryEndpoint: Endpoint {
-    var baseURL: URL { return URL(string: "http://www.masslottery.com/data/json")! }
+    var baseURL: URL { return URL(string: "https://www.masslottery.com/data/json")! }
 
     var path: String {
         switch self {

@@ -17,7 +17,7 @@ final class AppCoordinator {
         )
 
         promise.then { [weak self] gameDayContract in
-            self?.refreshData(for: drawingTableViewController, with: gameDayContract)
+            self?.buildViewModel(for: drawingTableViewController, with: gameDayContract)
             }.catch { [weak self] _ in
                 self?.showNetworkErrorAlert(on: drawingTableViewController)
         }
@@ -50,7 +50,7 @@ extension AppCoordinator: DrawingTableViewModelDelegate {
         )
 
         promise.then { [weak self] gameDayContract in
-            self?.refreshData(for: viewController, with: gameDayContract)
+            self?.buildViewModel(for: viewController, with: gameDayContract)
             }.catch { [weak self] _ in
                 self?.showNetworkErrorAlert(on: viewController)
         }
@@ -84,8 +84,8 @@ private extension AppCoordinator {
         UINavigationBar.appearance().isTranslucent = false
     }
 
-    func refreshData(for tableViewController: DrawingTableViewController,
-                     with gameDayContract: GameDayContract) {
+    func buildViewModel(for tableViewController: DrawingTableViewController,
+                        with gameDayContract: GameDayContract) {
 
         var drawingViewModels =  [DrawingViewModel]()
         let aDateFormatter = dateFormatter

@@ -28,7 +28,7 @@ final class DrawingTableViewModel: NSObject {
 
     init(drawingViewModels: [DrawingViewModel]) {
         title = "Today's Drawings"
-        self.drawingViewModels = drawingViewModels
+        self.drawingViewModels = drawingViewModels.sorted { $0.gameIdentifier > $1.gameIdentifier }
     }
 }
 
