@@ -10,7 +10,6 @@ import UIKit
 
 final class NumberViewController: UIViewController {
     @IBOutlet private weak var gameIdentifier: UILabel!
-    @IBOutlet private weak var drawDate: UILabel!
     @IBOutlet private weak var bonusMultiplier: UILabel!
     @IBOutlet private weak var numberCollectionView: UICollectionView!
 
@@ -30,9 +29,17 @@ final class NumberViewController: UIViewController {
         numberCollectionView.dataSource = viewModel
         numberCollectionView.delegate = viewModel
 
+        let layout = numberCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+
+        let width = UIScreen.main.bounds.width - 70
+
+        let w = width / 4
+
+        layout.itemSize = CGSize(width: w, height: w * 0.75)
+
         title = viewModel?.title
         gameIdentifier.text = viewModel?.gameIdentifier
-        drawDate.text = viewModel?.drawDate
+
         bonusMultiplier.text = viewModel?.bonusMultiplier
 
         let nib = UINib(

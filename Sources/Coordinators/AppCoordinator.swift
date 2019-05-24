@@ -22,11 +22,11 @@ final class AppCoordinator {
         return navigationController!
     }
     
-    private let networkClient: NetworkClientType
+    private let networkClient: NetworkClient
     private let dateFormatter: DateFormatter
     private var navigationController: UINavigationController?
 
-    init(networkClient: NetworkClientType) {
+    init(networkClient: NetworkClient) {
         self.networkClient = networkClient
         dateFormatter = DateFormatter()
 
@@ -38,7 +38,9 @@ final class AppCoordinator {
 extension AppCoordinator: DrawingTableViewModelDelegate {
     func refreshData(for viewController: DrawingTableViewController) {
         let promise = networkClient.get(
-            MassLotteryEndpoint.todaysGames, decodingResponseTo: GameDayContract.self
+            MassLotteryEndpoint.todaysGames,
+            decodingResponseTo: GameDayContract.self,
+            query: ["buster": String(Date().timeIntervalSince1970)]
         )
 
         promise.then { [weak self] gameDayContract in
@@ -71,8 +73,8 @@ private extension AppCoordinator {
         ]
 
         UINavigationBar.appearance().titleTextAttributes = attributes
-        UINavigationBar.appearance().tintColor = UIColor.init(named: "MediumBlue")
-        UINavigationBar.appearance().barTintColor = UIColor.init(named: "DarkBlue")
+        UINavigationBar.appearance().tintColor = UIColor.init(named: "White")
+        UINavigationBar.appearance().barTintColor = UIColor.init(named: "Blue")
         UINavigationBar.appearance().isTranslucent = false
     }
 

@@ -25,11 +25,11 @@ final class NumberViewModel: NSObject {
 
     init(drawing: DrawingModel, dateFormatter: DateFormatter) {
         title = "Winning Numbers"
-        gameIdentifier = "Game #\(drawing.id)"
+        gameIdentifier = "Game # \(drawing.id)"
         drawDate = dateFormatter.string(from: drawing.drawDate)
 
         if drawing.bonus > 1 {
-            bonusMultiplier = "BONUS = \(drawing.bonus)X"
+            bonusMultiplier = "BONUS = \(drawing.bonus)x"
         } else {
             bonusMultiplier = ""
         }
@@ -75,21 +75,5 @@ extension NumberViewModel: UICollectionViewDataSource {
 extension NumberViewModel: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Selected #\(numbers[indexPath.row])")
-    }
-}
-
-extension NumberViewModel: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-
-        let columnCount = 4
-        let spacing = 4
-        let s = Int(
-            collectionView.bounds.width / CGFloat(columnCount)) - ((columnCount - 1) * spacing
-        )
-
-        return CGSize(width: s, height: s)
-
     }
 }

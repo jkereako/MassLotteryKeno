@@ -10,7 +10,7 @@ import Promises
 
 // JSONEncoder and JSONDecoder perform their respective work on the the UI thread by default. As
 // such, we indicate to the Promise that we want this work to occur on a background thread.
-public final class Coder: CoderType {
+public final class Coder {
 
     /// The dispatch queue for the background thread.
     private let dispatchQueue = DispatchQueue(label: "JSONCoderQueue")

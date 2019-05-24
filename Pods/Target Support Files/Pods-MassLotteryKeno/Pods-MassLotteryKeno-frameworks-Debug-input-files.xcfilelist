@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-MassLotteryKeno/Pods-MassLotteryKeno-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Kringle/Kringle.framework
+${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework
+${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework

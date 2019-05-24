@@ -8,56 +8,62 @@
 import Foundation
 import Promises
 
-final public class NetworkClient: NetworkClientType {
-    fileprivate let urlSession: URLSession
-    fileprivate let coder: Coder
+final public class NetworkClient {
+    public var headers: [String: String]
+    
+    private let standardHeaders = [
+        "Accept": "application/json",
+        "Accept-Charset": "UTF-8",
+        "Accept-Encoding": "gzip"
+    ]
+    
+    private let urlSession: URLSession
+    private let coder: Coder
     
     // Allow for dependency injection to make the class testable
     public init(urlSession: URLSession = URLSession(configuration: .default)) {
-        urlSession.configuration.httpAdditionalHeaders = [
-            "Accept": "application/json",
-            "Accept-Charset": "UTF-8",
-            "Accept-Encoding": "gzip"
-        ]
-
+        self.headers = [String: String]()
         self.urlSession = urlSession
         self.coder = Coder()
     }
     
-    public func get(_ endpoint: Endpoint) -> Promise<Void> {
-        let promise = sendRequestIgnoringResponse(endpoint: endpoint, httpMethod: .get)
-        
-        return promise.then { _ -> Void  in
-            return
-        }
+    public func get(_ endpoint: Endpoint, query: [String: String] = [:]) -> Promise<Void> {
+        return sendRequestIgnoringResponse(endpoint: endpoint, httpMethod: .get, query: query)
     }
     
     public func get<T: Decodable>(_ endpoint: Endpoint,
-                                  decodingResponseTo contract: T.Type) -> Promise<T> {
+                                  decodingResponseTo contract: T.Type,
+                                  query: [String: String] = [:]) -> Promise<T> {
         return sendRequestDecodingResponse(
-            endpoint: endpoint, httpMethod: .get, decodable: contract
+            endpoint: endpoint, httpMethod: .get, decodable: contract, query: query
         )
     }
     
     public func put(_ body: Data, to endpoint: Endpoint) -> Promise<Void> {
-        return sendRequestIgnoringResponse(endpoint: endpoint, httpMethod: .put, body: body)
+        return sendRequestIgnoringResponse(
+            endpoint: endpoint, httpMethod: .put, body: body
+        )
     }
     
-    public func put<T: Decodable>(_ body: Data, to endpoint: Endpoint,
+    public func put<T: Decodable>(_ body: Data,
+                                  to endpoint: Endpoint,
                                   decodingResponseTo contract: T.Type) -> Promise<T> {
-
+        
         return sendRequestDecodingResponse(
             endpoint: endpoint, httpMethod: .put, decodable: contract, body: body
         )
     }
     
     public func post(_ body: Data, to endpoint: Endpoint) -> Promise<Void> {
-        return sendRequestIgnoringResponse(endpoint: endpoint, httpMethod: .post, body: body)
+        return sendRequestIgnoringResponse(
+            endpoint: endpoint, httpMethod: .post, body: body
+        )
     }
     
-    public func post<T: Decodable>(_ body: Data, to endpoint: Endpoint,
+    public func post<T: Decodable>(_ body: Data,
+                                   to endpoint: Endpoint,
                                    decodingResponseTo contract: T.Type) -> Promise<T> {
-
+        
         return sendRequestDecodingResponse(
             endpoint: endpoint, httpMethod: .post, decodable: contract, body: body
         )
@@ -69,7 +75,7 @@ final public class NetworkClient: NetworkClientType {
     
     public func delete<T: Decodable>(_ endpoint: Endpoint,
                                      decodingResponseTo contract: T.Type) -> Promise<T> {
-
+        
         return sendRequestDecodingResponse(
             endpoint: endpoint, httpMethod: .delete, decodable: contract
         )
@@ -78,18 +84,35 @@ final public class NetworkClient: NetworkClientType {
 
 // MARK: - Private helpers
 private extension NetworkClient {
-    func sendRequestIgnoringResponse(endpoint: Endpoint, httpMethod: HTTPMethod, body: Data? = nil) -> Promise<Void> {
+    func setHeaders(for request: NSMutableURLRequest) {
+        standardHeaders.forEach { request.setValue($1, forHTTPHeaderField: $0) }
+        headers.forEach { request.setValue($1, forHTTPHeaderField: $0) }
+    }
+    
+    func sendRequestIgnoringResponse(endpoint: Endpoint,
+                                     httpMethod: HTTPMethod,
+                                     query: [String: String] = [:],
+                                     body: Data? = nil) -> Promise<Void> {
+        
+        let promise = sendRequestToEndpoint(
+            endpoint, httpMethod: httpMethod, query: query, body: body
+        )
+        
         // Implicitly cast `Promise<Data?>` to `Promise<Void>`
-        return sendRequestToEndpoint(endpoint, httpMethod: httpMethod, body: body).then { _ -> Void  in
-            return
-        }
+        return promise.then { _ -> Void  in return }
     }
     
     func sendRequestDecodingResponse<T: Decodable>(endpoint: Endpoint,
                                                    httpMethod: HTTPMethod,
                                                    decodable: T.Type,
+                                                   query: [String: String] = [:],
                                                    body: Data? = nil) -> Promise<T> {
-        return sendRequestToEndpoint(endpoint, httpMethod: httpMethod, body: body).then { [unowned self] (data) in
+        
+        let promise = sendRequestToEndpoint(
+            endpoint, httpMethod: httpMethod, query: query, body: body
+        )
+        
+        return promise.then { [unowned self] (data) in
             guard let responseData = data else {
                 throw NetworkError.emptyResponse
             }
@@ -97,16 +120,28 @@ private extension NetworkClient {
             return self.coder.decode(responseData, to: T.self)
         }
     }
-
-    func sendRequestToEndpoint(_ endpoint: Endpoint, httpMethod: HTTPMethod, body: Data? = nil) -> Promise<Data?> {
-        let url = endpoint.baseURL.appendingPathComponent(endpoint.path)
-        let request = NSMutableURLRequest(url: url)
+    
+    func sendRequestToEndpoint(_ endpoint: Endpoint,
+                               httpMethod: HTTPMethod,
+                               query: [String: String] = [:],
+                               body: Data? = nil) -> Promise<Data?> {
         
-        request.httpMethod = httpMethod.rawValue
-        request.httpBody = body
+        let url = endpoint.baseURL.appendingPathComponent(endpoint.path)
+        var urlComponents = URLComponents(string: url.absoluteString)!
+        
+        urlComponents.queryItems = query.map { URLQueryItem(name: $0.0, value: $0.1) }
+        let mutableRequest = NSMutableURLRequest(url: urlComponents.url!)
+        
+        mutableRequest.httpMethod = httpMethod.rawValue
+        
+        // `httpBody` *must* be the last property that we set because of this bug: https://bugs.swift.org/browse/SR-6687
+        mutableRequest.httpBody = body
+        
+        setHeaders(for: mutableRequest)
         
         return Promise<Data?> { fulfill, reject in
-            let task = self.urlSession.dataTask(with: request as URLRequest) { (data: Data?, response: URLResponse?, error: Error?) in
+            let request = mutableRequest as URLRequest
+            let task = self.urlSession.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) in
                 
                 guard let httpResponse = response as? HTTPURLResponse else {
                     reject(NetworkError.emptyResponse)
@@ -139,7 +174,7 @@ private extension NetworkClient {
                     assertionFailure("Unexpected response code.")
                     reject(NetworkError.unknown)
                 }
-
+                
                 // Save cookies for all responses that have the header "Set-Cookie".
                 // See https://tools.ietf.org/html/rfc6265#section-4.1
                 cookieJar.setCookies(with: httpResponse)

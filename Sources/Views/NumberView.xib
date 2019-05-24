@@ -14,7 +14,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NumberViewController" customModule="MassLotteryKeno" customModuleProvider="target">
             <connections>
                 <outlet property="bonusMultiplier" destination="oiO-Hz-Qpd" id="OT0-e9-q7s"/>
-                <outlet property="drawDate" destination="Dal-D1-tN7" id="IVo-gU-VDR"/>
                 <outlet property="gameIdentifier" destination="Ena-ou-gIz" id="2em-f5-8tV"/>
                 <outlet property="numberCollectionView" destination="R3t-XQ-Lau" id="trJ-si-Z0W"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -45,7 +44,7 @@
                             </subviews>
                         </stackView>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="R3t-XQ-Lau" userLabel="Numbers">
-                            <rect key="frame" x="0.0" y="140.5" width="374" height="645.5"/>
+                            <rect key="frame" x="0.0" y="140.5" width="374" height="649"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ejK-3S-6R6">
                                 <size key="itemSize" width="50" height="50"/>
@@ -54,25 +53,13 @@
                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </collectionViewFlowLayout>
                         </collectionView>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="hCk-60-QOw" userLabel="Footer">
-                            <rect key="frame" x="0.0" y="790" width="374" height="20"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="3/17/2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dal-D1-tN7" userLabel="Date">
-                                    <rect key="frame" x="0.0" y="0.0" width="80.5" height="20"/>
-                                    <accessibility key="accessibilityConfiguration" identifier="jackpot"/>
-                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                    <color key="textColor" name="White"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="BONUS = 3X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiO-Hz-Qpd" userLabel="Bonus Multiplier">
-                                    <rect key="frame" x="272" y="0.0" width="102" height="20"/>
-                                    <accessibility key="accessibilityConfiguration" identifier="bonus"/>
-                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                    <color key="textColor" name="Gold"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="BONUS = 3X" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiO-Hz-Qpd" userLabel="Bonus Multiplier">
+                            <rect key="frame" x="0.0" y="793.5" width="374" height="16.5"/>
+                            <accessibility key="accessibilityConfiguration" identifier="bonus"/>
+                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="14"/>
+                            <color key="textColor" name="Gold"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <viewLayoutGuide key="safeArea" id="NsH-rA-HKS"/>
                 </stackView>
@@ -87,18 +74,24 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="color" keyPath="topColor">
-                    <color key="value" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="value" name="Blue"/>
                 </userDefinedRuntimeAttribute>
                 <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
-                    <color key="value" red="0.066666666669999999" green="0.035294117649999998" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="value" name="LightBlue"/>
                 </userDefinedRuntimeAttribute>
             </userDefinedRuntimeAttributes>
         </view>
     </objects>
     <resources>
         <image name="Keno" width="290" height="112"/>
+        <namedColor name="Blue">
+            <color red="0.0" green="0.0078431372549019607" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Gold">
             <color red="0.71372549019607845" green="0.80000000000000004" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightBlue">
+            <color red="0.20784313725490197" green="0.42352941176470588" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
