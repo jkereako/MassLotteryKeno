@@ -74,7 +74,7 @@ private extension AppCoordinator {
 
         UINavigationBar.appearance().titleTextAttributes = attributes
         UINavigationBar.appearance().tintColor = UIColor.init(named: "White")
-        UINavigationBar.appearance().barTintColor = UIColor.init(named: "Blue")
+        UINavigationBar.appearance().barTintColor = UIColor.init(named: "Black")
         UINavigationBar.appearance().isTranslucent = false
     }
 

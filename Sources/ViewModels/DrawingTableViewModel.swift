@@ -59,6 +59,9 @@ extension DrawingTableViewModel: UITableViewDataSource {
 
 // MARK: - UITableViewDelegate
 extension DrawingTableViewModel: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "\(drawingViewModels.count) Drawings"
+    }
     func tableView(_ tableView: UITableView,
                    heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
