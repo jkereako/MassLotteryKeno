@@ -40,10 +40,6 @@ final class NumberViewModel: NSObject {
         
         super.init()
     }
-    
-    deinit {
-        debugPrint("Deallocating NumberViewModel")
-    }
 }
 
 // MARK: - UICollectionViewDataSource

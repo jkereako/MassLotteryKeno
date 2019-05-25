@@ -19,7 +19,7 @@ final class AppCoordinator:RootCoordinator {
 
     init() {
         tabBarController = UITabBarController()
-        
+
         let networkClient = NetworkClient()
         let dateFormatter = DateFormatter()
         var viewControllers = [UIViewController]()
@@ -35,6 +35,7 @@ final class AppCoordinator:RootCoordinator {
         tabBarController.setViewControllers(viewControllers, animated: true)
 
         styleNavigationBar()
+        styleTabBar()
     }
 }
 
@@ -51,5 +52,11 @@ private extension AppCoordinator {
         UINavigationBar.appearance().tintColor = UIColor.init(named: "White")
         UINavigationBar.appearance().barTintColor = UIColor.init(named: "Black")
         UINavigationBar.appearance().isTranslucent = false
+    }
+
+    func styleTabBar() {
+        UITabBar.appearance().tintColor = UIColor.init(named: "White")
+        UITabBar.appearance().barTintColor = UIColor.init(named: "Black")
+        UITabBar.appearance().isTranslucent = false
     }
 }
