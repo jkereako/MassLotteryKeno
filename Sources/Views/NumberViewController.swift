@@ -26,16 +26,18 @@ final class NumberViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        guard let layout = numberCollectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
+            assertionFailure("Expected a UICollectionViewFlowLayout")
+            return
+        }
+
         numberCollectionView.dataSource = viewModel
         numberCollectionView.delegate = viewModel
 
-        let layout = numberCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        let adjustedScreenWidth = UIScreen.main.bounds.width - 70
+        let width = adjustedScreenWidth / 4
 
-        let width = UIScreen.main.bounds.width - 70
-
-        let w = width / 4
-
-        layout.itemSize = CGSize(width: w, height: w * 0.75)
+        layout.itemSize = CGSize(width: width, height: width * 0.75)
 
         title = viewModel?.title
         gameIdentifier.text = viewModel?.gameIdentifier
