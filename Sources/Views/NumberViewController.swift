@@ -23,6 +23,10 @@ final class NumberViewController: UIViewController {
         super.init(coder: aDecoder)
     }
 
+    deinit {
+        debugPrint("Deallocating NumberViewController")
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -51,13 +55,6 @@ final class NumberViewController: UIViewController {
         numberCollectionView.register(
             nib, forCellWithReuseIdentifier: cellReuseIdentifier
         )
-    }
-
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        
-        viewModel?.dataSource = nil
-        viewModel = nil
     }
 }
 

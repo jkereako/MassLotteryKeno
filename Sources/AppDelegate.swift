@@ -21,11 +21,11 @@ extension AppDelegate: UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        appCoordinator = AppCoordinator(networkClient: NetworkClient())
+        appCoordinator = AppCoordinator()
 
         // The ol' fashioned way.
         window = UIWindow(frame: UIScreen.main.bounds)
-        window!.rootViewController = appCoordinator.homeViewController
+        window!.rootViewController = appCoordinator.rootViewController
         window!.makeKeyAndVisible()
 
         return true

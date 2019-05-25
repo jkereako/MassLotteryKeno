@@ -9,57 +9,32 @@
 import Foundation
 import Kringle
 
-final class AppCoordinator {
-    var homeViewController: UIViewController {
-        let drawingTableViewController = DrawingTableViewController()
-
-        refreshData(for: drawingTableViewController)
-
-        navigationController = UINavigationController(
-            rootViewController: drawingTableViewController
-        )
-
-        return navigationController!
+final class AppCoordinator:RootCoordinator {
+    var rootViewController: UIViewController {
+        return tabBarController
     }
-    
-    private let networkClient: NetworkClient
-    private let dateFormatter: DateFormatter
-    private var navigationController: UINavigationController?
 
-    init(networkClient: NetworkClient) {
-        self.networkClient = networkClient
-        dateFormatter = DateFormatter()
+    private let tabBarController: UITabBarController
+    private let rootCoordinators: [RootCoordinator]
+
+    init() {
+        tabBarController = UITabBarController()
+        
+        let networkClient = NetworkClient()
+        let dateFormatter = DateFormatter()
+        var viewControllers = [UIViewController]()
+
+        rootCoordinators = [
+            DrawingsCoordinator(networkClient: networkClient, dateFormatter: dateFormatter),
+            LocationsCoordinator(networkClient: networkClient, dateFormatter: dateFormatter)
+        ]
+        rootCoordinators.forEach {
+            viewControllers.append($0.rootViewController)
+        }
+
+        tabBarController.setViewControllers(viewControllers, animated: true)
 
         styleNavigationBar()
-    }
-}
-
-// MARK: - DrawingTableViewModelDelegate
-extension AppCoordinator: DrawingTableViewModelDelegate {
-    func refreshData(for viewController: DrawingTableViewController) {
-        let promise = networkClient.get(
-            MassLotteryEndpoint.todaysGames,
-            decodingResponseTo: GameDayContract.self,
-            query: ["buster": String(Date().timeIntervalSince1970)]
-        )
-
-        promise.then { [weak self] gameDayContract in
-            self?.buildViewModel(for: viewController, with: gameDayContract)
-            }.catch { [weak self] _ in
-                self?.showNetworkErrorAlert(on: viewController)
-        }
-    }
-
-    func didSelect(_ drawingViewModel: DrawingViewModel) {
-        let numberViewController = NumberViewController()
-        let numberViewModel = NumberViewModel(
-            drawing: drawingViewModel.model, dateFormatter: dateFormatter
-        )
-
-        numberViewModel.dataSource = numberViewController
-        numberViewController.viewModel = numberViewModel
-        
-        navigationController?.show(numberViewController, sender: self)
     }
 }
 
@@ -76,44 +51,5 @@ private extension AppCoordinator {
         UINavigationBar.appearance().tintColor = UIColor.init(named: "White")
         UINavigationBar.appearance().barTintColor = UIColor.init(named: "Black")
         UINavigationBar.appearance().isTranslucent = false
-    }
-
-    func buildViewModel(for tableViewController: DrawingTableViewController,
-                        with gameDayContract: GameDayContract) {
-
-        var drawingViewModels =  [DrawingViewModel]()
-        let aDateFormatter = dateFormatter
-
-        gameDayContract.drawings.forEach { drawingContract in
-            let drawingModel = DrawingModel(
-                contract: drawingContract, dateFormatter: aDateFormatter
-            )
-
-            drawingViewModels.append(
-                DrawingViewModel(model: drawingModel, dateFormatter: aDateFormatter)
-            )
-        }
-
-        let refreshedDrawingTableViewModel = DrawingTableViewModel(
-            drawingViewModels: drawingViewModels
-        )
-
-        refreshedDrawingTableViewModel.dataSource = tableViewController
-        refreshedDrawingTableViewModel.delegate = self
-        tableViewController.delegate = refreshedDrawingTableViewModel
-        tableViewController.viewModel = refreshedDrawingTableViewModel
-    }
-
-    func showNetworkErrorAlert(on viewController: UIViewController) {
-        // Displays an alert if the promise is rejected
-        let alertController = UIAlertController(
-            title: "Network Error",
-            message: "We weren't able to load today's winning numbers. Please try again later.",
-            preferredStyle: .alert
-        )
-
-        alertController.addAction(UIAlertAction(title: "Okay", style: .cancel))
-
-        viewController.present(alertController, animated: true)
     }
 }
